@@ -1,30 +1,241 @@
 ---
 title: "Major"
 author: "Porter Bischoff"
-date: "4/19/2022"
-output: html_document
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme:
+      bootswatch: journal
 ---
+```{r background, message=FALSE, warning=FALSE, include=FALSE}
+# Load Packages####
+library(tidyverse)
+library(readxl)
+library(easystats)
+library(janitor)
+library(modelr)
+library(vegan)
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+# Read in data ####
+df <- readxl::read_excel("./Data/Medical Conditions and Science Motivation Data 3.4.22.xlsx")
+df <- df %>% 
+  janitor::clean_names()
+df <- df %>% 
+  select(-index,-semester,-type,-course,-pre_post) %>% 
+  select(-starts_with("resilience"))
+
+df <- df %>% 
+  mutate(major=case_when(major == "1" ~ "Biology",
+                         major == "4" ~ "Chemistry",
+                         major == "5" ~ "Earth_sci",
+                         major == "6" ~ "Mathematics",
+                         major == "7" ~ "Physics",
+                         major == "8" ~ "Engineering",
+                         major == "9" ~ "Computer_sci",
+                         major == "10" ~ "Health_sci",
+                         major == "3" ~ "Non_STEM",
+                         major == "11" ~ "Other"))
+df <- df %>% 
+  mutate(career=case_when(career == "1" ~ "medical_doctor",
+                          career == "4" ~ "dentist",
+                          career == "5" ~ "health_care_pro",
+                          career == "6" ~ "scientist",
+                          career == "7" ~ "engineer",
+                          career == "8" ~ "science_communicator",
+                          career == "9" ~ "educator",
+                          career == "10" ~ "technician",
+                          career == "11" ~ "researcher",
+                          career == "3" ~ "non_stem"))
+
+df <- df %>% 
+  mutate(gender=case_when(gender == "1" ~ "male",
+                          gender == "2" ~ "trans_m",
+                          gender == "5" ~ "trans_w",
+                          gender == "6" ~ "female",
+                          gender == "7" ~ "non_conforming",
+                          gender == "8" ~ "intersex",
+                          gender == "9" ~ "two_spirited",
+                          gender == "10" ~ "prefer_not_answer",
+                          gender == "11" ~ "other"))
+
+df <- df %>% 
+  mutate(ethnicity=case_when(ethnicity == "1" ~ "african_american",
+                             ethnicity == "4" ~ "american_indian",
+                             ethnicity == "5" ~ "arab",
+                             ethnicity == "6" ~ "asian",
+                             ethnicity == "7" ~ "latinx",
+                             ethnicity == "8" ~ "biracial",
+                             ethnicity == "9" ~ "pacific_islander",
+                             ethnicity == "10" ~ "white",
+                             ethnicity == "11" ~ "prefer_not_answer",
+                             ethnicity == "12" ~ "other"))
+df <- df %>% 
+  select(-ends_with("ave")) %>% 
+  select(-ends_with("mot"))
+
+df <- df[complete.cases(df),]
+
+# Subplots for Adonis ####
+si <- df %>% 
+  select(starts_with("si"))
+
+cm <- df %>% 
+  select(starts_with("cm"))
+
+im <- df %>% 
+  select(starts_with("im"))
+
+sd <- df %>% 
+  select(starts_with("sd"))
+
+se <- df %>% 
+  select(starts_with("se"))
+
+gm <- df %>% 
+  select(starts_with("gm"))
+
+sci_comp <- df %>% 
+  select(starts_with("sci_comp"))
+
+per_comm_orient <- df %>% 
+  select(starts_with("per_comm_orient"))
+
+sci_comm_orient <- df %>% 
+  select(starts_with("sci_comm_orient"))
+
+demo <- df %>% 
+  select(major,gender,career,ethnicity,parents_grad_college,dependents,med_condition,med_condition_dependent)
+
+questions <- df %>% 
+  select(-major,-gender,-career,-ethnicity,-parents_grad_college,-dependents,-med_condition,-med_condition_dependent)
+
+mysubsetMDS <- function(x){
+  mysubset <- df %>% 
+    select(starts_with(x))
+  
+  meta <- metaMDS(mysubset)
+  MDS_df <- data.frame(MDS1=meta$points[,1],MDS2=meta$points[,2]) %>%
+    cbind(demo)
+  return(MDS_df)
+}
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+### *Major*
+Alright, awesome. Data is loaded, and MDS is ready to be run. We created this for-loop that will allow us to get the plots of the MDS data according to gender and whatever grouping of questions we are exploring particularly.
+```{r for loop, message=FALSE, warning=FALSE, include=FALSE}
+x=1
+major_plots <- list()
+for(i in c("si","cm","im","sd","se","gm","sci_comp","per_comm_orient","sci_comm_orient")){
+  major_plots[[x]] <- mysubsetMDS(i) %>% 
+    ggplot(aes(x=MDS1,y=MDS2,color=factor(major)))+
+    geom_point()+
+    labs(title = i)+
+    stat_ellipse()
+  x <- x+1
+}
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+Let's check out the relationship in Science Identity questions and majors.
+```{r si major, message=FALSE, warning=FALSE}
+major_plots[[1]]
 ```
+<br> 
+Well, that is kind of a mess. Let's run the Adonis test to see if there is a significant difference in Science Identity answers versus majors. 
+```{r si adonis, message=FALSE, warning=FALSE}
+adonis(si ~ demo$major)
+```
+Well gosh, check that out. We have a significant difference here. We will *mark that down for later analysis*.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Next, lets measure significance in difference in Career Motivation and majors. The same Adonis test is run on that.
+```{r message=FALSE, warning=FALSE}
+major_plots[[2]]
+adonis(cm ~ demo$major)
+```
+This shows that there is no significance.
+<br>
+  
+  Now, we will measure significance in difference in Intrinsic Motivation and majors, with an Adonis being run.
+```{r message=FALSE, warning=FALSE}
+major_plots[[3]]
+adonis(im ~ demo$major)
+```
+No significance here, either. 
+<br>
+  
+  Next, Self-Determination and majors.
+```{r message=FALSE, warning=FALSE}
+major_plots[[4]]
+adonis(sd ~ demo$major)
+```
+Again, not significant.
+<br>
+  
+  Here is Self-Efficacy and majors.
+```{r message=FALSE, warning=FALSE}
+major_plots[[5]]
+adonis(se ~ demo$major)
+```
+This is not significant.
+<br>
+  
+  This is Grade Motivation and majors.
+```{r message=FALSE, warning=FALSE}
+major_plots[[6]]
+adonis(gm ~ demo$major)
+```
+This is not significant.
+<br>
+  
+  Here is Science Competency and major.
+```{r message=FALSE, warning=FALSE}
+major_plots[[7]]
+adonis(sci_comp ~ demo$major)
+```
+This one is not significant, either.
+<br>
+  
+  Now, Personal Communal Orientation and majors.
+```{r message=FALSE, warning=FALSE}
+major_plots[[8]] +
+  coord_cartesian(xlim = c(-6,-5))
+adonis(per_comm_orient ~ demo$major)
+```
+This one is not significant.
+<br>
+  
+  Lastly, lets explore Science Communal Orientation and majors.
+```{r message=FALSE, warning=FALSE}
+major_plots[[9]]
+```
+<br> Well heck, that didn't work. Let's run a different type of MDS and try that.
+```{r message=FALSE, warning=FALSE}
+zerorows <- which(rowSums(sci_comm_orient) == 0)
+
+temp <- sci_comm_orient[-zerorows, ]
+
+dec <- decorana(temp, mk=2)
+dec <- summary(dec)
+dec %>% as.matrix()
+x=dec$site.scores[,1]
+y=dec$site.scores[,2]
+
+demo_DCA <- demo[-zerorows,]
+
+demo_DCA$DCA1 <- x
+demo_DCA$DCA2 <- y
+
+demo_DCA %>% ggplot(mapping= aes(x=DCA1, y=DCA2,color=major)) +
+  geom_point()+
+  stat_ellipse()
+```
+Now, let's see if it is significant. 
+```{r message=FALSE, warning=FALSE}
+adonis(sci_comm_orient ~ demo$major)
+```
+Lo and behold, this is not significant. 
+
+<br><br>
+
+Now, what does this all mean? All of the differences in the aspects of the survey and majors were not significant except for the Science Identity questions. This tells us that in our sample, there is a difference in how different majors answer Science Identity. To understand this, further model analysis needs to be run, something that will be run in later explorations of this data set.

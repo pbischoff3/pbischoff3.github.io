@@ -12,7 +12,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-# [Gender](https://pbischoff3.github.io/gender/) | [Major](https://pbischoff3.github.io/major/)
+# [Data Overview](https://pbischoff3.github.io/data_overview/) | [Major](https://pbischoff3.github.io/major/) | [Gender](https://pbischoff3.github.io/gender/) | [Career Goals](https://pbischoff3.github.io/career/) | [Ethnicity](https://pbischoff3.github.io/ethnicity/) | [First Generation Students](https://pbischoff3.github.io/fgs/) | [Number of Dependents](https://pbischoff3.github.io/dependents/) | [Medical Condition](https://pbischoff3.github.io/medical_condition/) | [Medical Care](https://pbischoff3.github.io/medical_care/) | [Conclusion](https://pbischoff3.github.io/conclusion/)
 
 
 ## **What is the data?**
