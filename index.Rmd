@@ -1,18 +1,18 @@
 ---
-title: "Final Project: Multi-Dimensional Analysis of Survey Data"
+title: "Final Project"
 author: "Porter Bischoff"
 output:
   html_document:
     toc: true
     toc_float: true
     theme:
-      bootswatch: journal
+      bootswatch: flatly
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-# [Data Overview](https://pbischoff3.github.io/data_overview/) | [Major](https://pbischoff3.github.io/major/) | [Gender](https://pbischoff3.github.io/gender/) | [Career Goals](https://pbischoff3.github.io/career/) | [Ethnicity](https://pbischoff3.github.io/ethnicity/) | [First Generation Students](https://pbischoff3.github.io/fgs/) | [Number of Dependents](https://pbischoff3.github.io/dependents/) | [Medical Condition](https://pbischoff3.github.io/medical_condition/) | [Medical Care](https://pbischoff3.github.io/medical_care/) | [Conclusion](https://pbischoff3.github.io/conclusion/)
+#### [Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/mutli_dimensional_analysis/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)
 
 
 ## **What is the data?**

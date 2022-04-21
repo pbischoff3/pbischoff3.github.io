@@ -1,13 +1,19 @@
 ---
 title: "Data Overview"
 author: "Porter Bischoff"
-date: "4/19/2022"
-output: html_document
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme:
+      bootswatch: flatly
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+#### [Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/mutli_dimensional_analysis/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)
+
 
 ## R Markdown
 
