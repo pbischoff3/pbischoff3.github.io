@@ -1,8 +1,0 @@
-name: "final_project"
-navbar:
-  title: "MDS for Survey Analysis"
-  left:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
