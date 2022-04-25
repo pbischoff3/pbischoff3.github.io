@@ -18,7 +18,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Welcome
 Welcome to my final project for Dr. Zahn's BIOL3100 class. 
-<iframe src="https://giphy.com/embed/26tOZ42Mg6pbTUPHW" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/26tOZ42Mg6pbTUPHW">via GIPHY</a></p>
+<br> <br>
+
+![](./R/Images/Home/fireworks.gif)
 
 ## Navigation
 Click on the links on the top of the page to navigate to different pages or use the **NEXT** button below to follow the presentation in order.

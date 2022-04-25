@@ -24,7 +24,7 @@ Multidimensional scaling is a way to measure similarity of individual cases in o
 ### **Example**
 An example of MDS is shown below, exploring voting patterns in the House of Representatives. 
   
-![](/Users/pbisc/Desktop/pbischoff3.github.io/R/Images/What is MDS/HoR_voting.png)
+![](/Users/pbisc/Desktop/pbischoff3.github.io/R/Images/what_is_MDS/HoR_voting.png)
 <br>
 
 As you can see, the values on the x-axis and y-axis are arbitrary according to the type of MDS that is run. This serves us no purpose in analyzing the actual data, but it does give us a starting point for comparing the types of responses. Each dot on the chart is an individual voter, the color is according to political orientation, and the location of the dot shows how specifically the individual voted. Knowing this, we are able to see a significant difference in Democrat and Republican voting patterns. This can be confirmed through further statistical analysis.
@@ -38,7 +38,7 @@ To confirm or deny the significance of the differences in types of answers, we r
 ### **Example**
 An example is shown below:
     
-![](/Users/pbisc/Desktop/pbischoff3.github.io/R/Images/What is MDS/adonis1.png)
+![](/Users/pbisc/Desktop/pbischoff3.github.io/R/Images/what_is_MDS/adonis1.png)
   <br> 
 
 Now, this is a little confusing in and of itself, but the most important part of the "adonis" test is the blue circle on the picture. What this shows us is if there is a difference in the groupings of the responses, according to parameters that we give. A practical example of this in my project would be in the science identity questions, there is or is not a significant difference in how different genders respond to the survey.
@@ -48,12 +48,12 @@ Now, this is a little confusing in and of itself, but the most important part of
 From here on out, to make our output easier to take track of, those adonis results that *are significant* will have this image to denote them:
 <br>
 
-<iframe src="https://giphy.com/embed/26gsobowozGM9umBi" width="480" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/good-success-ron-swanson-26gsobowozGM9umBi">via GIPHY</a></p>
+![](../R/Images/what_is_MDS/yes.gif)
 
 <br>
 On the other hand, those adonis results that *are not significant* will have this image to denote them:
 
-<iframe src="https://giphy.com/embed/K5l6YyE6gJhHxGrMiQ" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/parksandrec-episode-14-parks-and-recreation-rec-K5l6YyE6gJhHxGrMiQ">via GIPHY</a></p>
+![](../R/Images/what_is_MDS/no.gif)
 
     
 Now that all of this is taken care of, lets dive into our actual data and see what we can learn.
