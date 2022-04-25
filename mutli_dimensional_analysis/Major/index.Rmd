@@ -35,7 +35,7 @@ In English, this function allows us to run the MDS according to each subset of d
 
 ## Question Types
 ### Science Identity
-Let's explore the science identity subset of questions first. Running our function we created and plotting it, we are left with this image of the plot:
+Let's explore the science identity subset of questions first. Running our function we created and plotting it, we are left with this image of the plot:<br>
 ![](../../R/Images/major/si.png)
 <br> This is great and all, but let's run an adonis test to see if there is a significant difference in how different majors responded to science identity questions:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
