@@ -8,12 +8,14 @@ output:
       bootswatch: superhero
 ---
 
-<h3 style="background-color:bisque;text-align:center;font-size:165%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/mutli_dimensional_analysis/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
+<h3 style="background-color:bisque;text-align:center;font-size:165%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
 
-<h4 style="background-color:bisque;text-align:center;font-size:102%;">[Major](https://pbischoff3.github.io/mutli_dimensional_analysis/Major/) | [Gender](https://pbischoff3.github.io/mutli_dimensional_analysis/Gender/) | [Career](https://pbischoff3.github.io/mutli_dimensional_analysis/career/) | [Ethnicity](https://pbischoff3.github.io/mutli_dimensional_analysis/Ethnicity/) | [First Generation Students](https://pbischoff3.github.io/mutli_dimensional_analysis/fgs/) | [Dependents](https://pbischoff3.github.io/mutli_dimensional_analysis/dependents/)      | [Medical Condition](https://pbischoff3.github.io/mutli_dimensional_analysis/medical_condition/) | [Medical Care](https://pbischoff3.github.io/mutli_dimensional_analysis/medical_care/)</h4>
+<h4 style="background-color:bisque;text-align:center;font-size:95%;">[Major](https://pbischoff3.github.io/multi_dimensional_analysis/Major/) | [Gender](https://pbischoff3.github.io/multi_dimensional_analysis/Gender/) | [Career](https://pbischoff3.github.io/multi_dimensional_analysis/career/) | [Ethnicity](https://pbischoff3.github.io/multi_dimensional_analysis/Ethnicity/) | [First Generation Students](https://pbischoff3.github.io/multi_dimensional_analysis/fgs/) | [Dependents](https://pbischoff3.github.io/multi_dimensional_analysis/dependents/)      | [Medical Condition](https://pbischoff3.github.io/multi_dimensional_analysis/medical_condition/) | [Medical Care](https://pbischoff3.github.io/multi_dimensional_analysis/medical_care/) | [Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/analysis/)</h4>
   
 ```{r background, message=FALSE, warning=FALSE, include=FALSE}
 source(file = "./R/Code/01-cleaning_data.R")
+
+
 ```
 
 
@@ -39,6 +41,7 @@ Let's explore the science identity subset of questions first. Running our functi
 ![](../../R/Images/major/si.png)
 <br> This is great and all, but let's run an adonis test to see if there is a significant difference in how different majors responded to science identity questions:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(si ~ demo$major)
 ```
 Look at that! It was significant! <br>
@@ -51,6 +54,7 @@ Next, let's look into Carer Motivation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(cm ~ demo$major)
 ```
 This shows that the differences in answers are not significant, according to major. <br>
@@ -64,6 +68,7 @@ Now, Intrinsic Motivation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(im ~ demo$major)
 ```
 This shows that the differences in answers are not significant, according to major. <br>
@@ -75,6 +80,7 @@ Now, Self-Determination: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(sd ~ demo$major)
 ```
 This shows that the differences in answers are not significant, according to major. <br>
@@ -86,6 +92,7 @@ Now, Self-Efficacy: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(se ~ demo$major)
 ```
 This shows that the differences in answers are not significant, according to major. <br>
@@ -97,6 +104,7 @@ Now, Grade Motivation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(gm ~ demo$major)
 ```
 This shows that the differences in answers are not significant, according to major. <br>
@@ -108,6 +116,7 @@ Now, Competency in Science: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(sci_comp ~ demo$major)
 ```
 This shows that the differences in answers are not significant, according to major. <br>
@@ -119,6 +128,7 @@ Now, Personal Community Orientation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(per_comm_orient ~ demo$major)
 ```
 This shows that the differences in answers are not significant, according to major. <br>
@@ -133,6 +143,7 @@ Now, Competency in Science: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(sci_comm_orient ~ demo$major)
 ```
 This shows that the differences in answers are not significant, according to major. <br>
@@ -143,4 +154,4 @@ Ultimately, what we can understand from all of this is that students significant
 
 ![](../../R/Images/major/conclusion.gif)
 
-<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/mutli_dimensional_analysis/Gender/)
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/multi_dimensional_analysis/Gender/index.html)

@@ -5,6 +5,7 @@ source("./R/Code/01-cleaning_data.R")
 x=1
 med_condition_plots <- list()
 for(i in c("si","cm","im","sd","se","gm","sci_comp","per_comm_orient","sci_comm_orient")){
+  set.seed(123)
   med_condition_plots[[x]] <- mysubsetMDS(i) %>% 
     ggplot(aes(x=MDS1,y=MDS2,color=factor(med_condition)))+
     geom_point()+
@@ -17,49 +18,57 @@ for(i in c("si","cm","im","sd","se","gm","sci_comp","per_comm_orient","sci_comm_
 med_condition_plots[[1]]
 ggsave("./R/Images/med_condition/si.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(si ~ demo$med_condition)
 
 # Career Motivation ####
 med_condition_plots[[2]]
 ggsave("./R/Images/med_condition/cm.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(cm ~ demo$med_condition)
 
 # Intrinsic Motivation ####
 med_condition_plots[[3]]
 ggsave("./R/Images/med_condition/im.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(im ~ demo$med_condition)
 
 # Self-Determination ####
 med_condition_plots[[4]]
 ggsave("./R/Images/med_condition/sd.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(sd ~ demo$med_condition)
 
 # Self Efficacy ####
 med_condition_plots[[5]]
 ggsave("./R/Images/med_condition/se.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(se ~ demo$med_condition)
 
 # Grade Motivation ####
 med_condition_plots[[6]]
 ggsave("./R/Images/med_condition/gm.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(gm ~ demo$med_condition)
 
 # Competency in Science ####
 med_condition_plots[[7]]
 ggsave("./R/Images/med_condition/sci_comp.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(sci_comp ~ demo$med_condition)
 
 # Personal Communal Orientation ####
 med_condition_plots[[8]] +
-  coord_cartesian(xlim = c(-7.5,-6.5))
+  coord_cartesian(xlim = c(-5,-3.75))
 ggsave("./R/Images/med_condition/per_comm_orient.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(per_comm_orient ~ demo$med_condition)
 
 # Science Communal Orientation ####
@@ -87,4 +96,6 @@ demo_DCA %>% ggplot(mapping= aes(x=DCA1, y=DCA2,color=med_condition)) +
 
 ggsave("./R/Images/med_condition/sci_comm_orient2.png", dpi = 300, width = 8)
 
+set.seed(123)
 adonis(sci_comm_orient ~ demo$med_condition)
+

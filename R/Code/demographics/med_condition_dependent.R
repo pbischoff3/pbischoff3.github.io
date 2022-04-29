@@ -5,6 +5,7 @@ source("./R/Code/01-cleaning_data.R")
 x=1
 med_condition_dependent_plots <- list()
 for(i in c("si","cm","im","sd","se","gm","sci_comp","per_comm_orient","sci_comm_orient")){
+  set.seed(123)
   med_condition_dependent_plots[[x]] <- mysubsetMDS(i) %>% 
     ggplot(aes(x=MDS1,y=MDS2,color=factor(med_condition_dependent)))+
     geom_point()+
@@ -17,49 +18,57 @@ for(i in c("si","cm","im","sd","se","gm","sci_comp","per_comm_orient","sci_comm_
 med_condition_dependent_plots[[1]]
 ggsave("./R/Images/med_condition_dependent/si.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(si ~ demo$med_condition_dependent)
 
 # Career Motivation ####
 med_condition_dependent_plots[[2]]
 ggsave("./R/Images/med_condition_dependent/cm.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(cm ~ demo$med_condition_dependent)
 
 # Intrinsic Motivation ####
 med_condition_dependent_plots[[3]]
 ggsave("./R/Images/med_condition_dependent/im.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(im ~ demo$med_condition_dependent)
 
 # Self-Determination ####
 med_condition_dependent_plots[[4]]
 ggsave("./R/Images/med_condition_dependent/sd.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(sd ~ demo$med_condition_dependent)
 
 # Self Efficacy ####
 med_condition_dependent_plots[[5]]
 ggsave("./R/Images/med_condition_dependent/se.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(se ~ demo$med_condition_dependent)
 
 # Grade Motivation ####
 med_condition_dependent_plots[[6]]
 ggsave("./R/Images/med_condition_dependent/gm.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(gm ~ demo$med_condition_dependent)
 
 # Competency in Science ####
 med_condition_dependent_plots[[7]]
 ggsave("./R/Images/med_condition_dependent/sci_comp.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(sci_comp ~ demo$med_condition_dependent)
 
 # Personal Communal Orientation ####
 med_condition_dependent_plots[[8]] +
-  coord_cartesian(xlim = c(-6,-5))
+  coord_cartesian(xlim = c(-5,-3.75))
 ggsave("./R/Images/med_condition_dependent/per_comm_orient.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(per_comm_orient ~ demo$med_condition_dependent)
 
 # Science Communal Orientation ####
@@ -87,4 +96,5 @@ demo_DCA %>% ggplot(mapping= aes(x=DCA1, y=DCA2,color=med_condition_dependent)) 
 
 ggsave("./R/Images/med_condition_dependent/sci_comm_orient2.png", dpi = 300, width = 8)
 
+set.seed(123)
 adonis(sci_comm_orient ~ demo$med_condition_dependent)

@@ -8,9 +8,9 @@ output:
       bootswatch: superhero
 ---
 
-<h3 style="background-color:bisque;text-align:center;font-size:165%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/mutli_dimensional_analysis/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
+<h3 style="background-color:bisque;text-align:center;font-size:165%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
 
-<h4 style="background-color:bisque;text-align:center;font-size:102%;">[Major](https://pbischoff3.github.io/mutli_dimensional_analysis/Major/) | [Gender](https://pbischoff3.github.io/mutli_dimensional_analysis/Gender/) | [Career](https://pbischoff3.github.io/mutli_dimensional_analysis/career/) | [Ethnicity](https://pbischoff3.github.io/mutli_dimensional_analysis/Ethnicity/) | [First Generation Students](https://pbischoff3.github.io/mutli_dimensional_analysis/fgs/) | [Dependents](https://pbischoff3.github.io/mutli_dimensional_analysis/dependents/)      | [Medical Condition](https://pbischoff3.github.io/mutli_dimensional_analysis/medical_condition/) | [Medical Care](https://pbischoff3.github.io/mutli_dimensional_analysis/medical_care/)</h4>
+<h4 style="background-color:bisque;text-align:center;font-size:95%;">[Major](https://pbischoff3.github.io/multi_dimensional_analysis/Major/) | [Gender](https://pbischoff3.github.io/multi_dimensional_analysis/Gender/) | [Career](https://pbischoff3.github.io/multi_dimensional_analysis/career/) | [Ethnicity](https://pbischoff3.github.io/multi_dimensional_analysis/Ethnicity/) | [First Generation Students](https://pbischoff3.github.io/multi_dimensional_analysis/fgs/) | [Dependents](https://pbischoff3.github.io/multi_dimensional_analysis/dependents/)      | [Medical Condition](https://pbischoff3.github.io/multi_dimensional_analysis/medical_condition/) | [Medical Care](https://pbischoff3.github.io/multi_dimensional_analysis/medical_care/) | [Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/analysis/)</h4>
   
 ```{r background, message=FALSE, warning=FALSE, include=FALSE}
 source(file = "./R/Code/01-cleaning_data.R")
@@ -31,7 +31,7 @@ mysubsetMDS <- function(x){
 }
 ```
 <br>
-In English, this function allows us to run the MDS according to each subset of demographic and each subset of question type that we want. Obviously, in this page, we are exploring Gender.
+In English, this function allows us to run the MDS according to each subset of demographic and each subset of question type that we want. Obviously, in this page, we are exploring Career Goals.
 
 ## Question Types
 ### Science Identity
@@ -39,10 +39,12 @@ Let's explore the science identity subset of questions first. Running our functi
 ![](../../R/Images/career/si.png)
 <br> This is great and all, but let's run an adonis test to see if there is a significant difference in how different career goals responded to science identity questions:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(si ~ demo$career)
 ```
-This shows that the differences in answers are not significant, according to career goals. <br>
-![](../../R/Images/what_is_MDS/no.gif)
+Look at that! The differences are significant for Science Identity across career goals. <br>
+![](../../R/Images/what_is_MDS/yes.gif)
+
 <br>
 
 ### Career Motivation
@@ -51,6 +53,7 @@ Next, let's look into Carer Motivation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(cm ~ demo$career)
 ```
 This shows that the differences in answers are not significant, according to career goals. <br>
@@ -64,6 +67,7 @@ Now, Intrinsic Motivation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(im ~ demo$career)
 ```
 This shows that the differences in answers are not significant, according to career goals. <br>
@@ -75,6 +79,7 @@ Now, Self-Determination: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(sd ~ demo$career)
 ```
 This shows that the differences in answers are not significant, according to career goals. <br>
@@ -86,6 +91,7 @@ Now, Self-Efficacy: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(se ~ demo$career)
 ```
 This shows that the differences in answers are not significant, according to career goals. <br>
@@ -97,6 +103,7 @@ Now, Grade Motivation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(gm ~ demo$career)
 ```
 This shows that the differences in answers are not significant, according to career goals. <br>
@@ -108,10 +115,11 @@ Now, Competency in Science: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(sci_comp ~ demo$career)
 ```
-Look at that! The differences are significant for Science Competency across career goals. <br>
-![](../../R/Images/what_is_MDS/yes.gif)
+This shows that the differences in answers are not significant, according to career goals. <br>
+![](../../R/Images/what_is_MDS/no.gif)
 
 ### Personal Community Orientation
 Now, Personal Community Orientation: <br>
@@ -119,10 +127,11 @@ Now, Personal Community Orientation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(per_comm_orient ~ demo$career)
 ```
-This shows that the differences in answers are not significant, according to career goals. <br>
-![](../../R/Images/what_is_MDS/no.gif)
+Look at that! The differences are significant for Science Identity across career goals. <br>
+![](../../R/Images/what_is_MDS/yes.gif)
 
 ### Science Community Orientation
 Now, Competency in Science: <br>
@@ -133,6 +142,7 @@ Now, Competency in Science: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(sci_comm_orient ~ demo$career)
 ```
 This shows that the differences in answers are not significant, according to major. <br>

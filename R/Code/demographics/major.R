@@ -5,6 +5,7 @@ source("./R/Code/01-cleaning_data.R")
 x=1
 major_plots <- list()
 for(i in c("si","cm","im","sd","se","gm","sci_comp","per_comm_orient","sci_comm_orient")){
+  set.seed(123)
   major_plots[[x]] <- mysubsetMDS(i) %>% 
     ggplot(aes(x=MDS1,y=MDS2,color=factor(major)))+
     geom_point()+
@@ -17,42 +18,49 @@ for(i in c("si","cm","im","sd","se","gm","sci_comp","per_comm_orient","sci_comm_
 major_plots[[1]]
 ggsave("./R/Images/major/si.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(si ~ demo$major)
 
 # Career Motivation ####
 major_plots[[2]]
 ggsave("./R/Images/major/cm.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(cm ~ demo$major)
 
 # Intrinsic Motivation ####
 major_plots[[3]]
 ggsave("./R/Images/major/im.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(im ~ demo$major)
 
 # Self-Determination ####
 major_plots[[4]]
 ggsave("./R/Images/major/sd.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(sd ~ demo$major)
 
 # Self Efficacy ####
 major_plots[[5]]
 ggsave("./R/Images/major/se.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(se ~ demo$major)
 
 # Grade Motivation ####
 major_plots[[6]]
 ggsave("./R/Images/major/gm.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(gm ~ demo$major)
 
 # Competency in Science ####
 major_plots[[7]]
 ggsave("./R/Images/major/sci_comp.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(sci_comp ~ demo$major)
 
 # Personal Communal Orientation ####
@@ -60,6 +68,7 @@ major_plots[[8]] +
   coord_cartesian(xlim = c(-5.1,-4))
 ggsave("./R/Images/major/per_comm_orient.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(per_comm_orient ~ demo$major)
 
 # Science Communal Orientation ####
@@ -87,4 +96,5 @@ demo_DCA %>% ggplot(mapping= aes(x=DCA1, y=DCA2,color=major)) +
 
 ggsave("./R/Images/major/sci_comm_orient2.png", dpi = 300, width = 8)
 
+set.seed(123)
 adonis(sci_comm_orient ~ demo$major)

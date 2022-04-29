@@ -8,9 +8,9 @@ output:
       bootswatch: superhero
 ---
 
-<h3 style="background-color:bisque;text-align:center;font-size:165%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/mutli_dimensional_analysis/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
+<h3 style="background-color:bisque;text-align:center;font-size:165%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
 
-<h4 style="background-color:bisque;text-align:center;font-size:102%;">[Major](https://pbischoff3.github.io/mutli_dimensional_analysis/Major/) | [Gender](https://pbischoff3.github.io/mutli_dimensional_analysis/Gender/) | [Career](https://pbischoff3.github.io/mutli_dimensional_analysis/career/) | [Ethnicity](https://pbischoff3.github.io/mutli_dimensional_analysis/Ethnicity/) | [First Generation Students](https://pbischoff3.github.io/mutli_dimensional_analysis/fgs/) | [Dependents](https://pbischoff3.github.io/mutli_dimensional_analysis/dependents/)      | [Medical Condition](https://pbischoff3.github.io/mutli_dimensional_analysis/medical_condition/) | [Medical Care](https://pbischoff3.github.io/mutli_dimensional_analysis/medical_care/)</h4>
+<h4 style="background-color:bisque;text-align:center;font-size:95%;">[Major](https://pbischoff3.github.io/multi_dimensional_analysis/Major/) | [Gender](https://pbischoff3.github.io/multi_dimensional_analysis/Gender/) | [Career](https://pbischoff3.github.io/multi_dimensional_analysis/career/) | [Ethnicity](https://pbischoff3.github.io/multi_dimensional_analysis/Ethnicity/) | [First Generation Students](https://pbischoff3.github.io/multi_dimensional_analysis/fgs/) | [Dependents](https://pbischoff3.github.io/multi_dimensional_analysis/dependents/)      | [Medical Condition](https://pbischoff3.github.io/multi_dimensional_analysis/medical_condition/) | [Medical Care](https://pbischoff3.github.io/multi_dimensional_analysis/medical_care/) | [Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/analysis/)</h4>
   
 ```{r background, message=FALSE, warning=FALSE, include=FALSE}
 source(file = "./R/Code/01-cleaning_data.R")
@@ -39,6 +39,7 @@ Let's explore the science identity subset of questions first. Running our functi
 ![](../../R/Images/gender/si.png)
 <br> This is great and all, but let's run an adonis test to see if there is a significant difference in how different genders responded to science identity questions:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(si ~ demo$gender)
 ```
 This shows that the differences in answers are not significant, according to gender. <br>
@@ -51,6 +52,7 @@ Next, let's look into Carer Motivation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
 adonis(cm ~ demo$gender)
 ```
 This shows that the differences in answers are not significant, according to gender. <br>
@@ -64,6 +66,8 @@ Now, Intrinsic Motivation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
+
 adonis(im ~ demo$gender)
 ```
 This shows that the differences in answers are not significant, according to gender. <br>
@@ -75,6 +79,8 @@ Now, Self-Determination: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
+
 adonis(sd ~ demo$gender)
 ```
 This shows that the differences in answers are not significant, according to gender. <br>
@@ -86,6 +92,8 @@ Now, Self-Efficacy: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
+
 adonis(se ~ demo$gender)
 ```
 This shows that the differences in answers are not significant, according to gender. <br>
@@ -97,6 +105,8 @@ Now, Grade Motivation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
+
 adonis(gm ~ demo$gender)
 ```
 This shows that the differences in answers are not significant, according to gender. <br>
@@ -108,10 +118,12 @@ Now, Competency in Science: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
+
 adonis(sci_comp ~ demo$gender)
 ```
-Look at that! The differences are significant for Science Competency across genders. <br>
-![](../../R/Images/what_is_MDS/yes.gif)
+This shows that the differences in answers are not significant, according to gender. <br>
+![](../../R/Images/what_is_MDS/no.gif)
 
 ### Personal Community Orientation
 Now, Personal Community Orientation: <br>
@@ -119,6 +131,8 @@ Now, Personal Community Orientation: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
+
 adonis(per_comm_orient ~ demo$gender)
 ```
 This shows that the differences in answers are not significant, according to gender. <br>
@@ -133,13 +147,15 @@ Now, Competency in Science: <br>
 <br>
 And an Adonis test:
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
+set.seed(123)
+
 adonis(sci_comm_orient ~ demo$gender)
 ```
 This shows that the differences in answers are not significant, according to major. <br>
 ![](../../R/Images/what_is_MDS/no.gif)
 
 ## Conclusion
-Ultimately, what we can understand from all of this is that students significantly answer Science Competency questions differently according to their gender.
+Ultimately, what we can understand from all of this is that gender does not have a significant influence on the questions that were asked. 
 
 ![](../../R/Images/gender/conclusion.gif)
 

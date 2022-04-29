@@ -5,6 +5,7 @@ source("./R/Code/01-cleaning_data.R")
 x=1
 career_plots <- list()
 for(i in c("si","cm","im","sd","se","gm","sci_comp","per_comm_orient","sci_comm_orient")){
+  set.seed(123)
   career_plots[[x]] <- mysubsetMDS(i) %>% 
     ggplot(aes(x=MDS1,y=MDS2,color=factor(career)))+
     geom_point()+
@@ -17,49 +18,57 @@ for(i in c("si","cm","im","sd","se","gm","sci_comp","per_comm_orient","sci_comm_
 career_plots[[1]]
 ggsave("./R/Images/career/si.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(si ~ demo$career)
 
 # Career Motivation ####
 career_plots[[2]]
 ggsave("./R/Images/career/cm.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(cm ~ demo$career)
 
 # Intrinsic Motivation ####
 career_plots[[3]]
 ggsave("./R/Images/career/im.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(im ~ demo$career)
 
 # Self-Determination ####
 career_plots[[4]]
 ggsave("./R/Images/career/sd.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(sd ~ demo$career)
 
 # Self Efficacy ####
 career_plots[[5]]
 ggsave("./R/Images/career/se.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(se ~ demo$career)
 
 # Grade Motivation ####
 career_plots[[6]]
 ggsave("./R/Images/career/gm.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(gm ~ demo$career)
 
 # Competency in Science ####
 career_plots[[7]]
 ggsave("./R/Images/career/sci_comp.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(sci_comp ~ demo$career)
 
 # Personal Communal Orientation ####
 career_plots[[8]] +
-  coord_cartesian(xlim = c(-11,-2))
+  coord_cartesian(xlim = c(-5,-3.75))
 ggsave("./R/Images/career/per_comm_orient.png",dpi = 300,width = 8)
 
+set.seed(123)
 adonis(per_comm_orient ~ demo$career)
 
 # Science Communal Orientation ####
@@ -87,4 +96,5 @@ demo_DCA %>% ggplot(mapping= aes(x=DCA1, y=DCA2,color=career)) +
 
 ggsave("./R/Images/career/sci_comm_orient2.png", dpi = 300, width = 8)
 
+set.seed(123)
 adonis(sci_comm_orient ~ demo$career)
