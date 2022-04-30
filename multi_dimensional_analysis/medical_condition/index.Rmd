@@ -7,7 +7,7 @@ output:
     theme:
       bootswatch: superhero
 ---
-<h3 style="background-color:bisque;text-align:center;font-size:165%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/models/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
 
 <h4 style="background-color:bisque;text-align:center;font-size:95%;">[Major](https://pbischoff3.github.io/multi_dimensional_analysis/Major/) | [Gender](https://pbischoff3.github.io/multi_dimensional_analysis/Gender/) | [Career](https://pbischoff3.github.io/multi_dimensional_analysis/career/) | [Ethnicity](https://pbischoff3.github.io/multi_dimensional_analysis/Ethnicity/) | [First Generation Students](https://pbischoff3.github.io/multi_dimensional_analysis/fgs/) | [Dependents](https://pbischoff3.github.io/multi_dimensional_analysis/dependents/)      | [Medical Condition](https://pbischoff3.github.io/multi_dimensional_analysis/medical_condition/) | [Medical Care](https://pbischoff3.github.io/multi_dimensional_analysis/medical_care/) | [Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/analysis/)</h4>
   
@@ -148,7 +148,11 @@ This shows that the differences in answers are not significant, according to maj
 ![](../../R/Images/what_is_MDS/no.gif)
 
 ## Conclusion
-Ultimately, what we can understand from all of this is that Career and Intrinsic Motivation questions are answered significantly differently between those who have medical conditions and those who don't.
+Ultimately, what we can understand from all of this is that Career and Intrinsic Motivation questions are answered significantly differently between those who have medical conditions and those who don't. <br>
+
+In summary, let's take a look at the running list we are making of which questions were significant and not according to demographics: <br>
+![](../../R/Images/med_condition/table.png)
+<br> <br>
 
 ![](../../R/Images/med_condition/conclusion.gif)
 

@@ -1,0 +1,10 @@
+---
+title: "Models"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme:
+      bootswatch: superhero
+---
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/models/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>

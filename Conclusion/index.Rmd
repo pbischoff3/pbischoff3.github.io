@@ -8,7 +8,7 @@ output:
       bootswatch: superhero
 ---
 
-<h3 style="background-color:bisque;text-align:center;font-size:165%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/mutli_dimensional_analysis/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/models/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
