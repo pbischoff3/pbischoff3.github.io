@@ -22,4 +22,4 @@ To put all this in English, it looks like differences in Gender, Parent's Gradua
 
 <br>
 ![](../../R/Images/excited.gif)
-<br> <br>
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/models/)
