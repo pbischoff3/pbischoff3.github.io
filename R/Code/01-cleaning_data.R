@@ -59,9 +59,6 @@ df <- df %>%
                              ethnicity == "10" ~ "white",
                              ethnicity == "11" ~ "prefer_not_answer",
                              ethnicity == "12" ~ "other"))
-df <- df %>% 
-  select(-ends_with("ave")) %>% 
-  select(-ends_with("mot"))
 
 df <- df[complete.cases(df),]
 
