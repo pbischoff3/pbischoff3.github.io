@@ -27,7 +27,7 @@ cm_mod_1 <- glm(data = df,
 summary(cm_mod_1)
 ```
 <br>
-This shows that those who study Biology have a significantly higher Career Motivation, while Non-STEM majors answer significantly lower. <br>
+This shows that Non-STEM majors have significantly lower Career Motivation. <br>
 
 This is great, but it is difficult to understand this in context until we compare it to the other models. 
 <br>
@@ -41,7 +41,7 @@ cm_mod_2 <- glm(data = df,
 summary(cm_mod_2)
 ```
 <br>
-This shows that those who aspire to be Dentists have significantly higher Career Motivation. <br>
+This shows that there may not be a correlation between Career Motivation and specific career goals. <br>
 
 Now let's run from another model's point of view. <br>
 
@@ -54,7 +54,7 @@ cm_mod_3 <- glm(data = df,
 summary(cm_mod_3)
 ```
 <br>
-This shows that African-Americans have a significantly lower Career Motivation, while American Indians, Arabs, Asians, those who are Biracial, Latinx, and Caucasians have a significantly higher Career Motivation. <br>
+This shows that American Indians, Arabs, Asians, those who are Biracial, Latinx, and Caucasian have significantly higher Career Motivation. <br>
 
 One last model. Let's check it out. 
 

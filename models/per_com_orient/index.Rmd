@@ -41,7 +41,7 @@ pco_mod_2 <- glm(data = df,
 summary(pco_mod_2)
 ```
 <br>
-This shows that Educators have significantly higher Personal Communal Orientation and Researchers have signficantly lowe Personal Communal Orientation.  <br>
+This shows that Educators have significantly higher Personal Communal Orientation and Researchers have significantly lower Personal Communal Orientation.  <br>
 
 Now let's run from another model's point of view. <br>
 
