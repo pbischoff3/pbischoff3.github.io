@@ -2,7 +2,7 @@
 title: "Projects"
 output: html_document
 ---
-<h3 style="background-color:bisque;text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/projects/BIOL_3100) </h3>
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) </h3>
 
 ## Description
 

@@ -1,28 +1,331 @@
 ---
-title: "MD PhD Meta Analysis"
-output: html_document
+title: "Med School Meta"
+output:
+  html_document:
+    theme: simplex
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r LAbels, include=FALSE}
+library(dplyr)
+library(janitor)
+library(stringr)
+library(readr)
+library(ggplot2)
+library(leaflet)
+library(sf)
+library(viridis)
+library(htmltools)
+library(stringr)
+library(reshape2)
+library(plotly)
+library(gapminder)
+
+
+my_df <- read.csv("cleaned.csv")
 ```
 
-## R Markdown
+Welcome to my meta analysis of the medical schools I am hoping to attend. I need to compile a list of schools to apply to for next year, and preparation on my end will be the best way that I can prepare for that, as I have no idea which schools I am interested in applying to.
+<br>
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## {.tabset}
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+### Overview {.tabset}
+#### Maps 
+```{r echo=FALSE}
+pal1 <- colorFactor(
+  palette = 'Reds', domain = my_df$research_rank)
+pal2 <- colorFactor(
+  palette = 'Blues', domain = my_df$primary_care_rank)
 
-```{r cars}
-summary(cars)
+leaflet(my_df) %>% addTiles() %>%
+  addMarkers(lng = ~longitude,lat = ~latitude,popup = ~school,label = ~school) %>% 
+  addProviderTiles(providers$CartoDB.Positron)
 ```
 
-## Including Plots
+Here is a description of all the MD/PhD programs offered in the nation. There are 115 schools, and my initial impression is how densely populated the schools are back east. Not a ton of Western options. 
+<br>
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+
+#### Data {.tabset}
+
+##### Total Admittance
+Here is the top 30 Total MD Admittance according to school.
+<br>
+```{r echo=FALSE}
+keeps <- c("short_name","admittance_year")
+temp = my_df[keeps]
+
+top15 <- temp %>% 
+  arrange(desc(admittance_year)) %>% 
+  slice(1:30)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = admittance_year))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+This is for medical students overall, not just MD/PhD students. It seems awfully toploaded. This is a good basis to understand where my odds of acceptance may be higher than in others.
+<br>
+Exploring admittance for MD/PhD students is important as well.
+
+
+##### MD/PhD Admittance
+Here is the top 30 MD/PhD admittance according to school.
+<br>
+```{r echo=FALSE}
+keeps2 <- c("short_name","md_ph_d_year_last_3_years")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(desc(md_ph_d_year_last_3_years)) %>% 
+  slice(1:30)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = md_ph_d_year_last_3_years))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+<br>
+
+Not many students admitted each year across the board. It may be interesting to see the percentage of MD/PhD students admitted versus MD students admitted. 
+
+##### MD vs MD/PhD Admittance %
+
+```{r echo=FALSE}
+my_df$admitpercent <- ((my_df$md_ph_d_year_last_3_years/my_df$admittance_year)*100)
+
+keeps2 <- c("short_name","admitpercent")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(desc(admitpercent)) %>% 
+  slice(1:30)
+
+top15
+```
+<br>
+This graph shows us the highest percentage of MD/PhD students per the total of those admitted to medical school. Again, sort of a highest odds, kind of thing. 
+
+##### 40 Furthest Distance from Temple
+
+```{r echo=FALSE}
+keeps2 <- c("short_name","distance_to_temple_mi")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(desc(distance_to_temple_mi)) %>% 
+  slice(1:40)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = distance_to_temple_mi))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+<br>
+The temple is entirely important to me, so let's see which medical schools are the furthest from the temple. 
+
+
+##### 60 Closest Distance to Temple 
+```{r echo=FALSE}
+keeps2 <- c("short_name","distance_to_temple_mi")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(distance_to_temple_mi) %>% 
+  slice(1:60)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = distance_to_temple_mi))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=75, hjust=1))
+```
+<br>
+And this shows the ones that are closest to the temple. 
+
+##### 40 Lowest Home Prices
+```{r echo=FALSE}
+keeps2 <- c("short_name","home")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(home) %>% 
+  slice(1:40)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = home))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+<br>
+An interesting part of data, but not one that I think I need to use to make the decision of what schools to apply to. This would be important for a tertiary level of decision making, or even as a means to help decide after being accepted to multiple schools. 
+
+##### 40 Highest Home Prices
+```{r}
+keeps2 <- c("short_name","home")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(desc(home)) %>% 
+  slice(1:40)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = home))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+<br>
+Again, not a decision maker, but something to be mindful of for the future. 
+
+##### 40 Highest Caucasian %
+```{r echo=FALSE}
+keeps2 <- c("short_name","caucasian")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(desc(caucasian)) %>% 
+  slice(1:40)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = caucasian))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+Lastly, this isn't a main decision maker. Something I need to look into later on.
+
+### 1st Analysis {.tabset}
+
+#### Research vs. Primary Care
+```{r echo=FALSE}
+p <- ggplot(my_df, aes(x= research_rank, y= primary_care_rank, label=short_name, color=temple))+
+  geom_point()+
+  geom_text(hjust=0, vjust=0)
+
+ggplotly(p)
+
+# add distance research and primary care
+my_df$school_rank <- sqrt(((my_df$research_rank)^2)+((my_df$primary_care_rank)^2))
+keeps <- c("short_name","school_rank")
+temp2 = my_df[keeps]
+
+top50 <- temp2 %>% 
+  arrange(school_rank) %>% 
+  slice(1:50)
+top50
+```
+This is an exploration of the data. What I did here was visualize the data in a cartesian coordinate system, with research and primary care rank being on the x and y systems. This helped me visualize how the two relate. 
+
+<br>
+
+With this, I wanted to see which of the schools was "closest" to 0, as that would be the one that is absolute best. I took the square root of each the research rank squared and primary care rank squared. According to pygathorean theory, this will give the length of the line from "0,0". The smaller the number, the better the combined ranks. 
+
+<br>
+
+According to this, **Cal San Fran** is the best school, according to the combination of research and primary care.
+
+#### Research and Temple Distance
+Ultimately, I love research and I love the temple. I think that these are the two biggest things I hope to consider. Let's explore the two together, similar to the last one. 
+```{r echo=FALSE}
+p <- ggplot(my_df, aes(x= research_rank, y= distance_to_temple_mi, label=short_name))+
+  geom_point()+
+  geom_text(hjust=0, vjust=0)
+
+ggplotly(p)
+```
+This plot explores research rank and distance to the temple, with the closer one is to zero being the better result. I need to run a similar square root assessment as before.
+<br>
+
+```{r echo=FALSE}
+my_df$temple_research <- sqrt(((my_df$research_rank)^2)+((my_df$distance_to_temple_mi)^2))
+keeps <- c("short_name","temple_research")
+temp2 = my_df[keeps]
+
+top50 <- temp2 %>% 
+  arrange(temple_research) %>% 
+  slice(1:50)
+top50
+```
+Awesome, another analysis down. With this, we can be assured that **NYU** is the best for research and temple distance. 
+
+
+#### Research and MCAT Score
+I am sure there is, but my next thought was what the correlation looked like between research rank and MCAT score. A simple plot should show this information to me. 
+
+<br>
+
+```{r echo=FALSE}
+p <- ggplot(my_df, aes(x= research_rank, y= mcat_total_score, label=short_name))+
+  geom_point()+
+  geom_text(hjust=0, vjust=0)
+
+ggplotly(p)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Alright, based on that alone, the regression seems super strong. I don't need much more statistical analysis. This just shows that if I want to go to a high level research university, I have to have a great MCAT score. 
+
+#### Research and Total Admittance
+```{r echo=FALSE}
+my_df$weighted_admit <- ((100/my_df$admittance_year)*100)
+
+p <- ggplot(my_df, aes(x= research_rank, y= weighted_admit, label=short_name))+
+  geom_point()+
+  geom_text(hjust=0, vjust=0)
+
+ggplotly(p)
+
+```
+This plot is hard to read. Let's look at it graphically. 
+<br>
+
+```{r echo=FALSE}
+my_df$admit_research <- sqrt(((my_df$research_rank)^2)+((my_df$weighted_admit)^2))
+keeps <- c("short_name","admit_research")
+temp2 = my_df[keeps]
+
+top50 <- temp2 %>% 
+  arrange(admit_research) %>% 
+  slice(1:50)
+top50
+```
+Well cool. **Washington** has the highest number of admittance versus research rank in the nation. 
+
+
+#### Research and MD/PhD
+Now we copy almost exactly what we studied before, except this time, we are only looking into the number of MD/PhD students admitted versus their MCAT score. 
+```{r echo=FALSE}
+my_df$weighted_padmit <- ((100/my_df$md_ph_d_year_last_3_years))
+
+p <- ggplot(my_df, aes(x= research_rank, y= weighted_padmit, label=short_name))+
+  geom_point()+
+  geom_text(hjust=0, vjust=0)
+
+ggplotly(p)
+```
+<br>
+And a table to understand this better:
+<br>
+```{r echo=FALSE}
+my_df$padmit_research <- sqrt(((my_df$research_rank)^2)+((my_df$weighted_padmit)^2))
+keeps <- c("short_name","padmit_research")
+temp2 = my_df[keeps]
+
+top50 <- temp2 %>% 
+  arrange(padmit_research) %>% 
+  slice(1:50)
+top50
+```
+As **Harvard** is the closest one to zero, it has the highest number of MD/PhD students according to the highest research rank. 

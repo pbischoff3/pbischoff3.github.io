@@ -7,7 +7,7 @@ library(modelr)
 library(vegan)
 
 # Read in data ####
-df <- readxl::read_excel("./Data/Medical Conditions and Science Motivation Data 3.4.22.xlsx")
+df <- readxl::read_excel("Projects/BIOL_3100/Data/Medical Conditions and Science Motivation Data 3.4.22.xlsx")
 df <- df %>% 
   janitor::clean_names()
 df <- df %>% 
