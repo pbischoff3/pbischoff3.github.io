@@ -1,10 +1,21 @@
 ---
 title: "Home"
-output: html_document
+output: 
+  html_document:
+    theme: readable
 ---
+<body style="background-color:grey;">
 
-<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/) | [Projects](https://pbischoff3.github.io/Projects)</h3>
+<h3 style="background-color:LemonChiffon;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/) | [Projects](https://pbischoff3.github.io/Projects)</h3>
 
 
 ## Welcome
 This is my home page. I am Porter Bischoff, an undergraduate student at Utah Valley University. I am a Presidential Intern for Provost Wayne Vaught, and my plan is to pursue an MD/PhD degree following my time at UVU. 
+
+<br> This is the most important thing that I can use for my RMD file 
+https://holtzy.github.io/Pimp-my-rmd/#:~:text=%23ffffff%3B%0A%7D-,Use%20DT%20for%20tables,-The%20DT%20library
+
+<br>
+
+![](photos/personal.png)
+</center>
