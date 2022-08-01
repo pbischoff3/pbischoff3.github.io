@@ -13,7 +13,7 @@ output:
 <h4 style="background-color:bisque;text-align:center;font-size:95%;">[Major](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/Major/) | [Gender](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/Gender/) | [Career](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/career/) | [Ethnicity](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/Ethnicity/) | [First Generation Students](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/fgs/) | [Dependents](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/dependents/)      | [Medical Condition](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/medical_condition/) | [Medical Care](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/medical_care/) | [Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/analysis/)</h4>
   
 ```{r background, message=FALSE, warning=FALSE, include=FALSE}
-source(file = "../../../BIOL_3100/R/Code/01-cleaning_data.R")
+source(file = "../../Data/Medical Conditions and Science Motivation Data 3.4.22.xlsx")
 ```
 
 
