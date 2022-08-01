@@ -113,7 +113,7 @@ Questions regarding "Science Competency" included:
     <li>"I am good at solving complicated scientific problems"</li>
     <li>"I read websites, articles, or books about scientific issues"</li>
     <li>"I work on a project involving scientific concepts"</li>
-    <li>"I think about how mu life is affected by science"</li>
+    <li>"I think about how my life is affected by science"</li>
   </ul>
 Questions were measured on a 5 point scale, from "Strongly Disagree" to "Strongly Agree".
 
