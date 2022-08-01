@@ -7,12 +7,12 @@ output:
     theme:
       bootswatch: superhero
 ---
-<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/models/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/Projects/BIOL_3100) | [Data Overview](https://pbischoff3.github.io/Projects/BIOL_3100/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/Projects/BIOL_3100/models/) | [Conclusion](https://pbischoff3.github.io/Projects/BIOL_3100/Conclusion/)</h3>
 
-<h4 style="background-color:bisque;text-align:center;font-size:95%;">[Major](https://pbischoff3.github.io/multi_dimensional_analysis/Major/) | [Gender](https://pbischoff3.github.io/multi_dimensional_analysis/Gender/) | [Career](https://pbischoff3.github.io/multi_dimensional_analysis/career/) | [Ethnicity](https://pbischoff3.github.io/multi_dimensional_analysis/Ethnicity/) | [First Generation Students](https://pbischoff3.github.io/multi_dimensional_analysis/fgs/) | [Dependents](https://pbischoff3.github.io/multi_dimensional_analysis/dependents/)      | [Medical Condition](https://pbischoff3.github.io/multi_dimensional_analysis/medical_condition/) | [Medical Care](https://pbischoff3.github.io/multi_dimensional_analysis/medical_care/) | [Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/analysis/)</h4>
+<h4 style="background-color:bisque;text-align:center;font-size:95%;">[Major](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/Major/) | [Gender](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/Gender/) | [Career](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/career/) | [Ethnicity](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/Ethnicity/) | [First Generation Students](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/fgs/) | [Dependents](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/dependents/)      | [Medical Condition](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/medical_condition/) | [Medical Care](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/medical_care/) | [Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/analysis/)</h4>
   
 ```{r background, message=FALSE, warning=FALSE, include=FALSE}
-source(file = "./R/Code/01-cleaning_data.R")
+source(file = "../../R/Code/01-cleaning_data.R")
 ```
 
 
@@ -156,4 +156,4 @@ In summary, let's take a look at the running list we are making of which questio
 
 ![](../../R/Images/med_condition/conclusion.gif)
 
-<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/multi_dimensional_analysis/medical_care/)
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/medical_care/)

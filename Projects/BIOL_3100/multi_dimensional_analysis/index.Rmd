@@ -58,4 +58,4 @@ On the other hand, those adonis results that *are not significant* will have thi
     
 Now that all of this is taken care of, lets dive into our actual data and see what we can learn.
 
-<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/multi_dimensional_analysis/Major/)
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/Major/)

@@ -7,9 +7,9 @@ output:
     theme:
       bootswatch: superhero
 ---
-<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/models/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/Projects/BIOL_3100) | [Data Overview](https://pbischoff3.github.io/Projects/BIOL_3100/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/Projects/BIOL_3100/models/) | [Conclusion](https://pbischoff3.github.io/Projects/BIOL_3100/Conclusion/)</h3>
 
-<h4 style="background-color:bisque;text-align:center;font-size:73%;">[Science Identity](https://pbischoff3.github.io/models/si/) | [Career Motivation](https://pbischoff3.github.io/models/cm/) | [Intrinsic Motivation](https://pbischoff3.github.io/models/im/) | [Self-Determination](https://pbischoff3.github.io/models/sd/) | [Self-Efficacy](https://pbischoff3.github.io/models/se/) | [Grade Motivation](https://pbischoff3.github.io/models/gm)      | [Personal Communal Orientation](https://pbischoff3.github.io/models/per_com_orient/) | [Analysis](https://pbischoff3.github.io/models/analysis/)</h4>
+<h4 style="background-color:bisque;text-align:center;font-size:73%;">[Science Identity](https://pbischoff3.github.io/Projects/BIOL_3100/models/si/) | [Career Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/cm/) | [Intrinsic Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/im/) | [Self-Determination](https://pbischoff3.github.io/Projects/BIOL_3100/models/sd/) | [Self-Efficacy](https://pbischoff3.github.io/Projects/BIOL_3100/models/se/) | [Grade Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/gm)      | [Personal Communal Orientation](https://pbischoff3.github.io/Projects/BIOL_3100/models/per_com_orient/) | [Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/models/analysis/)</h4>
 
 ## Explanation
 We are now going to run models to analyze the data. Essentially, our goal here is to see if specific demographic information will cause a significant change in averages for the types of questions. <br>
@@ -27,4 +27,4 @@ We are not running analysis on all data, as we are incorporating results from ou
 
 ![](../R/Images/models/models.gif)
 
-<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/models/si/)
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/models/si/)

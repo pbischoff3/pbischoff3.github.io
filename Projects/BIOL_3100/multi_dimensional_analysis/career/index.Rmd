@@ -157,4 +157,4 @@ In summary, let's take a look at the running list we are making of which questio
 
 ![](../../R/Images/career/conclusion.gif)
 
-<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/multi_dimensional_analysis/Ethnicity/)
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/Ethnicity/)
