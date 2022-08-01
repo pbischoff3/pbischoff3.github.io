@@ -153,5 +153,5 @@ In my experiences in life, I have had many medical experiences that have affecte
 
 ![](../R/Images/data_overview/science.gif)
 
-<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/multi_dimensional_analysis/)
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/)
 

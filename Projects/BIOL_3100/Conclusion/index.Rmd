@@ -8,7 +8,7 @@ output:
       bootswatch: superhero
 ---
 
-<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/) | [Data Overview](https://pbischoff3.github.io/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/models/) | [Conclusion](https://pbischoff3.github.io/Conclusion/)</h3>
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/Projects/BIOL_3100) | [Data Overview](https://pbischoff3.github.io/Projects/BIOL_3100/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/Projects/BIOL_3100/models/) | [Conclusion](https://pbischoff3.github.io/Projects/BIOL_3100/Conclusion/)</h3>
 
 ## What did we do?
 In this project, we first cleaned the data into a format that we could accurately use in R. After that, we ran multi-dimensional analysis. This let us see if there were significant differences in the demographics in the way they answered the questions. We took this data, and we ran this back into a model. This gave us the ability to see how specifically the demographics affected the answers to the question.

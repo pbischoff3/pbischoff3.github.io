@@ -25,4 +25,4 @@ Welcome to my final project for Dr. Zahn's BIOL3100 class.
 ## Navigation
 Click on the links on the top of the page to navigate to different pages or use the **NEXT** button below to follow the presentation in order.
 
-<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/data_overview)
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/data_overview/)
