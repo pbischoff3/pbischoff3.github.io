@@ -13,7 +13,7 @@ output:
 
 ## About Me
 My name is Porter Bischoff. I am from Heber City, UT, and I am currently a undergraduate student at Utah Valley University. I am studying Biotechnology, and I hope to pursue an MD/PhD degree following my time here. <br><br>
-While studying at UVU, I have been blessed with so many wonderful opportunities. As a biotech student, I was granted the [NSF S-STEM scholarship](https://www.uvu.edu/biology/s_stem_scholarship.html), allowing me to have a strong focus on research I am interested in as an undergraduate. I was involved with Station1 as a [Station1 Frontiers Fellow](https://www.station1.org/sff). This was a wonderful experience that included "an exciting research internship in emerging areas of science and technology with leading established and startup partner companies, research institutes, and nonprofit organizations, a cross-interdisciplinary shared curriculum, and personal and professional advancement activities including inclusive leadership and collaboration, scientific and technical communication, networking, and more." I worked with [GC Therapeutics](https://www.gc-tx.com/) as an intern following my time with Station1, and this provided me the unique experience of working with a biotech startup on the cutting edge of curing incurable diseases through stem cell implantation. Currently, I am an intern at Utah Valley University with Provost Wayne Vaught, as his [Presidential Intern](https://www.uvu.edu/president/interns/index.html). I am excited for the opportunities and experience that this position will hold. <br><br>
+While studying at UVU, I have been blessed with so many wonderful opportunities. As a biotech student, I was granted the [NSF S-STEM scholarship](https://www.uvu.edu/biology/s_stem_scholarship.html), allowing me to have a strong focus on research I am interested in as an undergraduate. I was involved with Station1 as a [Station1 Frontiers Fellow](https://www.station1.org/sff). This was a wonderful experience that included "an exciting research internship in emerging areas of science and technology with leading established and startup partner companies, research institutes, and nonprofit organizations, a cross-interdisciplinary shared curriculum, and personal and professional advancement activities including inclusive leadership and collaboration, scientific and technical communication, networking, and more." I worked with [GC Therapeutics](https://www.gc-tx.com/) as an intern following my time with Station1, and this provided me the unique experience of working with a biotech startup on the cutting edge of curing incurable diseases through stem cell implantation. Currently, I am an intern at Utah Valley University with Provost Wayne Vaught as his [Presidential Intern](https://www.uvu.edu/president/interns/index.html). I am excited for the opportunities and experience that this position will hold. <br><br>
 I am the oldest of 5, and I love my family so much. They are truly my best friends. I have a dog named Bubba that enjoys doing homework with me, and I love watching basketball. Sadly, I am a disappointed Utah Jazz fan. 
 
 
@@ -22,8 +22,12 @@ I am the oldest of 5, and I love my family so much. They are truly my best frien
 
 ## Important Links 
 
-### [LinkedIn](www.linkedin.com/in/porter-bischoff)
+### [LinkedIn](https://linkedin.com/in/porter-bischoff)
 <br>
+![](photos/linkedin.PNG)
+</center>
+<br>
+
 Here is my LinkedIn page.
 
 ### [iSPIRE Research](https://sites.google.com/uvu.edu/ispire/home)

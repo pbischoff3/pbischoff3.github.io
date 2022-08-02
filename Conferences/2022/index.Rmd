@@ -1,0 +1,56 @@
+---
+title: "2022"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
+---
+<body style="background-color:Gainsboro;">
+
+<h3 style="background-color:DarkSeaGreen;text-align:center;font-size:175%;">[Home](https://pbischoff3.github.io/)   |   [Research]((https://pbischoff3.github.io/Research))   |   [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Projects)</h3>
+
+<h4 style="background-color:DarkSeaGreen;text-align:center;font-size:150%;"> [2020](https://pbischoff3.github.io/Conferences/2020)  |  [2021](https://pbischoff3.github.io/Conferences/2021)  |  [2022](https://pbischoff3.github.io/Conferences/2022) </h4>
+
+2022 was my first real opportunity to present on what I had been learning. The Covid project came to a head where we could present at both UCUR and the UVU Showcase, while initial results from the Medical Conditions project was presented on at ASMCUE. 
+<br>
+
+## Utah Council of Undergraduate Research ([UCUR](https://www.ucur.org/)) - February 2022
+
+This presentation took place virtually in tandem with the undergraduate schools in Utah, being hosted by Dixie State University. 
+
+<br>
+
+
+```{r echo=FALSE}
+library(vembedr)
+embed_url("https://www.youtube.com/watch?v=ljhjICzPYfw")
+```
+
+<br>
+
+### Abstract 
+First-generation students (FGSs) are less likely to earn a four-year degree than their continuing generation peers (CGSs). This trend is particularly pronounced in STEM disciplines. FGSs are more likely to be communally oriented which contrasts the typical values of universities that value individual accomplishments. This generates a disconnect between FGS’s values and the perceived values of STEM. However, limited data is available from teaching institutions that are open-enrollment. In addition, few studies have examined peer interactions as a specific source of science motivation and communal views of science. This study examined student’s cooperative experiences with peers and STEM motivation through pre/post-test survey collection within STEM classes. Students were asked questions addressing STEM motivation, the value of working with others and their community, and the community orientation of STEM disciplines. Early results show that FGS do indeed rely on cooperative experiences with peers to judge the communal orientation of science which then impacts their science motivation. We predict that similar trends will be seen for women and that these trends will be significantly weaker for CGSs. Our next steps include continuing with the data analysis. Also, this survey was taken when COVID-19 caused an emergency transition to online learning. Future data collection will provide a comparison to better understand the impacts of the emergency transition on STEM students. 
+
+## [UVU Showcase](https://www.uvu.edu/sculpt/events/showcase.html) - April 2022
+
+Similar to UCUR, I was able to present on my Covid project, but this time, presenting in person was a wonderful experience for me. <br>
+
+![](photos/Poster Draft 6-1.png)
+
+</center>
+<a href="photos/Poster Draft 6-1.png" download>Click to Download</a>
+<br>
+
+## American Society for Microbiology Conference for Undergraduate Educators ([ASMCUE](https://asm.org/Events/ASM-Conference-for-Undergraduate-Educators/Home)) - July 2022
+This was my first opportunity to present on the Medical Conditions project. This was a great opportunity for me, as I was one of only a few undergraduates who presented at this conference. 
+
+```{r echo=FALSE}
+library(vembedr)
+embed_url("https://www.youtube.com/watch?v=uUSxcEBUV24")
+```
+<a href="files/presentation.pdf" download>Click to Download</a>
+<br>
+
+### Abstract
+Understanding different aspects of science motivation allows educators to appropriately tailor their pedagogy and increase student success in the science fields. Aspects of science motivation that have been explored in the past include: perceived self-efficacy, career motivation, intrinsic motivation, self-determination, and grade motivation. These factors are foundational in Self Determination Theory (Deci, 2012), which explores the importance of autonomy, competence, and relatedness in identifying self-determination. One aspect that may influence self-determination for science motivation could be the presence of medical experiences in the life of the student (having a medical experience/condition or being a caregiver for one who has medical conditions). Based on the Self-Determination Theory, we hypothesized that self-determination and intrinsic motivation would be increased if a student identified as having a medical experience(s).  Based on data analysis from surveys given to different introductory biology classes, aspects influenced by the Self-Determination Theory were explored as well as if one has a medical experience/condition or cares for one who does. Results show that students with medical conditions had significantly higher science motivation overall (d = .37. medium effect), particularly for intrinsic motivation (d = .50. medium effect). These results suggest that those with medical conditions enjoy learning science and understand the importance of science in one’s daily life more than those who do not. In addition, students with medical experiences had significantly higher science identities (d= .38). This suggests that those with medical conditions see themselves as science people and scientists. Further analysis will be run through focus groups to allow us to better understand individual experiences surrounding the connection of medical conditions in science motivation. This study will provide insight into understanding the influence of medical conditions on science motivation and thus allow educators, doctors, parents, and others help encourage science experiences in those that have medical experiences. 
