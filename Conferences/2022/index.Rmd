@@ -8,9 +8,9 @@ output:
 ---
 <body style="background-color:Gainsboro;">
 
-<h3 style="background-color:DarkSeaGreen;text-align:center;font-size:175%;">[Home](https://pbischoff3.github.io/)   |   [Research]((https://pbischoff3.github.io/Research))   |   [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)</h3>
+<h3 style="background-color:DarkSeaGreen;text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)</h3>
 
-<h4 style="background-color:DarkSeaGreen;text-align:center;font-size:150%;"> [2020](https://pbischoff3.github.io/Conferences/2020)  |  [2021](https://pbischoff3.github.io/Conferences/2021)  |  [2022](https://pbischoff3.github.io/Conferences/2022) </h4>
+<h4 style="background-color:DarkSeaGreen;text-align:center;font-size:150%;"> [2022](https://pbischoff3.github.io/Conferences/2022)  |  [2021](https://pbischoff3.github.io/Conferences/2021)  |  [2020](https://pbischoff3.github.io/Conferences/2020) </h4>
 
 2022 was my first real opportunity to present on what I had been learning. The Covid project came to a head where we could present at both UCUR and the UVU Showcase, while initial results from the Medical Conditions project was presented on at ASMCUE. 
 <br>
@@ -21,11 +21,12 @@ This presentation took place virtually in tandem with the undergraduate schools 
 
 <br>
 
-
+<center>
 ```{r echo=FALSE}
 library(vembedr)
 embed_url("https://www.youtube.com/watch?v=ljhjICzPYfw")
 ```
+</center>
 
 <br>
 
@@ -36,6 +37,7 @@ First-generation students (FGSs) are less likely to earn a four-year degree than
 
 Similar to UCUR, I was able to present on my Covid project, but this time, presenting in person was a wonderful experience for me. <br>
 
+<center>
 ![](photos/Poster Draft 6-1.png)
 
 </center>
@@ -45,10 +47,12 @@ Similar to UCUR, I was able to present on my Covid project, but this time, prese
 ## American Society for Microbiology Conference for Undergraduate Educators ([ASMCUE](https://asm.org/Events/ASM-Conference-for-Undergraduate-Educators/Home)) - July 2022
 This was my first opportunity to present on the Medical Conditions project. This was a great opportunity for me, as I was one of only a few undergraduates who presented at this conference. 
 
+<center>
 ```{r echo=FALSE}
 library(vembedr)
 embed_url("https://www.youtube.com/watch?v=uUSxcEBUV24")
 ```
+</center>
 <a href="files/presentation.pdf" download>Click to Download</a>
 <br>
 
