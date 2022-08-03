@@ -1,11 +1,19 @@
 ---
 title: "Projects"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
 ---
-<h3 style="background-color:bisque;text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) </h3>
+<body style="background-color:Gainsboro;">
+
+<h3 style="background-color:DarkSeaGreen;text-align:center;font-size:175%;">[Home](https://pbischoff3.github.io/)   |   [Research]((https://pbischoff3.github.io/Research))   |   [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)</h3>
+
+<h4 style="background-color:DarkSeaGreen;text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) </h4>
 
 ## Description
 
-Following the links under the associated tabs, see different projects I have been involved in. 
+Following the links under the associated tabs, see different projects I have been involved in, either in classes or on my own.
 
 

@@ -1,0 +1,18 @@
+---
+title: "Medical Conditions and STEM Motivation"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
+---
+<body style="background-color:Gainsboro;">
+
+<h3 style="background-color:DarkSeaGreen;text-align:center;font-size:175%;">[Home](https://pbischoff3.github.io/)   |   [Research]((https://pbischoff3.github.io/Research))   |   [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)</h3>
+
+
+<h4 style="background-color:DarkSeaGreen;text-align:center;font-size:150%;">[COVID and FGS](https://pbischoff3.github.io/Research/covid) | [Medical Conditions and STEM Motivation](https://pbischoff3.github.io/Research/med_cond) </h4>
+
+
+
+## Test
