@@ -4,13 +4,13 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cosmo
+    theme: sandstone
 ---
-<body style="background-color:Gainsboro;">
+<body style="background-color:MintCream;">
 
-<h3 style="background-color:DarkSeaGreen;text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)</h3>
+<h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)</h3>
 
-<h4 style="background-color:DarkSeaGreen;text-align:center;font-size:150%;"> [2022](https://pbischoff3.github.io/Conferences/2022)  |  [2021](https://pbischoff3.github.io/Conferences/2021)  |  [2020](https://pbischoff3.github.io/Conferences/2020) </h4>
+<h4 style="text-align:center;font-size:150%;"> [2022](https://pbischoff3.github.io/Conferences/2022)  |  [2021](https://pbischoff3.github.io/Conferences/2021)  |  [2020](https://pbischoff3.github.io/Conferences/2020) </h4>
 
 
 In 2021, we worked on getting IRB approval for my project at UVU. Eventually, we were granted that approval in getting UVU IRB #936. The rest of the year was spent in data collection, preparing for eventual presentation on what we had discovered. 

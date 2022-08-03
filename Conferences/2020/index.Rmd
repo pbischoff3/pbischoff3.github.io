@@ -4,13 +4,13 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cosmo
+    theme: sandstone
 ---
-<body style="background-color:Gainsboro;">
+<body style="background-color:MintCream;">
 
-<h3 style="background-color:DarkSeaGreen;text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)</h3>
+<h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)</h3>
 
-<h4 style="background-color:DarkSeaGreen;text-align:center;font-size:150%;"> [2022](https://pbischoff3.github.io/Conferences/2022)  |  [2021](https://pbischoff3.github.io/Conferences/2021)  |  [2020](https://pbischoff3.github.io/Conferences/2020) </h4>
+<h4 style="text-align:center;font-size:150%;"> [2022](https://pbischoff3.github.io/Conferences/2022)  |  [2021](https://pbischoff3.github.io/Conferences/2021)  |  [2020](https://pbischoff3.github.io/Conferences/2020) </h4>
 
 2020 was the year I began doing research at my university. It was this year that I was granted the [NSF S-STEM scholarship](https://www.uvu.edu/biology/s_stem_scholarship.html) that has given me the opportunity to devote so much time to something I am so passionate in studying. 
 <br> <br>
