@@ -11,3 +11,78 @@ output:
 <h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
 
 <h4 style="text-align:center;font-size:150%;"> [Patient Interaction](https://pbischoff3.github.io/Hours/patient)  |  [Leadership](https://pbischoff3.github.io/Hours/leadership)  |  [Service](https://pbischoff3.github.io/Hours/service)  |  [Research](https://pbischoff3.github.io/Hours/research) </h4>
+
+## Pie Chart
+Due to confidentiality, I decided to put the main reason for care as the identifier for each patient.
+
+```{r LAbels, include=FALSE}
+library(dplyr)
+library(janitor)
+library(stringr)
+library(readr)
+library(ggplot2)
+library(leaflet)
+library(sf)
+library(viridis)
+library(htmltools)
+library(stringr)
+library(reshape2)
+library(plotly)
+library(gapminder)
+library(readxl)
+
+
+df <- read_excel("files/patient.xlsx")
+```
+<center>
+
+```{r include=FALSE}
+bp<- ggplot(df, aes(x="", y=hours, fill=description))+
+geom_bar(width = 1, stat = "identity")+
+  geom_text(aes(label=hours),
+             position = position_stack(vjust = 0.5))
+bp
+
+pie <- bp+coord_polar("y", start=0)
+pie
+```
+
+```{r echo=FALSE}
+pie + scale_fill_brewer(palette="Pastel2")+
+  theme_minimal()
+```
+
+</center>
+
+<center>
+
+*These are the patient hours I have accumulated overtime, according to **August 4, 2022**.*
+
+</center>
+<br> <br>
+
+## Seizures
+
+### Description
+From the August 2020 to June 2021, I lived in the basement of a family who had a 27 year old severely autistic child with drop-fall seizures. Each morning, I was responsible for the feeding, bathing, dressing, and care for this man. He had majorly stunted mental capabilities, and each seizure had the potential to further stunt his mental abilities or even cause death. As these drop-fall seizures were dangerous and unexpected, my job was to catch and hold him through the seizure to avoid further injuries. 
+
+### Learnings 
+This job was a stressful one, as the family told me from day one that the man would one day pass away from his seizures, and there was a chance that could happen while I worked with him. This helped me learn how to "leave work at work". I was attending school full-time, and I didn't have the mental fortitude to deal with that stress along with my academics at the beginning. At the end of this experience, I am happy to say that I had learned how to effectively manage my mental load. 
+
+Also, as the man had severe autism, I learned how to be compassionate with those who struggled in expressing themselves. The patient was unable to communicate at all, but he was receptive to social expressions. By the end of my time at this job, the patient and I had a relationship, something that was difficult for the patient to do.
+
+<br> <br>
+
+## Dementia
+
+### Description
+In the summer of 2022, I worked with an elderly man (mid-80's) in his rest home. Due to recent surgeries and medical experiences, this man required somebody with him at all times in addition to the rest home staff. I filled that role and spent the mornings and evenings with him. Much of the work was typical CNA-type things, including toileting, dressing, feeding, and medication assistance. 
+
+### Learnings
+Spending time with this man was very informative for me in my path in becoming a physician. Up until this experience, I hadn't spent much time with elderly patients. I was able to see the functions of a rest home while only being responsible for one patient. Also, as the patient had dementia, he was quite frustrated during the majority of my visits, and this helped me develop more patience in my healthcare skills. 
+
+<br> <br>
+
+
+## Mobility
+
