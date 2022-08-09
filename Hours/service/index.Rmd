@@ -11,3 +11,78 @@ output:
 <h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
 
 <h4 style="text-align:center;font-size:150%;"> [Patient Interaction](https://pbischoff3.github.io/Hours/patient)  |  [Leadership](https://pbischoff3.github.io/Hours/leadership)  |  [Service](https://pbischoff3.github.io/Hours/service)  |  [Research](https://pbischoff3.github.io/Hours/research) </h4>
+
+## Pie Chart
+As of **August 4, 2022**, I have spent **188** hours doing volunteer service.
+<br> <br>
+
+
+```{r LAbels, include=FALSE}
+library(dplyr)
+library(janitor)
+library(stringr)
+library(readr)
+library(ggplot2)
+library(leaflet)
+library(sf)
+library(viridis)
+library(htmltools)
+library(stringr)
+library(reshape2)
+library(plotly)
+library(gapminder)
+library(readxl)
+
+
+df <- read_excel("files/service.xlsx")
+```
+<center>
+
+```{r include=FALSE}
+bp<- ggplot(df, aes(x="", y=hours, fill=description))+
+geom_bar(width = 1, stat = "identity")+
+  geom_text(aes(label=hours),
+             position = position_stack(vjust = 0.5))
+bp
+
+pie <- bp+coord_polar("y", start=0)
+pie
+```
+
+```{r echo=FALSE}
+pie + scale_fill_brewer(palette="Pastel2")+
+  theme_minimal()
+```
+
+</center>
+
+<br> <br>
+
+## Executive Secretary
+
+### Description
+In my church community, a Bishop is seen in a similar role as a Pastor, the head of the congregation. I was asked to be the "Executive Secretary" for the Bishop, helping him as he ran the congregation. Duties included preparing agendas, attending multiple meetings throughout the week, schedule appointments, and keeping lists of congregation members. My goal was to do everything on the back end to make the life of the Bishop easier. For more information, see [this website](https://www.churchofjesuschrist.org/study/manual/general-handbook/7?lang=eng#title_number14)
+
+
+### Learnings 
+I feel like I was able to make a huge difference in the lives of those around me with this service opportunity. Both the members of the congregation and the nonmembers in the area were constantly on our mind and in our prayers. It taught me to better look outside of myself, both to those who share my faith and those who do not.
+
+<br> <br>
+
+## High Council
+
+### Description
+Again, in my church community, a group of congregations in an area is called a Stake (similar to a Catholic diocese). There are leaders in the Stake that help all of the congregations in the area. I served on the High Council in the Stake, helping be the hands of the Stake President (similar to a Catholic bishop). I was assigned to a congregation and was responsible to learn their needs, offer support, teach and train when necessary, and communicate important information. A lot of my time was spent dealing with leaders in the individual congregations. In addition to our assignment to specific congregations, I was put in charge of the physical facilities in the Stake where the congregations met. For more information, follow [this link](https://www.churchofjesuschrist.org/study/manual/general-handbook/6-stake-leadership?lang=eng#title_number19).
+
+### Learnings 
+The majority of my service in this opportunity was with leaders for in each individual congregation. Though I didn't spend as much one-on-one with the members of the congregations, I learned how to effective serve those who are always serving others. I think that is something that the pandemic has made explicitly clear; caregivers, in whatever manner they care, oftentimes need care themselves. 
+
+<br> <br>
+
+## IHC Emergency Room
+
+### Description
+I volunteered in the emergency room at the American Fork Intermountain Healthcare Hospital. My role in this position was to make the patient comfortable. I was not there to provide care; instead my role was to offer blankets, toys for kids, or food and beverages. 
+
+### Learnings 
+I loved this service opportunity, as I was able to help others in the height of their struggles while seeing how an emergency room operates. Much of this service was during one of the peaks of the pandemic, so I was able to understand a little more how the pandemic effected caregivers. 
