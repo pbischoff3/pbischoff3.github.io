@@ -10,7 +10,7 @@ output:
 
 <h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
 
-<h4 style="text-align:center;font-size:150%;"> [Patient Interaction](https://pbischoff3.github.io/Hours/patient)  |  [Leadership](https://pbischoff3.github.io/Hours/leadership)  |  [Service](https://pbischoff3.github.io/Hours/service)  |  [Research](https://pbischoff3.github.io/Hours/research) </h4>
+<h4 style="text-align:center;font-size:150%;"> [Patient Interaction](https://pbischoff3.github.io/Hours/patient)  |  [Leadership](https://pbischoff3.github.io/Hours/leadership)  |  [Service](https://pbischoff3.github.io/Hours/service)  |  [Research](https://pbischoff3.github.io/Hours/research)  |  [Shadowing](https://pbischoff3.github.io/Hours/shadowing) </h4>
 
 ## Pie Chart
 As of **August 4, 2022**, I have spent **394** hours in leadership capabilities.
