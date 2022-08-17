@@ -1,9 +1,18 @@
 ---
-title: "Med School Meta"
-output:
+title: "MD / PhD"
+output: 
   html_document:
-    theme: simplex
+    toc: true
+    toc_float: true
+    theme: sandstone
 ---
+<body style="background-color:MintCream;">
+
+<h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [R Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
+
+<h4 style="text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) </h4>
+
+<h5 style="text-align:center;font-size:150%;">[Initial](https://pbischoff3.github.io/Projects/MD_PhD/initial) | [Secondary](https://pbischoff3.github.io/Projects/BIOL_3100/secondary) </h5>
 
 ```{r LAbels, include=FALSE}
 library(dplyr)
@@ -189,23 +198,6 @@ top15 %>%
 <br>
 Again, not a decision maker, but something to be mindful of for the future. 
 
-##### 40 Highest Caucasian %
-```{r echo=FALSE}
-keeps2 <- c("short_name","caucasian")
-temp2 = my_df[keeps2]
-
-top15 <- temp2 %>% 
-  arrange(desc(caucasian)) %>% 
-  slice(1:40)
-
-top15
-
-top15 %>% 
-  ggplot(mapping = aes(x = short_name, y = caucasian))+
-  geom_point()+
-  theme(axis.text.x = element_text(angle=60, hjust=1))
-```
-Lastly, this isn't a main decision maker. Something I need to look into later on.
 
 ### 1st Analysis {.tabset}
 
