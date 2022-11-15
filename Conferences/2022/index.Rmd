@@ -73,3 +73,17 @@ I had the wonderful opportunity to represent the UVU Honor's Program at the NCHC
 
 ### Abstract 
 Signature experiences are a key element that sets honors education apart from standard collegiate offerings. They are a primary reason students apply for and remain in honors At Utah Valley University's honors program, we offer the repeated signature experience of semester long, experiential learning, one-credit class called Honors Colloquium and Housing Colloquium. This experience is key for building community on our commuter campus, which has a small residential component via a public-private partnership. This session will involve  facilitation by honors faculty, staff, and student leaders. Our session, which would be ideally suited for attendees  from commuter/urban/non-residential campuses will offer a warm-up activity that gets tables reflecting on barriers to student community on their campus. The takeaways for the workshop will include structured brainstorms of community-building activities that are both free and that will require funding, as well as marketing ideas for communicating the colloquia to students. Plans for requesting or obtaining funding will be offered to participants. The honors director and assistant director at Utah Valley University, assisted by up to eight of our student ambassadors, will facilitate a roundtable discussion of specific methods and specific activities that help connect honors students to each other based on our decade-long successful program.
+
+<br>
+
+## UVU Bio 497R Colloquium Class- November 2022
+
+```{r echo=FALSE}
+library(vembedr)
+embed_url("https://www.youtube.com/watch?v=ZyujRGODbs4")
+```
+<br>
+
+### Abstract
+There was no abstract for this presentation, but instead this is a summary of the research that I have done for other students at UVU. It is a great summary regarding all research I have done here.
+
