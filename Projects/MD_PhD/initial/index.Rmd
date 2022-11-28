@@ -1,0 +1,198 @@
+---
+title: "Initial"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: sandstone
+---
+<body style="background-color:MintCream;">
+
+<h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [R Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
+
+<h4 style="text-align:center;font-size:170%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) </h4>
+
+<h5 style="text-align:center;font-size:150%;">[Initial](https://pbischoff3.github.io/Projects/MD_PhD/initial) | [Secondary](https://pbischoff3.github.io/Projects/secondary) </h5>
+
+
+```{r LAbels, include=FALSE}
+library(dplyr)
+library(janitor)
+library(stringr)
+library(readr)
+library(ggplot2)
+library(leaflet)
+library(sf)
+library(viridis)
+library(htmltools)
+library(stringr)
+library(reshape2)
+library(plotly)
+library(gapminder)
+
+
+my_df <- read.csv("../../MD_PhD/cleaned.csv")
+```
+
+
+## {.tabset}
+
+### Maps 
+```{r echo=FALSE}
+pal1 <- colorFactor(
+  palette = 'Reds', domain = my_df$research_rank)
+pal2 <- colorFactor(
+  palette = 'Blues', domain = my_df$primary_care_rank)
+
+leaflet(my_df) %>% addTiles() %>%
+  addMarkers(lng = ~longitude,lat = ~latitude,popup = ~school,label = ~school) %>% 
+  addProviderTiles(providers$CartoDB.Positron)
+```
+
+Here is a description of all the MD/PhD programs offered in the nation. There are 115 schools, and my initial impression is how densely populated the schools are back east. Not a ton of Western options. 
+<br>
+
+
+
+### Data {.tabset}
+
+#### Total Admittance
+Here is the top 30 Total MD Admittance according to school.
+<br>
+```{r echo=FALSE}
+keeps <- c("short_name","admittance_year")
+temp = my_df[keeps]
+
+top15 <- temp %>% 
+  arrange(desc(admittance_year)) %>% 
+  slice(1:30)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = admittance_year))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+This is for medical students overall, not just MD/PhD students. It seems awfully toploaded. This is a good basis to understand where my odds of acceptance may be higher than in others.
+<br>
+Exploring admittance for MD/PhD students is important as well.
+
+
+#### MD/PhD Admittance
+Here is the top 30 MD/PhD admittance according to school.
+<br>
+```{r echo=FALSE}
+keeps2 <- c("short_name","md_ph_d_year_last_3_years")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(desc(md_ph_d_year_last_3_years)) %>% 
+  slice(1:30)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = md_ph_d_year_last_3_years))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+<br>
+
+Not many students admitted each year across the board. It may be interesting to see the percentage of MD/PhD students admitted versus MD students admitted. 
+
+#### MD vs MD/PhD Admittance %
+
+```{r echo=FALSE}
+my_df$admitpercent <- ((my_df$md_ph_d_year_last_3_years/my_df$admittance_year)*100)
+
+keeps2 <- c("short_name","admitpercent")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(desc(admitpercent)) %>% 
+  slice(1:30)
+
+top15
+```
+<br>
+This graph shows us the highest percentage of MD/PhD students per the total of those admitted to medical school. Again, sort of a highest odds, kind of thing. 
+
+#### 40 Furthest Distance from Temple
+
+```{r echo=FALSE}
+keeps2 <- c("short_name","distance_to_temple_mi")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(desc(distance_to_temple_mi)) %>% 
+  slice(1:40)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = distance_to_temple_mi))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+<br>
+The temple is entirely important to me, so let's see which medical schools are the furthest from the temple. 
+
+
+#### 60 Closest Distance to Temple 
+```{r echo=FALSE}
+keeps2 <- c("short_name","distance_to_temple_mi")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(distance_to_temple_mi) %>% 
+  slice(1:60)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = distance_to_temple_mi))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=75, hjust=1))
+```
+<br>
+And this shows the ones that are closest to the temple. 
+
+#### 40 Lowest Home Prices
+```{r echo=FALSE}
+keeps2 <- c("short_name","home")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(home) %>% 
+  slice(1:40)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = home))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+<br>
+An interesting part of data, but not one that I think I need to use to make the decision of what schools to apply to. This would be important for a tertiary level of decision making, or even as a means to help decide after being accepted to multiple schools. 
+
+#### 40 Highest Home Prices
+```{r echo=FALSE}
+keeps2 <- c("short_name","home")
+temp2 = my_df[keeps2]
+
+top15 <- temp2 %>% 
+  arrange(desc(home)) %>% 
+  slice(1:40)
+
+top15
+
+top15 %>% 
+  ggplot(mapping = aes(x = short_name, y = home))+
+  geom_point()+
+  theme(axis.text.x = element_text(angle=60, hjust=1))
+```
+<br>
+Again, not a decision maker, but something to be mindful of for the future. 
+

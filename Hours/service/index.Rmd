@@ -13,7 +13,7 @@ output:
 <h4 style="text-align:center;font-size:150%;"> [Patient Interaction](https://pbischoff3.github.io/Hours/patient)  |  [Leadership](https://pbischoff3.github.io/Hours/leadership)  |  [Service](https://pbischoff3.github.io/Hours/service)  |  [Research](https://pbischoff3.github.io/Hours/research)  |  [Shadowing](https://pbischoff3.github.io/Hours/shadowing) </h4>
 
 ## Pie Chart
-As of **August 4, 2022**, I have spent **188** hours doing volunteer service.
+As of **November 15, 2022**, I have spent **243** hours doing volunteer service.
 <br> <br>
 
 
@@ -58,24 +58,27 @@ pie + scale_fill_brewer(palette="Pastel2")+
 
 <br> <br>
 
-## Executive Secretary
+## Food Pantry
 
 ### Description
-In my church community, a Bishop is seen in a similar role as a Pastor, the head of the congregation. I was asked to be the "Executive Secretary" for the Bishop, helping him as he ran the congregation. Duties included preparing agendas, attending multiple meetings throughout the week, schedule appointments, and keeping lists of congregation members. My goal was to do everything on the back end to make the life of the Bishop easier. For more information, see [this website](https://www.churchofjesuschrist.org/study/manual/general-handbook/7?lang=eng#title_number14)
+This is a place-holder for the service I am going to begin after the Thanksgiving break. I have the connection made-- just waiting for the break to pass.
 
 
 ### Learnings 
-I feel like I was able to make a huge difference in the lives of those around me with this service opportunity. Both the members of the congregation and the nonmembers in the area were constantly on our mind and in our prayers. It taught me to better look outside of myself, both to those who share my faith and those who do not.
+Again, this is a placeholder for the service I will be doing. 
+
 
 <br> <br>
 
-## High Council
+## Honor's Program
 
 ### Description
-Again, in my church community, a group of congregations in an area is called a Stake (similar to a Catholic diocese). There are leaders in the Stake that help all of the congregations in the area. I served on the High Council in the Stake, helping be the hands of the Stake President (similar to a Catholic bishop). I was assigned to a congregation and was responsible to learn their needs, offer support, teach and train when necessary, and communicate important information. A lot of my time was spent dealing with leaders in the individual congregations. In addition to our assignment to specific congregations, I was put in charge of the physical facilities in the Stake where the congregations met. For more information, follow [this link](https://www.churchofjesuschrist.org/study/manual/general-handbook/6-stake-leadership?lang=eng#title_number19).
+As a member of the Honor's Program at UVU, during the first 2 semesters you are involved in the program, you are required to take a "Honor's Colloquium" class. Part of this class required us to do service in the community that we wouldn't otherwise do. Between both semesters, I was able to use some of the life experiences I had in order to help other students going through similar issues. My mother is a health aide at the local school district, and there was a student who was type one diabetic and was about to graduate. He had poor diabetes habits, and I was asked to work with him to provide tips and tricks to adjusting to living on your own with diabetes. That was roughly 8 of these hours.
+
+The other 7 hours came as I met with other individual students. I shared things I had learned from my experiences, such as with [Station 1](https://www.station1.org/sff), the things I shared in my [Wolverine Story](https://www.uvu.edu/news/wolverine-stories/2022/03/2022_03_16_wolverine_stories_porter_bischoff.html), among other things. My goal here was to help each person I met with know that there is a place for them here. 
 
 ### Learnings 
-The majority of my service in this opportunity was with leaders for in each individual congregation. Though I didn't spend as much one-on-one with the members of the congregations, I learned how to effective serve those who are always serving others. I think that is something that the pandemic has made explicitly clear; caregivers, in whatever manner they care, oftentimes need care themselves. 
+Overall, the thing I learned the most with these experiences was that I have a need to give back. I have had many people help me along my path, guiding me through diabetes, through school, and through general life challenges. I need to give back to others and be the same voice for them that I had in my life. Overall, students need to know they are not alone, that they are not "weirdos", and this service helped me convey that to others. All in all, it helped me step outside of myself and be aware of the needs and struggles of others. 
 
 <br> <br>
 
@@ -86,3 +89,35 @@ I volunteered in the emergency room at the American Fork Intermountain Healthcar
 
 ### Learnings 
 I loved this service opportunity, as I was able to help others in the height of their struggles while seeing how an emergency room operates. Much of this service was during one of the peaks of the pandemic, so I was able to understand a little more how the pandemic effected caregivers. 
+
+<br> <br>
+
+## Cards 4 Kidz
+
+### Description
+I am currently in the middle of this service opportunity. My time in the hospital was stressful and traumatic, and unfortunately, I spent a lot of time there. I learned first hand how having people reach out helped lift my spirits. With that in mind, I found this service opportunity with the [Loma Linda University Hospital](https://www.justserve.org/projects/5674aa52-f3e3-4a2a-85a8-b6348a5d9f7b). I have been making notes for these young patients that will be delivered to them with their breakfast. I have focused on making them silly and fun, helping them take their minds off the fact that they are in the hospital.
+
+### Learnings
+What I have learned the most from this service is that looking outside yourself is the means by which amazing things can happen. When I was in the hospital, I had so many different people touch my life, and they made it easier for me to continue fighting the illnesses I had. I can provide an empathetic approach to making their days better, and that is the way by which I can give back to those that helped me. 
+
+<br> <br>
+
+## Church Volunteer Service
+
+### Description
+As a member of my church, I made the decision to pursue missionary service in the Kansas City, MO area. It was here that I spent 2 years serving those great people. The majority of that time was spent proselyting and supporting local church units, but I spent roughly 2 hours a week doing community service. At different points of time over the two years, I worked at a food pantry, set up a community event, worked at a thrift store, spent countless hours doing yard work, among other things.
+
+### Learnings
+This was the first time in my life where I feel I truly looked outside of myself. I was 19 years old when I began this service, and I felt like I truly dived in with the communities in which I lived. I feel that I learned empathy, love, and how important a kind word is, regardless of the person, the location, or the circumstance. It taught me to be less judgmental, and it increased my ability to strive to understand everybody.
+
+<br> <br>
+
+## Primary Children's Booth
+
+### Description
+When I was in the Primary Children's Medical Hospital, there were events that were hosted to help us patients get our minds off of things. One time when I was there, it was the beginning of college football season, and the mascots from two local rival colleges came handing out toys, coloring books, stress balls, and high fives. It truly lifted my sprits as a patient. 
+
+With the [research](https://pbischoff3.github.io/Conferences/) that I do on campus, I knew that I wanted to implement some of the same sort of event at Primary Children's. Seeing as I am studying how having medical conditions lead to science motivation, I want to provide an event where the science behind the medical care is made fun. We plan on teaching how x-rays work, what the heart looks like, what laboratory work looks like, etc. I applied for and was granted an [URSCA Grant](https://www.uvu.edu/undergrad-research/student-research/apply-for-funding/ursca-research.html) to pay for the toys and such needed for the event. Some of that funding is also going to an assistant student employee that will work underneath me, assisting me in this project. I will not be funded for this project, but he will, allowing him to add things to his medical school application.
+
+### Learnings
+So far, the majority of the work has been with preparing the grant. Now that we are approved, we need to make a connection with those at Primary Children's. I am excited to report back on some of my learnings from this project. 
