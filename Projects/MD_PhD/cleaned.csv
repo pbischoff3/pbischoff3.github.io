@@ -5,7 +5,11 @@ East Tennessee State University James H. Quillen College of Medicine,East Tennes
 "Louisiana State University, Shreveport School of Medicine",LSU Shreveport,Louisiana,Shreveport,32.4806484,-93.7609388,94,58,37.2,,,,,NA,200,too far ,393000,185000,1,South West Central
 West Virginia University School of Medicine,West Virginia,West Virginia,Morgantown,39.6541484,-79.9576894,84,21,85.7,82,61,434,510,NA,198,too far ,30700,285000,1,South Atlantic
 University of South Alabama College of Medicine,South Alabama,Alabama,Mobile,30.701111,-88.174782,89,55,43.53,,,,,NA,196,too far ,430197,175000,1,South East Central
+<<<<<<< HEAD
+University of Pittsburgh School of Medicine,Pitt,Pennsylvania,Pittsburgh,40.4425645,-79.9617855,83,20,66.4,14,10,610,516,13,25,too far ,2300000,237000,1,Northeast Mid-Atlantic
+=======
 University of Pittsburgh School of Medicine,Pitt,Pennsylvania,Pittsburgh,40.4425645,-79.9617855,83,20,66.4,14,10,610,516,13,25,medium,2300000,237000,1,Northeast Mid-Atlantic
+>>>>>>> 0598f0d1a0d33d4c85627d570710a553412f4582
 University of Arkansas College of Medicine,Arkansas,Arkansas,Little Rock,34.74902,-92.32011,92,45,49.9,74,36,684,509,3,156,too far ,726000,224000,1,South West Central
 Case Western Reserve University School of Medicine,Case Western,Ohio,Cleveland,41.5041139,-81.6200756,81,23,39.7,24,71,924,518,NA,150,too far ,2040000,106000,1,Midwest East North Central
 Northeastern Ohio College of Medicine,Northeastern Ohio,Ohio,Rootstown,41.1032382,-81.2447316,81,21,95.5,,,,,2,145,too far ,8198,267000,1,Midwest East North Central
