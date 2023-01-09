@@ -12,9 +12,9 @@ output:
 
 <h4 style="text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) | [SPUR Preparation](https://pbischoff3.github.io/Projects/SPUR_Prep) </h4>
 
-<h4 style="text-align:center;font-size:130%;">[netplot Overview](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) | [R Package Creation](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) | [Unit Tests](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) | [Docker](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) </h4>
+<h4 style="text-align:center;font-size:130%;">[netplot Overview](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) | [R Package Creation](https://pbischoff3.github.io/Projects/SPUR_Prep/package) | [Unit Tests](https://pbischoff3.github.io/Projects/SPUR_Prep/unit) | [Docker](https://pbischoff3.github.io/Projects/SPUR_Prep/docker) </h4>
 
-# For this walkthrough, I used [this website](https://github.com/USCCANA/netplot) to get a general idea of the package.
+For this walkthrough, I used [this website](https://github.com/USCCANA/netplot) to get a general idea of the package.
 
 First-- installing the packages needed
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
