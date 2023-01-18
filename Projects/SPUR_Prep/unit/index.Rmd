@@ -45,7 +45,6 @@ Alright, now some unit testing. Is our function accurate?
 # import testthat package
 library(testthat)
 
-# use expect_that to create tests
 
 ```
-Because of the failure of running this code, we can assume that the
+There is an issue with this code, and it is something that I will need to discuss with Dr. Zahn.

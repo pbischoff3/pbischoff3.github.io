@@ -13,7 +13,7 @@ output:
 <h4 style="text-align:center;font-size:150%;"> [Patient Interaction](https://pbischoff3.github.io/Hours/patient)  |  [Leadership](https://pbischoff3.github.io/Hours/leadership)  |  [Service](https://pbischoff3.github.io/Hours/service)  |  [Research](https://pbischoff3.github.io/Hours/research)  |  [Shadowing](https://pbischoff3.github.io/Hours/shadowing) </h4>
 
 ## Pie Chart
-As of **November 15, 2022**, I have spent **881** hours doing research.
+As of **January 18, 2023**, I have spent **908** hours doing research.
 <br> <br>
 
 
@@ -61,7 +61,7 @@ pie + scale_fill_brewer(palette="Pastel2")+
 ## S-STEM Scholarship
 
 ### Description
-I was granted this scholarship early in my academic endeavors. This scholarship is NSF funded and is focused on giving undergraduate students research opportunities. It included a full-ride scholarship, $1000 per year for research expenses, $1000 per year for travel expenses, and the opportunity to create a project with hand-picked faculty advisors. I knew that I was interested in making others' path that are similar to mine easier, especially for those who have had medical conditions. A lot of the faculty was interested in pursuing wet-lab studies focused on mushrooms, pigeon feather color, or drosophila, and all of those opportunities would have taught me a lot. Seeing as my degree is in biotechnology, I knew that I would have exceeding amounts of wet lab experience, so I decided that I wanted to pursue a research project that would give me skills I otherwise couldn't experience. I decided to work with Drs. Britt Wyatt and Josh Premo studying science motivation. I specifically chose to study how having medical experiences leads to STEM motivation, as that was the path that I took personally. For more information on this research, follow [this link](https://pbischoff3.github.io/Conferences) to see my presentations at conferences. I have been involved with this research since September of 2020, and I have spent on average 3 hours a week on these projects. 
+I was granted this scholarship early in my academic endeavors. This scholarship is NSF funded and is focused on giving undergraduate students research opportunities. It included a full-ride scholarship, $1000 per year for research expenses, $1000 per year for travel expenses, and the opportunity to create a project with hand-picked faculty advisors. I knew that I was interested in making others' path that are similar to mine easier, especially for those who have had medical conditions. A lot of the faculty was interested in pursuing wet-lab studies focused on mushrooms, pigeon feather color, or drosophila, and all of those opportunities would have taught me a lot. Seeing as my degree is in biotechnology, I knew that I would have exceeding amounts of wet lab experience, so I decided that I wanted to pursue a research project that would give me skills I otherwise couldn't experience. I decided to work with Drs. Britt Wyatt and Josh Premo studying science motivation. I specifically chose to study how having medical experiences leads to STEM motivation, as that was the path that I took personally. For more information on this research, follow [this link](https://pbischoff3.github.io/Conferences) to see my presentations at conferences. I have been involved with this research since September of 2020, and I have spent on average 3 hours a week on these projects, with many of the weeks before presentations requiring more hours.
 
 
 ### Learnings 

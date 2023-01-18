@@ -13,7 +13,7 @@ output:
 <h4 style="text-align:center;font-size:150%;"> [Patient Interaction](https://pbischoff3.github.io/Hours/patient)  |  [Leadership](https://pbischoff3.github.io/Hours/leadership)  |  [Service](https://pbischoff3.github.io/Hours/service)  |  [Research](https://pbischoff3.github.io/Hours/research)  |  [Shadowing](https://pbischoff3.github.io/Hours/shadowing) </h4>
 
 ## Pie Chart
-As of **November 15, 2022**, I have spent **911** hours in leadership capabilities.
+As of **January 18, 2023**, I have spent **1227** hours in leadership capabilities.
 
 
 ```{r LAbels, warning=TRUE, include=FALSE}
@@ -80,7 +80,7 @@ This assignment pulled me right out of my comfort zone. Before this, I was typic
 ## Stake Executive Secretary
 
 ### Description 
-This was another position I served in my church community. Similar to the Ward Executive Secretary, my position with the Stake Executive Secretary was to work with the Stake President and his presidency to assist them in running the Stake. Responsibilities include creating agendas for meetings, serve as members of councils for the stake, coordinate business in the stake, schedule appointments, and train new ward executive secretaries in their positions. For more information, follow [this link](https://www.churchofjesuschrist.org/study/manual/general-handbook/6-stake-leadership?lang=eng#title_number17).This is my current assignment. I have been involved here for a month, and I put in 12 hours a week in this service.
+This was another position I served in my church community. Similar to the Ward Executive Secretary, my position with the Stake Executive Secretary was to work with the Stake President and his presidency to assist them in running the Stake. Responsibilities include creating agendas for meetings, serve as members of councils for the stake, coordinate business in the stake, schedule appointments, and train new ward executive secretaries in their positions. For more information, follow [this link](https://www.churchofjesuschrist.org/study/manual/general-handbook/6-stake-leadership?lang=eng#title_number17).This is my current assignment. I have been involved here for 2.5 months, and I put in 12 hours a week in this service.
 
 ### Learning
 This position came at a really tough time for me. I have been working as a Presidential Intern, going to school full time, and studying for the MCAT. Overall, I would say I have learned the most about my personal way to manage time. There is a lot on my plate, and I needed to find out quickly how to juggle it all at once. This has made me a better organized person. Also, managing the schedule for the Stake Presidency requires me to work with the members of the stake extensively. This helps me better treat people one by one, providing them the same love and care that I would hope is provided to me. 
