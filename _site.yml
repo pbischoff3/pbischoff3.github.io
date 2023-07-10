@@ -1,20 +1,17 @@
+title: "Porter"
 navbar:
-  - name: Home
-    url: https://pbischoff3.github.io/
-  - name: Conferences
-    url: https://pbischoff3.github.io/Conferences
-  - name: R Projects
-    url: https://pbischoff3.github.io/Projects
-  - name: Publications
-    url: https://pbischoff3.github.io/Publications
-  - name: Medical Hours
-    url: https://pbischoff3.github.io/Hours
-subnavbar:
-  - name: MD PhD
-    url: https://pbischoff3.github.io/Projects/MD_PhD
-  - name: BIOL 3100 Final
-    url: https://pbischoff3.github.io/Projects/BIOL_3100
-  - name: SPUR Preparation
-    url: https://pbischoff3.github.io/Projects/SPUR_Prep
-  - name: SABER
-    url: https://pbischoff3.github.io/Projects/2023_saber
+  left:
+    - text: Home
+      href: index.html
+    - text: Conferences
+      href: Conferences/index.html
+    - text: R Projects
+      href: Projects/index.html
+      
+  right:
+    - text: Contact
+      href: mailto:portergbischoff@gmail.com
+
+html_document:
+  toc: true
+  theme: simplex
