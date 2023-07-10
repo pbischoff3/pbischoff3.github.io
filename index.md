@@ -5,9 +5,6 @@ output:
     toc: true
     toc_float: true
     theme: sandstone
-editor_options: 
-  markdown: 
-    wrap: 72
 ---
 
 ## About Me

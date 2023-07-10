@@ -5,10 +5,10 @@ output:
     toc: true
     toc_float: true
     theme: sandstone
-editor_options: 
-  markdown: 
-    wrap: 72
 ---
+<body style="background-color:MintCream;">
+
+<h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [R Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
 
 ## About Me
 
