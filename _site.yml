@@ -1,3 +1,4 @@
+---
 title: "Porter"
 navbar:
   left:
@@ -12,6 +13,11 @@ navbar:
     - text: Contact
       href: mailto:portergbischoff@gmail.com
 
-html_document:
-  toc: true
-  theme: simplex
+output:
+  html_document:
+    toc: true
+    theme: simplex
+    keep_md: true
+    self_contained: true
+    site: pbischoff3.github.io
+---
