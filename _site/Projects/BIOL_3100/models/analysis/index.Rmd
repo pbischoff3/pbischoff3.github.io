@@ -1,0 +1,23 @@
+---
+title: "Analysis"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme:
+      bootswatch: superhero
+---
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/Projects/BIOL_3100) | [Data Overview](https://pbischoff3.github.io/Projects/BIOL_3100/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/Projects/BIOL_3100/models/) | [Conclusion](https://pbischoff3.github.io/Projects/BIOL_3100/Conclusion/)</h3>
+
+<h4 style="background-color:bisque;text-align:center;font-size:73%;">[Science Identity](https://pbischoff3.github.io/Projects/BIOL_3100/models/si/) | [Career Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/cm/) | [Intrinsic Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/im/) | [Self-Determination](https://pbischoff3.github.io/Projects/BIOL_3100/models/sd/) | [Self-Efficacy](https://pbischoff3.github.io/Projects/BIOL_3100/models/se/) | [Grade Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/gm)      | [Personal Communal Orientation](https://pbischoff3.github.io/Projects/BIOL_3100/models/per_com_orient/) | [Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/models/analysis/)</h4>
+
+## What does this mean?
+This gives us a basis for comparison with other research papers, to see if our research at UVU falls into place with what other data has found. Also, this gives us a good launching point from where we can perform larger and more complex data analysis.
+
+## Why is this relevant?
+This ultimately gives us the clout we would need to understand this data. This is pretty useful stuff that we can apply to our project. 
+
+![](../../R/Images/models/analysis.gif)
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/Conclusion/)
+
+

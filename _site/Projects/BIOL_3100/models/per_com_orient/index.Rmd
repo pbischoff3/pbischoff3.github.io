@@ -1,0 +1,101 @@
+---
+title: "Personal Communal Orientation"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme:
+      bootswatch: superhero
+---
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/Projects/BIOL_3100) | [Data Overview](https://pbischoff3.github.io/Projects/BIOL_3100/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/Projects/BIOL_3100/models/) | [Conclusion](https://pbischoff3.github.io/Projects/BIOL_3100/Conclusion/)</h3>
+
+<h4 style="background-color:bisque;text-align:center;font-size:73%;">[Science Identity](https://pbischoff3.github.io/Projects/BIOL_3100/models/si/) | [Career Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/cm/) | [Intrinsic Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/im/) | [Self-Determination](https://pbischoff3.github.io/Projects/BIOL_3100/models/sd/) | [Self-Efficacy](https://pbischoff3.github.io/Projects/BIOL_3100/models/se/) | [Grade Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/gm)      | [Personal Communal Orientation](https://pbischoff3.github.io/Projects/BIOL_3100/models/per_com_orient/) | [Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/models/analysis/)</h4>
+
+
+```{r background, message=FALSE, warning=FALSE, include=FALSE}
+source(file = "../../R/Code/01-cleaning_data.R")
+```
+
+Let's check out Personal Communal Orientation models. <br>
+
+## Major
+Let's see the influence that the difference in majors have an the average of Personal Communal Orientation questions:
+<br>
+```{r echo=FALSE}
+pco_mod_1 <- glm(data = df,
+                formula = persol_comm_orient_ave ~ major)
+summary(pco_mod_1)
+```
+<br>
+This shows that difference in Majors may not have an influence on Personal Communal Orientation.  <br>
+
+This is great, but it is difficult to understand this in context until we compare it to the other models. 
+<br>
+
+## Career
+Now, let's look at how career goals affect the average of Personal Communal Orientation questions:
+<br>
+```{r echo=FALSE}
+pco_mod_2 <- glm(data = df,
+                formula = persol_comm_orient_ave ~ career)
+summary(pco_mod_2)
+```
+<br>
+This shows that Educators have significantly higher Personal Communal Orientation and Researchers have significantly lower Personal Communal Orientation.  <br>
+
+Now let's run from another model's point of view. <br>
+
+## Ethnicity
+How about we look at how different ethnicities affect Personal Communal Orientation? <br>
+
+```{r echo=FALSE}
+pco_mod_3 <- glm(data = df,
+                formula = persol_comm_orient_ave ~ ethnicity)
+summary(pco_mod_3)
+```
+<br>
+This shows that those who are Biracial have significantly higher Personal Communal Orientation. <br>
+
+One last model. Let's check it out. 
+
+## Medical Conditions
+Here is the model according to a presence of medical conditions or not. <br>
+```{r echo=FALSE}
+pco_mod_4 <- glm(data = df,
+                formula = persol_comm_orient_ave ~ med_condition)
+summary(pco_mod_4)
+```
+<br>
+
+This shows that Medical Conditions does not have an influence on Personal Communal Orientation.
+
+## Conclusion
+Now that we have those 4 models according to the demographic that we are interested in, let's compare them against each other to see which models were best in determining Personal Communal Orientation. <br>
+
+```{r echo=FALSE}
+compare_models(pco_mod_1,pco_mod_2,pco_mod_3,pco_mod_4, style = "se_p") 
+
+```
+<br> 
+This shows everything that we have performed thus far, but now let's add some statistical analysis to it.
+<br>
+```{r echo=FALSE}
+compare_performance(pco_mod_1,pco_mod_2,pco_mod_3,pco_mod_4) 
+
+```
+<br>
+To put all of this in English, we are most interested in those that have higher R^2 values and lower BIC, AIC, and RMSE values. According to that knowledge, it looks like Major, Ethnicity, and Medical Conditions are the most significant in predicting Personal Communal Orientation. Let's see these together, and with that, we can see whether how they relate. 
+<br>
+
+```{r echo=FALSE}
+pco_mod_5 <- glm(data=df,
+                formula = persol_comm_orient_ave ~ ethnicity + major + med_condition)
+summary(pco_mod_5) 
+
+compare_models(pco_mod_5) %>% plot()
+```
+
+Well awesome, this gives us a great place that we can start in further data analysis in our project. <br><br>
+![](../../R/Images/models/pco.gif)
+
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/models/analysis/)

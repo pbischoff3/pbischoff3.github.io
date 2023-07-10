@@ -1,0 +1,28 @@
+---
+title: "Final Project"
+author: "Porter Bischoff"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme:
+      bootswatch: superhero
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/Projects/BIOL_3100) | [Data Overview](https://pbischoff3.github.io/Projects/BIOL_3100/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/Projects/BIOL_3100/models/) | [Conclusion](https://pbischoff3.github.io/Projects/BIOL_3100/Conclusion/)</h3>
+
+
+## Welcome
+Welcome to my final project for Dr. Zahn's BIOL3100 class. 
+<br> <br>
+
+![](./R/Images/Home/fireworks.gif)
+
+## Navigation
+Click on the links on the top of the page to navigate to different pages or use the **NEXT** button below to follow the presentation in order.
+
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/data_overview/)

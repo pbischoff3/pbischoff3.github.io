@@ -1,0 +1,100 @@
+---
+title: "Self-Efficacy"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme:
+      bootswatch: superhero
+---
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/Projects/BIOL_3100) | [Data Overview](https://pbischoff3.github.io/Projects/BIOL_3100/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/Projects/BIOL_3100/models/) | [Conclusion](https://pbischoff3.github.io/Projects/BIOL_3100/Conclusion/)</h3>
+
+<h4 style="background-color:bisque;text-align:center;font-size:73%;">[Science Identity](https://pbischoff3.github.io/Projects/BIOL_3100/models/si/) | [Career Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/cm/) | [Intrinsic Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/im/) | [Self-Determination](https://pbischoff3.github.io/Projects/BIOL_3100/models/sd/) | [Self-Efficacy](https://pbischoff3.github.io/Projects/BIOL_3100/models/se/) | [Grade Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/gm)      | [Personal Communal Orientation](https://pbischoff3.github.io/Projects/BIOL_3100/models/per_com_orient/) | [Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/models/analysis/)</h4>
+
+
+```{r background, message=FALSE, warning=FALSE, include=FALSE}
+source(file = "../../R/Code/01-cleaning_data.R")
+```
+
+Let's check out Self-Efficacy models. <br>
+
+## Major
+Let's see the influence that the difference in majors have an the average of Self-Efficacy questions:
+<br>
+```{r echo=FALSE}
+se_mod_1 <- glm(data = df,
+                formula = self_efficacy_ave ~ major)
+summary(se_mod_1)
+```
+<br>
+This shows that those who study Health Science and Other majors answer significantly lower Self-Efficacy than the rest of the groups of majors.  <br>
+
+This is great, but it is difficult to understand this in context until we compare it to the other models. 
+<br>
+
+## Career
+Now, let's look at how career goals affect the average of Self-Efficacy questions:
+<br>
+```{r echo=FALSE}
+se_mod_2 <- glm(data = df,
+                formula = self_efficacy_ave ~ career)
+summary(se_mod_2)
+```
+<br>
+This shows that those pursuing Healthcare Professional careers have lower Self-Efficacy than the rest of the career goals. <br>
+
+Now let's run from another model's point of view. <br>
+
+## Ethnicity
+How about we look at how different ethnicities affect Self-Efficacy? <br>
+
+```{r echo=FALSE}
+se_mod_3 <- glm(data = df,
+                formula = self_efficacy_ave ~ ethnicity)
+summary(se_mod_3)
+```
+<br>
+This shows that American Indians, Arabs, Asians, those who are Biracial, Latinx, and Caucasians have significantly higher Self-Efficacy. <br>
+
+One last model. Let's check it out. 
+
+## Medical Conditions
+Here is the model according to a presence of medical conditions or not. <br>
+```{r echo=FALSE}
+se_mod_4 <- glm(data = df,
+                formula = self_efficacy_ave ~ med_condition)
+summary(se_mod_4)
+```
+<br>
+
+This shows that Medical Conditions does not have an influence on Self-Efficacy.
+
+## Conclusion
+Now that we have those 4 models according to the demographic that we are interested in, let's compare them against each other to see which models were best in determining Self-Efficacy. <br>
+
+```{r echo=FALSE}
+compare_models(se_mod_1,se_mod_2,se_mod_3,se_mod_4, style = "se_p") 
+
+```
+<br> 
+This shows everything that we have performed thus far, but now let's add some statistical analysis to it.
+<br>
+```{r echo=FALSE}
+compare_performance(se_mod_1,se_mod_2,se_mod_3,se_mod_4) 
+
+```
+<br>
+To put all of this in English, we are most interested in those that have higher R^2 values and lower BIC, AIC, and RMSE values. According to that knowledge, it looks like all models may be significant in predicting Self-Efficacy. Let's see these together, and with that, we can see whether how they relate. 
+<br>
+
+```{r echo=FALSE}
+se_mod_5 <- glm(data=df,
+                formula = self_efficacy_ave ~ major + ethnicity + career + med_condition)
+summary(se_mod_5) 
+compare_models(se_mod_5) %>% plot()
+```
+
+Well awesome, this gives us a great place that we can start in further data analysis in our project. <br><br>
+![](../../R/Images/models/se.gif)
+
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/models/gm)

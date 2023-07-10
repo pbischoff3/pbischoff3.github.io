@@ -1,0 +1,59 @@
+---
+title: "R Package Creation"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: sandstone
+---
+<body style="background-color:MintCream;">
+
+<h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [R Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
+
+<h4 style="text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) | [SPUR Preparation](https://pbischoff3.github.io/Projects/SPUR_Prep) </h4>
+
+<h4 style="text-align:center;font-size:130%;">[netplot Overview](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) | [R Package Creation](https://pbischoff3.github.io/Projects/SPUR_Prep/package) | [Unit Tests](https://pbischoff3.github.io/Projects/SPUR_Prep/unit) | [Docker](https://pbischoff3.github.io/Projects/SPUR_Prep/docker) </h4>
+<br>
+
+# Basic Instructions
+For this exercise, I wanted to learn how to create a simple package. I followed the instructions on [this site](https://web.mit.edu/insong/www/pdf/rpackage_instructions.pdf)
+
+<br>
+
+First, we cleared the default directory:
+```{r}
+rm(list = ls())
+
+ls()
+```
+<br>
+
+Next, we wrote a simple code for the functions:
+```{r}
+myfun <- function(x){x+7}
+
+myfun2 <- function(x){x*7}
+```
+<br>
+
+Following that, we downloaded the 'devtools' package in order to create packages.
+<br>
+
+Next, we created the project by first going to "File", then "New Project", then "New Directory", followed by "R Package". We create that project. 
+<br>
+
+For the next steps, we manipulated the .Rd files. We built the package, and now the package should work! Let's give it a shot. 
+```{r warning=FALSE}
+library(pPractice)
+
+pPractice::myfun(5)
+
+pPractice::myfun2(5)
+```
+<br> 
+
+Well check that out. Everything works! I just created my first R Package.
+<br><br>
+
+# Building R Package with Command Line
+This is where I would like to explore next, but first, I need to learn more about the command line in my class I am taking.

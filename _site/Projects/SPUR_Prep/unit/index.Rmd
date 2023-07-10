@@ -1,0 +1,50 @@
+---
+title: "Unit Tests"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: sandstone
+---
+<body style="background-color:MintCream;">
+
+<h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [R Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
+
+<h4 style="text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) | [SPUR Preparation](https://pbischoff3.github.io/Projects/SPUR_Prep) </h4>
+
+<h4 style="text-align:center;font-size:130%;">[netplot Overview](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) | [R Package Creation](https://pbischoff3.github.io/Projects/SPUR_Prep/package) | [Unit Tests](https://pbischoff3.github.io/Projects/SPUR_Prep/unit) | [Docker](https://pbischoff3.github.io/Projects/SPUR_Prep/docker) </h4>
+
+# Walkthrough 1- "TestThat Package"
+For this walk through, I followed the information given at [this website](https://www.geeksforgeeks.org/unit-testing-in-r-programming/).
+<br>
+
+First, we need to load the "testthat" package:
+```{r}
+library(testthat)
+```
+<br>
+
+Next, we created a recursive program that calculates the factorial of a number 'n'. 
+```{r}
+factorial <- function(n)
+{
+  if(n == 0)
+  {
+    return(1)
+  }
+  else
+  {
+    return(n * factorial(n-2))
+  }
+}
+```
+<br>
+
+Alright, now some unit testing. Is our function accurate?
+```{r}
+# import testthat package
+library(testthat)
+
+
+```
+There is an issue with this code, and it is something that I will need to discuss with Dr. Zahn.

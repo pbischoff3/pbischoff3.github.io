@@ -1,0 +1,101 @@
+---
+title: "Grade Motivation"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme:
+      bootswatch: superhero
+---
+<h3 style="background-color:bisque;text-align:center;font-size:150%;">[Home](https://pbischoff3.github.io/Projects/BIOL_3100) | [Data Overview](https://pbischoff3.github.io/Projects/BIOL_3100/data_overview/) | [Multi-Dimensional Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/multi_dimensional_analysis/) | [Models](https://pbischoff3.github.io/Projects/BIOL_3100/models/) | [Conclusion](https://pbischoff3.github.io/Projects/BIOL_3100/Conclusion/)</h3>
+
+<h4 style="background-color:bisque;text-align:center;font-size:73%;">[Science Identity](https://pbischoff3.github.io/Projects/BIOL_3100/models/si/) | [Career Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/cm/) | [Intrinsic Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/im/) | [Self-Determination](https://pbischoff3.github.io/Projects/BIOL_3100/models/sd/) | [Self-Efficacy](https://pbischoff3.github.io/Projects/BIOL_3100/models/se/) | [Grade Motivation](https://pbischoff3.github.io/Projects/BIOL_3100/models/gm)      | [Personal Communal Orientation](https://pbischoff3.github.io/Projects/BIOL_3100/models/per_com_orient/) | [Analysis](https://pbischoff3.github.io/Projects/BIOL_3100/models/analysis/)</h4>
+
+
+```{r background, message=FALSE, warning=FALSE, include=FALSE}
+source(file = "../../R/Code/01-cleaning_data.R")
+```
+
+Let's check out Grade Motivation models. <br>
+
+## Major
+Let's see the influence that the difference in majors have an the average of Grade Motivation questions:
+<br>
+```{r echo=FALSE}
+gm_mod_1 <- glm(data = df,
+                formula = grade_mot_ave ~ major)
+summary(gm_mod_1)
+```
+<br>
+This shows that difference in Majors may not have an influence on Grade Motivation.  <br>
+
+This is great, but it is difficult to understand this in context until we compare it to the other models. 
+<br>
+
+## Career
+Now, let's look at how career goals affect the average of Grade Motivation questions:
+<br>
+```{r echo=FALSE}
+gm_mod_2 <- glm(data = df,
+                formula = grade_mot_ave ~ career)
+summary(gm_mod_2)
+```
+<br>
+This shows that Career Goals might not have an influence on Grade Motivation.  <br>
+
+Now let's run from another model's point of view. <br>
+
+## Ethnicity
+How about we look at how different ethnicities affect Grade Motivation? <br>
+
+```{r echo=FALSE}
+gm_mod_3 <- glm(data = df,
+                formula = grade_mot_ave ~ ethnicity)
+summary(gm_mod_3)
+```
+<br>
+This shows that American Indians, Arabs, Asians, those who are Biracial, Latinx, and Caucasians have significantly higher Grade Motivation. <br>
+
+One last model. Let's check it out. 
+
+## Medical Conditions
+Here is the model according to a presence of medical conditions or not. <br>
+```{r echo=FALSE}
+gm_mod_4 <- glm(data = df,
+                formula = grade_mot_ave ~ med_condition)
+summary(gm_mod_4)
+```
+<br>
+
+This shows that Medical Conditions does not have an influence on Grade Motivation.
+
+## Conclusion
+Now that we have those 4 models according to the demographic that we are interested in, let's compare them against each other to see which models were best in determining Grade Motivation. <br>
+
+```{r echo=FALSE}
+compare_models(gm_mod_1,gm_mod_2,gm_mod_3,gm_mod_4, style = "se_p") 
+
+```
+<br> 
+This shows everything that we have performed thus far, but now let's add some statistical analysis to it.
+<br>
+```{r echo=FALSE}
+compare_performance(gm_mod_1,gm_mod_2,gm_mod_3,gm_mod_4) 
+
+```
+<br>
+To put all of this in English, we are most interested in those that have higher R^2 values and lower BIC, AIC, and RMSE values. According to that knowledge, it looks like Ethnicity is the most significant in predicting Grade Motivation. Let's see these together, and with that, we can see whether how they relate. 
+<br>
+
+```{r echo=FALSE}
+gm_mod_5 <- glm(data=df,
+                formula = grade_mot_ave ~ ethnicity)
+summary(gm_mod_5) 
+compare_models(gm_mod_5) %>% plot()
+```
+
+
+Well awesome, this gives us a great place that we can start in further data analysis in our project. <br>
+![](../../R/Images/models/gm.gif)
+
+<h3 style="text-align:right;font-size:180%;">[**NEXT**](https://pbischoff3.github.io/Projects/BIOL_3100/models/per_com_orient/)

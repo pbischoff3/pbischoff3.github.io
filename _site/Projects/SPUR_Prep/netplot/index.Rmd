@@ -1,0 +1,131 @@
+---
+title: "netplot Overview"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: sandstone
+---
+<body style="background-color:MintCream;">
+
+<h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [R Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
+
+<h4 style="text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) | [SPUR Preparation](https://pbischoff3.github.io/Projects/SPUR_Prep) </h4>
+
+<h4 style="text-align:center;font-size:130%;">[netplot Overview](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) | [R Package Creation](https://pbischoff3.github.io/Projects/SPUR_Prep/package) | [Unit Tests](https://pbischoff3.github.io/Projects/SPUR_Prep/unit) | [Docker](https://pbischoff3.github.io/Projects/SPUR_Prep/docker) </h4>
+
+For this walkthrough, I used [this website](https://github.com/USCCANA/netplot) to get a general idea of the package.
+
+First-- installing the packages needed
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(igraph)
+library(igraphdata)
+library(dplyr)
+library(netplot)
+```
+
+Next, creating an actual plot. 
+```{r}
+set.seed(1)
+data("UKfaculty", package = "igraphdata")
+l <- layout_with_fr(UKfaculty)
+
+plot(UKfaculty, layout = l)
+```
+<br>
+This one is messy, but we are starting to get somewhere at least.
+<br>
+<br>
+
+Now, how about one from the nplot package?
+```{r}
+nplot(UKfaculty, layout = l)
+```
+<br>
+
+This is pretty, but it is hard to understand thus far. 
+<br>
+<br>
+
+
+One more different view for comparison. Let's check it out.
+```{r}
+sna::gplot(intergraph::asNetwork(UKfaculty), coord=l)
+```
+
+<br><br>
+
+Obviously, the nplot is the pretty one. How about we make it look better?
+```{r}
+# Random names
+set.seed(1)
+nam <- sample(babynames::babynames$name, vcount(UKfaculty))
+
+ans <- nplot(
+  UKfaculty,
+  layout                = l,
+  vertex.color          = grDevices::hcl.colors(5, "Plasma")[V(UKfaculty)$Group + 1],
+  vertex.label          = nam,
+  vertex.size.range     = c(.01, .04, 4),
+  vertex.label.col      =  "black",
+  vertex.label.fontface = "bold",
+  bg.col                = "transparent",
+  vertex.label.show     = .5,
+  vertex.label.range    = c(10, 25),
+  edge.width.range      = c(1, 4, 5)
+  )
+
+
+# Plot it!
+ans
+```
+
+<br><br>
+
+Awesome, this is cool. Now let's throw it all together.
+```{r}
+# Loading the data
+data(USairports, package="igraphdata")
+
+# Generating a layout naively
+layout   <- V(USairports)$Position
+layout   <- do.call(rbind, lapply(layout, function(x) strsplit(x, " ")[[1]]))
+layout[] <- stringr::str_remove(layout, "^[a-zA-Z]+")
+layout   <- matrix(as.numeric(layout[]), ncol=2)
+
+# Some missingness
+layout[which(!complete.cases(layout)), ] <- apply(layout, 2, mean, na.rm=TRUE)
+
+# Have to rotate it (it doesn't matter the origin)
+layout <- netplot:::rotate(layout, c(0,0), pi/2)
+
+# Simplifying the network
+net <- simplify(USairports, edge.attr.comb = list(
+  weight = "sum",
+  name   = "concat",
+  Passengers = "sum",
+  "ignore"
+))
+
+# Getting a pretty color
+
+f <- 1.5
+col <- adjustcolor(
+  rev(grDevices::hcl.colors(8, alpha = .5))[1],
+  red.f = f, blue.f = f, green.f = f
+  )
+
+nplot(
+  net,
+  layout            = layout,
+  edge.width        = E(net)$Passengers,
+  vertex.color      = col,
+  skip.vertex       = TRUE,
+  skip.arrows       = TRUE,
+  edge.width.range  = c(.75, 4, 4), 
+  bg.col            = "black",
+  edge.line.breaks  = 10
+  )
+```
+
+Well that's gorgeous.
