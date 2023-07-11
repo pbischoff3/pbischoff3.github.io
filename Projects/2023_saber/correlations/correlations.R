@@ -25,10 +25,6 @@ df[-1] <- sapply(df[-1], function(x) as.numeric(gsub("\\**", "", x)))
 # View the reformatted dataframe
 df
 
-# Install and load the 'corrplot' package
-# install.packages("corrplot")
-library(corrplot)
-
 # Create a subset of the dataframe without the first row and column
 df_subset <- df[-1, -1]
 
@@ -41,18 +37,25 @@ row_labels <- unname(df[-1, 1])
 # Convert the subset to a correlation matrix
 corr_matrix <- cor(df_subset)
 
-# Create the correlation plot using corrplot
-plot <- corrplot(corr_matrix, type = 'lower', method = 'color', tl.col = "black", tl.srt = 45)
+# Define the bottom and top colors for the gradient
+bottom_color <- "#074EAB"
+top_color <- "#275d38"
+
+# Create a gradient of colors from bottom to top, passing through white
+n_colors <- 100  # Number of colors in the gradient
+colors <- c(colorRampPalette(c(bottom_color, "white"))(n_colors / 2), colorRampPalette(c("white", top_color))(n_colors / 2))
+
+# Create the correlation plot using corrplot with the gradient colors
+corrplot(corr_matrix, type = 'lower', method = 'color', tl.col = "black", tl.srt = 45, col = colors)
 
 
 ## To Save####
 # Save the plot as a PNG file
-##png(file = "Projects/2023_saber/plots/correlations.png", width = 800, height = 600, bg = "transparent")
-# Replace "/path/to/save/plot.png" with your desired file path
+png(file = "Projects/2023_saber/plots/correlations.png", width = 800, height = 600, bg = "transparent")
 
 # Plot the correlation matrix
-##corrplot(corr_matrix, type = 'lower', method = 'color', tl.col = "black", tl.srt = 45)
+corrplot(corr_matrix, type = 'lower', method = 'color', tl.col = "black", tl.srt = 45, col = colors)
 
 # Close the PNG device
-## dev.off()
+ dev.off()
 
