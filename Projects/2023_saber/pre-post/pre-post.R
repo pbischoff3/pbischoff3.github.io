@@ -56,7 +56,7 @@ for (i in seq_along(pair_names)) {
 }
 
 # Combine graphs into a grid
-combined_plot <- grid.arrange(grobs = graphs, nrow = 2, ncol = 3, padding = unit(10, "cm"))
+combined_plot <- grid.arrange(grobs = graphs, nrow = 3, ncol = 2, padding = unit(10, "cm"))
 
 # Display the combined plot
 print(combined_plot)
@@ -66,8 +66,8 @@ file_path <- "Projects/2023_saber/plots/"
 file_name <- "pre_post_mean.PNG"
 
 # Set the width and height in inches
-width <- 11.5
-height <- 7.9
+width <- 17.5 
+height <- 24.166667
 
 # Save the combined plot as a PNG file
 ggsave(file = paste0(file_path, file_name), plot = combined_plot, width = width, height = height)
