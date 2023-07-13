@@ -29,7 +29,7 @@ experience_colors <- c(
 
 # Create the waffle chart
 chart <- waffle(counts,
-                rows = 10,  # Number of rows in the chart
+                rows = 5,  # Number of rows in the chart
                 colors = experience_colors,  # Colors for each category
                 size = 0.7,  # Size of each waffle block
                 title = "Medical Experience") + # Chart title
@@ -39,8 +39,8 @@ chart
 
 # Set the file path
 file_path <- "Projects/2023_saber/plots/medical.png"
-width <- 600
-height <- 600
+width <- 1050
+height <- 330
 
 # Save the chart as a PNG file with specified dimensions
 png(file_path, width = width, height = height, res = 96)

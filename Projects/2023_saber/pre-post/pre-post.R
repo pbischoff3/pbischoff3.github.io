@@ -38,7 +38,7 @@ for (i in seq_along(pair_names)) {
     geom_bar(stat = "identity", position = "dodge") +
     geom_errorbar(aes(ymin = Mean - Std.Error.Mean, ymax = Mean + Std.Error.Mean),
                   position = position_dodge(width = 0.9), width = 0.25) +
-    labs(x = "Number of Medical Interruptions", y = "Mean") +
+    labs(x = "Rate of Medical Interruptions", y = "Pre/Post Semester Change") +
     ggtitle(new_pair_names[i]) +
     scale_fill_manual(values = color_gradient(length(unique(pair_data$interruptions)))) +
     theme_minimal() +
@@ -68,6 +68,7 @@ file_name <- "pre_post_mean.PNG"
 # Set the width and height in inches
 width <- 17.5 
 height <- 24.166667
+
 
 # Save the combined plot as a PNG file
 ggsave(file = paste0(file_path, file_name), plot = combined_plot, width = width, height = height)
