@@ -41,6 +41,7 @@ for (i in seq_along(pair_names)) {
     labs(x = "Rate of Medical Interruptions", y = "Pre/Post Semester Change") +
     ggtitle(new_pair_names[i]) +
     scale_fill_manual(values = color_gradient(length(unique(pair_data$interruptions)))) +
+    scale_x_discrete(labels = c("0" = "Control")) +  # Modify labels for "0"
     theme_minimal() +
     theme(legend.position = "none") +
     theme(panel.border = element_rect(color = "black", fill = NA))
@@ -68,7 +69,6 @@ file_name <- "pre_post_mean.PNG"
 # Set the width and height in inches
 width <- 17.5 
 height <- 24.166667
-
 
 # Save the combined plot as a PNG file
 ggsave(file = paste0(file_path, file_name), plot = combined_plot, width = width, height = height)
