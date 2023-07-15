@@ -14,7 +14,7 @@ output:
 
 <h5 style="text-align:center;font-size:125%;">[Introduction](https://pbischoff3.github.io/Projects/2023_saber/intro) | [Methods](https://pbischoff3.github.io/Projects/2023_saber/methods) | [Results](https://pbischoff3.github.io/Projects/2023_saber/results) | [Conclusion](https://pbischoff3.github.io/Projects/2023_saber/conclusion)</h5>.
 
-## General Methods
+## Methods Background
 We used an adapted survey from other literature to find information regarding STEM motivation. This survey was given pre-semester and post-semester to 14 different Biology courses at Utah Valley University. These classes had students who were both STEM majors and non-majors, as these classes were generally General Education classes. Utah Valley University is an open enrollment institution, making this data an interesting set to explore. 
 
 390 students answered the pre/post-semester surveys. We have a large number of pre-semester data, but only 390 responded to both the beginning and end of the semester survey.
