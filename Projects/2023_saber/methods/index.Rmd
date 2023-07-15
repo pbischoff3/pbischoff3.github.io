@@ -1,0 +1,97 @@
+---
+title: "Methods"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: sandstone
+---
+<body style="background-color:MintCream;">
+
+<h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [R Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
+
+<h4 style="text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) | [SPUR Preparation](https://pbischoff3.github.io/Projects/SPUR_Prep) | [SABER](https://pbischoff3.github.io/Projects/2023_saber) </h4>
+
+<h5 style="text-align:center;font-size:125%;">[Introduction](https://pbischoff3.github.io/Projects/2023_saber/intro) | [Methods](https://pbischoff3.github.io/Projects/2023_saber/methods) | [Results](https://pbischoff3.github.io/Projects/2023_saber/results) | [Conclusion](https://pbischoff3.github.io/Projects/2023_saber/conclusion)</h5>.
+
+```{r message=FALSE, warning=FALSE}
+# Load the required package
+library(knitr)
+
+# Create the data frame
+data <- data.frame(
+  "Science Identity" = c(
+    "I see myself as a biology person.",
+    "I see myself as a science person.",
+    "I see myself as a scientist.",
+    "Other people (friends/family) see me as a science person.",
+    "My science instructors see me as a science person."
+  ),
+  "Career Motivation" = c(
+    "Learning science will help me get a good job.",
+    "Understanding science will benefit me in my career.",
+    "Knowing science will give me a career advantage.",
+    "I will use science problem-solving skills in my career.",
+    "My career will involve science."
+  ),
+  "Instrinsic Motivation" = c(
+    "Learning science is interesting.",
+    "I am curious about discoveries in science.",
+    "The science I learn is relevant to my life.",
+    "Learning science makes my life more meaningful.",
+    "I enjoy learning science."
+  ),
+  "Self-Determination" = c(
+    "I study hard to learn science.",
+    "I prepare well for science tests and labs.",
+    "I put enough effort into learning science.",
+    "I spend a lot of time learning science.",
+    "I use strategies to learn science well."
+  ),
+  "Self-Efficacy" = c(
+    "I am confident that I will do well on science labs and projects.",
+    "I believe I can earn a grade of 'A' in science.",
+    "I am confident I will do well on science tests.",
+    "I believe I can master science knowledge and skills."
+  ),
+  "Grade Motivation" = c(
+    "Scoring high on science tests and labs matters to me.",
+    "It is important that I get an 'A' in science.",
+    "I think about the grade I will get in science.",
+    "Getting a good science grade is important to me.",
+    "I like to do better than other students on science tests."
+  ),
+  "Value of Peer Interactions" = c(
+    "My college science classes are more enjoyable when I work with other students.",
+    "I understand more when my classmates participate in college classroom discussions.",
+    "I learn best in college science classes when I work with classmates.",
+    "The amount I understand is increased by classmates' ideas in my college science classes.",
+    "When classmates share their ideas in college science classes, this helps me learn."
+  ),
+  "Sense of Belonging" = c(
+    "When I am in a science setting, I feel a connection with the science community.",
+    "When I am in a science setting, I feel respected.",
+    "When I am in a science setting, I feel comfortable.",
+    "When I am in a science setting, I trust my instructors to be committed to helping me learn.",
+    "When I am in a science setting, I enjoy being an active participant.",
+    "When I am in a science setting, I try to say as little as possible."
+  ),
+  "Competency in Science" = c(
+    "I am good at solving complicated scientific problems.",
+    "I read website articles or books about scientific issues.",
+    "I work on a project involving scientific concepts.",
+    "I think about how my life is affected by science."
+  ),
+  "Community in Science" = c(
+    "To what extent is serving the community important to scientific work?",
+    "To what extent is working with people important to scientific work?",
+    "To what extent is helping others important to scientific work?",
+    "To what extent is connecting with others important to scientific work?"
+  )
+)
+
+# Print the table
+kable(data, format = "html")
+
+```
+
