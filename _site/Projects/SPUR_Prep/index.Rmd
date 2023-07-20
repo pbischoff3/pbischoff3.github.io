@@ -1,0 +1,22 @@
+---
+title: "SPUR Preparation"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: sandstone
+---
+<body style="background-color:MintCream;">
+
+<h3 style="text-align:center;font-size:185%;">[Home](https://pbischoff3.github.io/)  |  [Conferences](https://pbischoff3.github.io/Conferences) | [R Projects](https://pbischoff3.github.io/Projects)   |   [Publications](https://pbischoff3.github.io/Publications)  |  [Medical Hours](https://pbischoff3.github.io/Hours)</h3>
+
+<h4 style="text-align:center;font-size:150%;">[MD PhD](https://pbischoff3.github.io/Projects/MD_PhD) | [BIOL 3100 Final](https://pbischoff3.github.io/Projects/BIOL_3100) | [SPUR Preparation](https://pbischoff3.github.io/Projects/SPUR_Prep) </h4>
+
+<h4 style="text-align:center;font-size:130%;">[netplot Overview](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) | [R Package Creation](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) | [Unit Tests](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) | [Docker](https://pbischoff3.github.io/Projects/SPUR_Prep/netplot) </h4>
+
+"[SPUR (Summer Program of Undergraduate Research)](https://our.utah.edu/research-scholarship-opportunities/spur/) is a nationally competitive opportunity that provides undergraduate students with an intensive 10-week summer research experience under the mentorship of a University of Utah faculty member. The program provides opportunities to gain research experience in a variety of disciplines."
+
+This is a program I plan to apply to for Summer of 2023. Under these tabs, you can find the activities that I went through to become a better applicant. 
+
+<center>
+![](logo.png)

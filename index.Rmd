@@ -5,6 +5,8 @@ output:
     toc: true
     toc_float: true
     theme: sandstone
+    includes: 
+      in_header: analytics.html
 ---
 <body style="background-color:MintCream;">
 
