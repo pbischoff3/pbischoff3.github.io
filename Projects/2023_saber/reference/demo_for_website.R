@@ -25,9 +25,8 @@ pal <- c(
 chart <- waffle(counts,
                 rows = 10,  # Number of rows in the chart
                 colors = pal,  # Colors for each category
-                size = 0.7,  # Size of each waffle block
-                title = "Major") +
-  theme(legend.position = "bottom")  # Move legend to the bottom of the graph
+                size = 0.7) +  # Size of each waffle block
+  theme(legend.position = "bottom")
 
 chart
 
@@ -70,9 +69,8 @@ pal <- c(
 chart <- waffle(counts,
                 rows = 10,  # Number of rows in the chart
                 colors = pal,  # Colors for each category
-                size = 0.7,  # Size of each waffle block
-                title = "Class Year") +
-  theme(legend.position = "bottom")  # Move legend to the bottom of the graph
+                size = 0.7) +  # Size of each waffle block
+              theme(legend.position = "bottom")  # Move legend to the bottom of the graph
 
 chart
 
@@ -106,8 +104,7 @@ career_colors <- c(
 chart <- waffle(counts,
                 rows = 10,  # Number of rows in the chart
                 colors = career_colors,  # Colors for each category
-                size = 0.7,  # Size of each waffle block
-                title = "Career Aspiration") + 
+                size = 0.7) +  # Size of each waffle block
   theme(legend.position = "bottom")  # Move legend to the bottom of the graph
 
 chart
@@ -165,8 +162,7 @@ pal <- c(
 chart <- waffle(counts,
                 rows = 10,  # Number of rows in the chart
                 colors = pal,  # Colors for each category
-                size = 0.7,  # Size of each waffle block
-                title = "Ethnicity") +
+                size = 0.7) +  # Size of each waffle block
   theme(legend.position = "bottom")  # Move legend to the bottom of the graph
 
 chart
@@ -218,8 +214,7 @@ pal <- c(
 chart <- waffle(counts,
                 rows = 10,  # Number of rows in the chart
                 colors = pal,  # Colors for each category
-                size = 0.7,  # Size of each waffle block
-                title = "Gender Representation") +
+                size = 0.7) +  # Size of each waffle block
   theme(legend.position = "bottom")  # Move legend to the bottom of the graph
 
 chart
@@ -265,8 +260,7 @@ pal <- c(
 chart <- waffle(counts,
                 rows = 10,  # Number of rows in the chart
                 colors = pal,  # Colors for each category
-                size = 0.7,  # Size of each waffle block
-                title = "Religious?") +
+                size = 0.7) +  # Size of each waffle block
   theme(legend.position = "bottom")  # Move legend to the bottom of the graph
 
 chart
@@ -312,8 +306,7 @@ pal <- c(
 chart <- waffle(counts,
                 rows = 10,  # Number of rows in the chart
                 colors = pal,  # Colors for each category
-                size = 0.7,  # Size of each waffle block
-                title = "FGS?") +
+                size = 0.7) +  # Size of each waffle block
   theme(legend.position = "bottom")  # Move legend to the bottom of the graph
 
 chart
@@ -340,13 +333,12 @@ experience_colors <- c(
 chart <- waffle(counts,
                 rows = 10,  # Number of rows in the chart
                 colors = experience_colors,  # Colors for each category
-                size = 0.7,  # Size of each waffle block
-                title = "Medical Experience") + # Chart title
+                size = 0.7) +  # Size of each waffle block
   theme(legend.position = "bottom")  # Move legend to the bottom of the graph
 
 chart
 
-# medical condition####
+# chronic condition####
 # Load required library
 library(waffle)
 
@@ -387,8 +379,7 @@ pal <- c(
 chart <- waffle(counts,
                 rows = 10,  # Number of rows in the chart
                 colors = pal,  # Colors for each category
-                size = 0.7,  # Size of each waffle block
-                title = "Chronic Condition?") +
+                size = 0.7) +  # Size of each waffle block
   theme(legend.position = "bottom")  # Move legend to the bottom of the graph
 
 chart
