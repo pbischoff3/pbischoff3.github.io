@@ -50,7 +50,10 @@ website:
       - icon: github
         href: https://github.com/pbischoff3
         target: _blank
-      - icon: envelope
+      - icon: linkedin
+        href: https://www.linkedin.com/in/porter-bischoff/
+        target: _blank
+      - icon: envelope-fill
         href: mailto:portergbischoff@gmail.com
         
 format:
