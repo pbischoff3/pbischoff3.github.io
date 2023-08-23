@@ -1,0 +1,639 @@
+---
+title: "Results"
+---
+Please see the following for the results we got for each demographic group. To see the R code for this, [follow this link](https://github.com/pbischoff3/pbischoff3.github.io/blob/main/Projects/2023_saber/reference/)! <br>
+
+
+
+# Demographics
+<small> *Each block represents 1%, but there are some demographics that have less than 1%. These are identified by 1 block, though they are smaller than the 1%.* </small>
+
+## Major
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Load required library
+library(waffle)
+
+# Define the data
+career_aspiration <- c(
+  "Biology" = 109,
+  "Non-biology STEM" = 59,
+  "Pre-Professional" = 80,
+  "Non-STEM" = 142
+)
+
+# Calculate the adjusted counts based on a 10x10 grid
+counts <- round(career_aspiration / sum(career_aspiration) * 100)
+
+# Define the color palette for each career aspiration
+pal <- c(
+  "Biology" = "#275d38",
+  "Non-biology STEM" = "#8BD8F0",
+  "Pre-Professional" = "#A6D19F",
+  "Non-STEM" = "#074EAB"
+)
+
+# Create the waffle chart with distinct colors
+chart <- waffle(counts,
+                rows = 10,  # Number of rows in the chart
+                colors = pal,  # Colors for each category
+                size = 0.7) +  # Size of each waffle block
+  theme(legend.position = "bottom")
+
+chart
+```
+
+<br>
+
+The data indicates the distribution of career aspirations among the respondents. Approximately 29% of them expressed an interest in Biology, while Non-biology STEM fields accounted for around 16% of the responses. Pre-Professional aspirations represented approximately 21% of the respondents, and Non-STEM career paths comprised about 34% of the total aspirations reported.
+
+<br>
+
+## Year in School
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Load required library
+library(waffle)
+
+# Define the data
+class_year <- c(
+  "Freshman" = 132,
+  "Sophomore" = 112,
+  "Junior" = 66,
+  "Senior" = 80
+)
+
+# Calculate the adjusted percentages to have a total of 100 squares
+total_squares <- 100
+adjusted_percentages <- class_year / sum(class_year) * total_squares
+
+# Round down the adjusted percentages to integers
+counts <- floor(adjusted_percentages)
+
+# Calculate the difference between the desired total squares and the current count
+remaining_squares <- total_squares - sum(counts)
+
+# Distribute the remaining squares to the categories with the highest fractional part
+frac_parts <- adjusted_percentages - counts
+sorted_indices <- order(frac_parts, decreasing = TRUE)
+counts[sorted_indices[1:remaining_squares]] <- counts[sorted_indices[1:remaining_squares]] + 1
+
+# Define the color palette for each class year
+pal <- c(
+  "Freshman" = "#275d38",
+  "Sophomore" = "#8BD8F0",
+  "Junior" = "#A6D19F",
+  "Senior" = "#074EAB"
+)
+
+# Create the waffle chart with distinct colors
+chart <- waffle(counts,
+                rows = 10,  # Number of rows in the chart
+                colors = pal,  # Colors for each category
+                size = 0.7) +  # Size of each waffle block
+              theme(legend.position = "bottom")  # Move legend to the bottom of the graph
+
+chart
+```
+
+<br>
+
+The data represents the distribution of students across different academic years. Among the students surveyed, 36% were Freshmen, 31% were Sophomores, 18% were Juniors, and the remaining 22% were Seniors.
+
+<br>
+
+## Career Aspiration
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(waffle)
+
+# Define the data
+career_aspiration <- c(
+  "Doctor" = 51,
+  "Dentist" = 28,
+  "Health Care Professional" = 80,
+  "STEM Professional" = 77,
+  "Non-STEM" = 154
+)
+
+# Calculate the adjusted counts based on a 10x10 grid
+counts <- round(career_aspiration / sum(career_aspiration) * 100)
+
+# Define colors for each career aspiration
+career_colors <- c(
+  "Doctor" = "#275d38",
+  "Dentist" = "#8BD8F0",
+  "Health Care Professional" = "#A6D19F",
+  "STEM Professional" = "#A391CF",
+  "Non-STEM" = "#074EAB"
+)
+
+# Create the waffle chart with distinct shades of green
+chart <- waffle(counts,
+                rows = 10,  # Number of rows in the chart
+                colors = career_colors,  # Colors for each category
+                size = 0.7) +  # Size of each waffle block
+  theme(legend.position = "bottom")  # Move legend to the bottom of the graph
+
+chart
+```
+
+<br>
+
+Non-STEM took the largest percent of the graph with 39%. STEM professionals took nearly twenty percent (20%), which was similar to the 21% of those who wished to be health care professionals. Those who wish to be a dentist or a doctor took a combined 20% (with those who wish to be dentists taking 7% and those who wished to be doctors taking 13%).
+
+<br>
+
+## Ethnicity
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Load required library
+library(waffle)
+
+# Define the data
+ethnicity_data <- c(
+  "Black" = 8,
+  "Native American" = 3,
+  "Middle Eastern" = 1,
+  "Asian" = 19,
+  "Latina/o" = 32,
+  "Multiracial" = 8,
+  "Pacific Islander" = 5,
+  "White" = 314
+)
+
+# Calculate the adjusted percentages to have a total of 100 squares
+total_squares <- 100
+adjusted_percentages <- ethnicity_data / sum(ethnicity_data) * total_squares
+
+# Round down the adjusted percentages to integers for categories with more than 1%
+counts <- floor(adjusted_percentages[adjusted_percentages >= 1])
+
+# Calculate the remaining squares for categories with less than 1%
+remaining_squares <- total_squares - sum(counts)
+
+# Identify categories with less than 1% representation and allocate one square to each
+counts_below_1_percent <- adjusted_percentages[adjusted_percentages < 1]
+counts_below_1_percent <- ifelse(counts_below_1_percent > 0, 1, 0)
+remaining_squares <- remaining_squares - sum(counts_below_1_percent)
+
+# Distribute the remaining squares to categories with more than 1% representation
+counts <- c(counts, counts_below_1_percent)
+frac_parts <- adjusted_percentages[adjusted_percentages >= 1] - counts[adjusted_percentages >= 1]
+sorted_indices <- order(frac_parts, decreasing = TRUE)
+counts[sorted_indices[1:remaining_squares]] <- counts[sorted_indices[1:remaining_squares]] + 1
+
+# Define the color palette for each ethnicity category
+pal <- c(
+  "Black" = "#275d38",
+  "Native American" = "#8BD8F0",
+  "Middle Eastern" = "#A6D19F",
+  "Asian" = "#A391CF",
+  "Latina/o" = "#074EAB",
+  "Multiracial" = "#BA56CC",
+  "Pacific Islander" = "#25B81D",
+  "White" = "#76A398"
+)
+
+# Create the waffle chart with distinct colors
+chart <- waffle(counts,
+                rows = 10,  # Number of rows in the chart
+                colors = pal,  # Colors for each category
+                size = 0.7) +  # Size of each waffle block
+  theme(legend.position = "bottom")  # Move legend to the bottom of the graph
+
+chart
+```
+
+<br>
+
+The data illustrates the racial and ethnic distribution of the surveyed individuals. Among the respondents, 1.6% identified as Black, 0.6% as Native American, 0.2% as Middle Eastern, 3.8% as Asian, 6.4% as Latina/o, 1.6% as Multiracial, 1% as Pacific Islander, and the majority, 78.7%, identified as White.
+
+<br>
+
+## Gender
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Load required library
+library(waffle)
+
+# Define the data
+gender_data <- c(
+  "Men" = 201,
+  "Transgender" = 2,
+  "Women" = 182,
+  "Fluid / Gender Non-Conforming" = 5
+)
+
+# Calculate the adjusted percentages to have a total of 100 squares
+total_squares <- 100
+adjusted_percentages <- gender_data / sum(gender_data) * total_squares
+
+# Round down the adjusted percentages to integers for categories with more than 1%
+counts <- floor(adjusted_percentages[adjusted_percentages >= 1])
+
+# Calculate the remaining squares for categories with less than 1%
+remaining_squares <- total_squares - sum(counts)
+
+# Identify categories with less than 1% representation and allocate one square to each
+counts_below_1_percent <- adjusted_percentages[adjusted_percentages < 1]
+counts_below_1_percent <- ifelse(counts_below_1_percent > 0, 1, 0)
+remaining_squares <- remaining_squares - sum(counts_below_1_percent)
+
+# Distribute the remaining squares to categories with more than 1% representation
+counts <- c(counts, counts_below_1_percent)
+frac_parts <- adjusted_percentages[adjusted_percentages >= 1] - counts[adjusted_percentages >= 1]
+sorted_indices <- order(frac_parts, decreasing = TRUE)
+counts[sorted_indices[1:remaining_squares]] <- counts[sorted_indices[1:remaining_squares]] + 1
+
+# Define the color palette for each gender category
+pal <- c(
+  "Men" = "#275d38",
+  "Transgender" = "#8BD8F0",
+  "Women" = "#A6D19F",
+  "Fluid / Gender Non-Conforming" = "#074EAB"
+)
+
+# Create the waffle chart with distinct colors
+chart <- waffle(counts,
+                rows = 10,  # Number of rows in the chart
+                colors = pal,  # Colors for each category
+                size = 0.7) +  # Size of each waffle block
+  theme(legend.position = "bottom")  # Move legend to the bottom of the graph
+
+chart
+```
+
+<br>
+
+The data represents the gender distribution of the respondents. Among those surveyed, 50.8% identified as Men, 0.5% as Transgender, 46% as Women, and 1.3% as Fluid / Gender Non-Conforming.
+
+<br>
+
+## Religious?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Load required library
+library(waffle)
+
+# Define the data
+religion_data <- c(
+  "Non-Religious" = 106,
+  "Religious" = 284
+)
+
+# Calculate the adjusted percentages to have a total of 100 squares
+total_squares <- 100
+adjusted_percentages <- religion_data / sum(religion_data) * total_squares
+
+# Round down the adjusted percentages to integers for categories with more than 1%
+counts <- floor(adjusted_percentages[adjusted_percentages >= 1])
+
+# Calculate the remaining squares for categories with less than 1%
+remaining_squares <- total_squares - sum(counts)
+
+# Identify categories with less than 1% representation and allocate one square to each
+counts_below_1_percent <- adjusted_percentages[adjusted_percentages < 1]
+counts_below_1_percent <- ifelse(counts_below_1_percent > 0, 1, 0)
+remaining_squares <- remaining_squares - sum(counts_below_1_percent)
+
+# Distribute the remaining squares to categories with more than 1% representation
+counts <- c(counts, counts_below_1_percent)
+frac_parts <- adjusted_percentages[adjusted_percentages >= 1] - counts[adjusted_percentages >= 1]
+sorted_indices <- order(frac_parts, decreasing = TRUE)
+counts[sorted_indices[1:remaining_squares]] <- counts[sorted_indices[1:remaining_squares]] + 1
+
+# Define the color palette for each religion category
+pal <- c(
+  "Non-Religious" = "#275d38",
+  "Religious" = "#8BD8F0"
+)
+
+# Create the waffle chart with distinct colors
+chart <- waffle(counts,
+                rows = 10,  # Number of rows in the chart
+                colors = pal,  # Colors for each category
+                size = 0.7) +  # Size of each waffle block
+  theme(legend.position = "bottom")  # Move legend to the bottom of the graph
+
+chart
+```
+
+<br>
+
+The data indicates the distribution of respondents based on their religious affiliations. Among those surveyed, approximately 27% identified as Non-Religious, while around 73% identified as Religious.
+
+<br>
+
+## First Generation Student?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Load required library
+library(waffle)
+
+# Define the data
+generation_data <- c(
+  "Continuing Generation Student" = 290,
+  "First Generation Student" = 93
+)
+
+# Calculate the adjusted percentages to have a total of 100 squares
+total_squares <- 100
+adjusted_percentages <- generation_data / sum(generation_data) * total_squares
+
+# Round down the adjusted percentages to integers for categories with more than 1%
+counts <- floor(adjusted_percentages[adjusted_percentages >= 1])
+
+# Calculate the remaining squares for categories with less than 1%
+remaining_squares <- total_squares - sum(counts)
+
+# Identify categories with less than 1% representation and allocate one square to each
+counts_below_1_percent <- adjusted_percentages[adjusted_percentages < 1]
+counts_below_1_percent <- ifelse(counts_below_1_percent > 0, 1, 0)
+remaining_squares <- remaining_squares - sum(counts_below_1_percent)
+
+# Distribute the remaining squares to categories with more than 1% representation
+counts <- c(counts, counts_below_1_percent)
+frac_parts <- adjusted_percentages[adjusted_percentages >= 1] - counts[adjusted_percentages >= 1]
+sorted_indices <- order(frac_parts, decreasing = TRUE)
+counts[sorted_indices[1:remaining_squares]] <- counts[sorted_indices[1:remaining_squares]] + 1
+
+# Define the color palette for each generation category
+pal <- c(
+  "Continuing Generation Student" = "#275d38",
+  "First Generation Student" = "#8BD8F0"
+)
+
+# Create the waffle chart with distinct colors
+chart <- waffle(counts,
+                rows = 10,  # Number of rows in the chart
+                colors = pal,  # Colors for each category
+                size = 0.7) +  # Size of each waffle block
+  theme(legend.position = "bottom")  # Move legend to the bottom of the graph
+
+chart
+```
+
+<br>
+
+The data represents the distribution of students based on their generational status. Among those surveyed, approximately 76% identified as Continuing Generation Students (at least one parent attended college), while around 24% identified as First Generation Students (no parents attended college).
+
+<br>
+
+## Medical Experience?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(waffle)
+
+# Define the data
+medical_experience <- c(
+  "No" = 167,
+  "Yes" = 223
+)
+
+# Calculate the counts based on a 10x10 grid
+counts <- round(medical_experience / sum(medical_experience) * 100)
+
+# Define colors for each category
+experience_colors <- c(
+  "No" = "#8BD8F0",
+  "Yes" = "#275d38"
+)
+
+# Create the waffle chart
+chart <- waffle(counts,
+                rows = 10,  # Number of rows in the chart
+                colors = experience_colors,  # Colors for each category
+                size = 0.7) +  # Size of each waffle block
+  theme(legend.position = "bottom")  # Move legend to the bottom of the graph
+
+chart
+```
+
+<br>
+
+The data illustrates the percentage of those who identified to have had a medical experience. Among those surveyed, approximately 44% answered "No" while around 56% answered "Yes".
+
+<br>
+
+## Chronic Condition?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Load required library
+library(waffle)
+
+# Define the data
+response_data <- c(
+  "No" = 127,
+  "Yes" = 86
+)
+
+# Calculate the adjusted percentages to have a total of 100 squares
+total_squares <- 100
+adjusted_percentages <- response_data / sum(response_data) * total_squares
+
+# Round down the adjusted percentages to integers for categories with more than 1%
+counts <- floor(adjusted_percentages[adjusted_percentages >= 1])
+
+# Calculate the remaining squares for categories with less than 1%
+remaining_squares <- total_squares - sum(counts)
+
+# Identify categories with less than 1% representation and allocate one square to each
+counts_below_1_percent <- adjusted_percentages[adjusted_percentages < 1]
+counts_below_1_percent <- ifelse(counts_below_1_percent > 0, 1, 0)
+remaining_squares <- remaining_squares - sum(counts_below_1_percent)
+
+# Distribute the remaining squares to categories with more than 1% representation
+counts <- c(counts, counts_below_1_percent)
+frac_parts <- adjusted_percentages[adjusted_percentages >= 1] - counts[adjusted_percentages >= 1]
+sorted_indices <- order(frac_parts, decreasing = TRUE)
+counts[sorted_indices[1:remaining_squares]] <- counts[sorted_indices[1:remaining_squares]] + 1
+
+# Define the color palette for each response category
+pal <- c(
+  "No" = "#8BD8F0",
+  "Yes" = "#275d38"
+)
+
+# Create the waffle chart with distinct colors
+chart <- waffle(counts,
+                rows = 10,  # Number of rows in the chart
+                colors = pal,  # Colors for each category
+                size = 0.7) +  # Size of each waffle block
+  theme(legend.position = "bottom")  # Move legend to the bottom of the graph
+
+chart
+```
+
+<br>
+
+Of those who identified as had a medical experience, approximately 60% answered "No" while around 40% answered "Yes" to whether they have a chronic condition.
+
+# Correlations
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Install and load the 'readr' package for reading the data
+# install.packages("readr")
+library(readr)
+library(corrplot)
+
+# Create a variable with the dataset
+data <- "Variable,Sci_Ident_AVE,Sci_Engagement_Ave,Sci_SenseOfBelong_Ave,Sci_Career_Mot_AVE,Sci_Interest_Ave,Self_Determin_Ave,Self_Efficacy_Ave,Value_Peers_Ave,Communal_Sci_Ave,Med_interrupt_academics
+Sci_Ident_AVE,1,.664**,.602**,.579**,.676**,.452**,.523**,.110*,.261**,-0.001
+Sci_Engagement_Ave,.664**,1,.601**,.507**,.609**,.448**,.454**,.158**,.285**,0.102
+Sci_SenseOfBelong_Ave,.602**,.601**,1,.471**,.583**,.497**,.532**,.312**,.315**,-.150*
+Sci_Career_Mot_AVE,.579**,.507**,.471**,1,.581**,.425**,.440**,.247**,.257**,0.006
+Sci_Interest_Ave,.676**,.609**,.583**,.581**,1,.520**,.500**,.189**,.343**,0.029
+Self_Determin_Ave,.452**,.448**,.497**,.425**,.520**,1,.509**,.260**,.221**,-0.095
+Self_Efficacy_Ave,.523**,.454**,.532**,.440**,.500**,.509**,1,.201**,.216**,-.164*
+Value_Peers_Ave,.110*,.158**,.312**,.247**,.189**,.260**,.201**,1,.214**,0.004
+Communal_Sci_Ave,.261**,.285**,.315**,.257**,.343**,.221**,.216**,.214**,1,-0.013
+Med_interrupt_academics,-0.001,0.102,-.150*,0.006,0.029,-0.095,-.164*,0.004,-0.013,1"
+
+# Read the data into a dataframe
+df <- read.csv(text = data, check.names = FALSE)
+
+# Remove the asterisks and convert the columns to numeric
+df[-1] <- sapply(df[-1], function(x) as.numeric(gsub("\\**", "", x)))
+
+# Create a subset of the dataframe without the first row and column
+df_subset <- df[-1, -1]
+
+# Extract the labels for the columns from the first row of df
+col_labels <- unname(df[1, -1])
+
+# Extract the labels for the rows from the first column of df
+row_labels <- unname(df[-1, 1])
+
+# Convert the subset to a correlation matrix
+corr_matrix <- cor(df_subset)
+
+# Define the bottom and top colors for the gradient
+bottom_color <- "#074EAB"
+top_color <- "#275d38"
+
+# Create a gradient of colors from bottom to top, passing through white
+n_colors <- 100  # Number of colors in the gradient
+colors <- c(colorRampPalette(c(bottom_color, "white"))(n_colors / 2), colorRampPalette(c("white", top_color))(n_colors / 2))
+
+# Create the correlation plot using corrplot with the gradient colors
+corrplot(corr_matrix, type = 'lower', method = 'color', tl.col = "black", tl.srt = 45, col = colors)
+```
+
+<br>
+
+The graph uses a gradient system done by color to represent the strength and direction of correlations, with darker colors indicating stronger positive or negative correlations and lighter colors representing weaker correlations. This is done over 10 categories that are compared on a scale from -1 to 1.
+
+<br>
+
+# Pre & Post Semester Analysis
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Load required packages
+library(ggplot2)
+library(dplyr)
+library(gridExtra)
+
+# Create a data frame from the provided .csv data
+# Data provided directly in the code
+data <- read.csv(text = "
+interruptions,name_of_pair,Mean,Std.Deviation,Std.Error.Mean,lower_95_CI,upper_95_CI,t,df,Sig
+0,Sci_Ident_AVE - Sci_Ident_AVE_post,-0.3135,0.8762,0.0704,-0.4526,-0.1745,-4.455,154,0
+0,Sci_Career_Mot_AVE - Sci_Career_Mot_AVE_post,-2.60E-11,0.948150779,0.076157303,-0.150447843,0.150447843,0,154,1
+0,Sci_Interest_Ave - Sci_Interest_Ave_post,-0.137634409,0.767096714,0.061614691,-0.259353495,-0.015915323,-2.234,154,0.027
+0,Self_Determin_Ave - Self_Determin_Ave_post,0.008602151,0.720698302,0.057887881,-0.105754666,0.122958967,0.149,154,0.882
+0,Self_Efficacy_Ave - Self_Efficacy_Ave_post,0.088172043,0.793259318,0.063716122,-0.037698394,0.214042481,1.384,154,0.168
+0,Communal_Sci_Ave - Communal_Sci_Ave_post,-0.070967742,0.832239192,0.066847061,-0.203023312,0.061087828,-1.062,154,0.29
+1,Sci_Ident_AVE - Sci_Ident_AVE_post,-0.2933,0.9217,0.119,-0.5314,-0.0552,-2.465,59,0.017
+1,Sci_Career_Mot_AVE - Sci_Career_Mot_AVE_post,-0.177777778,0.846987943,0.109345673,-0.396577965,0.041022409,-1.626,59,0.109
+1,Sci_Interest_Ave - Sci_Interest_Ave_post,-0.144444444,0.653447087,0.084359656,-0.313247726,0.024358838,-1.712,59,0.092
+1,Self_Determin_Ave - Self_Determin_Ave_post,-0.055555556,0.893935767,0.115406611,-0.286483651,0.17537254,-0.481,59,0.632
+1,Self_Efficacy_Ave - Self_Efficacy_Ave_post,0.066666667,0.685606664,0.08851144,-0.110444315,0.243777648,0.753,59,0.454
+1,Communal_Sci_Ave - Communal_Sci_Ave_post,0.083333333,0.662771104,0.085563382,-0.087878598,0.254545265,0.974,59,0.334
+2,Sci_Ident_AVE - Sci_Ident_AVE_post,-0.3478,0.8317,0.0867,-0.5201,-0.1756,-4.011,91,0
+2,Sci_Career_Mot_AVE - Sci_Career_Mot_AVE_post,-0.06884058,0.818793364,0.085365109,-0.238407882,0.100726723,-0.806,91,0.422
+2,Sci_Interest_Ave - Sci_Interest_Ave_post,-0.097826087,0.676733596,0.070554355,-0.237973645,0.042321471,-1.387,91,0.169
+2,Self_Determin_Ave - Self_Determin_Ave_post,0.018115942,0.73023677,0.076132446,-0.13311181,0.169343694,0.238,91,0.812
+2,Self_Efficacy_Ave - Self_Efficacy_Ave_post,-0.094202899,0.723453404,0.075425231,-0.244025855,0.055620058,-1.249,91,0.215
+2,Communal_Sci_Ave - Communal_Sci_Ave_post,-0.057971014,0.645466383,0.067294522,-0.191643316,0.075701287,-0.861,91,0.391
+3,Sci_Ident_AVE - Sci_Ident_AVE_post,-0.2476,0.8609,0.1328,-0.5159,0.0206,-1.864,41,0.069
+3,Sci_Career_Mot_AVE - Sci_Career_Mot_AVE_post,0.103174603,0.912093085,0.140739018,-0.181053611,0.387402817,0.733,41,0.468
+3,Sci_Interest_Ave - Sci_Interest_Ave_post,-0.134920635,0.886696386,0.136820223,-0.411234681,0.141393411,-0.986,41,0.33
+3,Self_Determin_Ave - Self_Determin_Ave_post,-0.007936508,0.688614709,0.106255557,-0.222523958,0.206650942,-0.075,41,0.941
+3,Self_Efficacy_Ave - Self_Efficacy_Ave_post,0.007936508,0.780827493,0.120484298,-0.235386468,0.251259484,0.066,41,0.948
+3,Communal_Sci_Ave - Communal_Sci_Ave_post,0.126984127,0.525513717,0.081088527,-0.036777475,0.290745729,1.566,41,0.125
+4,Sci_Ident_AVE - Sci_Ident_AVE_post,0.0824,0.7987,0.137,-0.1963,0.361,0.601,33,0.552
+4,Sci_Career_Mot_AVE - Sci_Career_Mot_AVE_post,0.098039216,0.979690777,0.168015582,-0.243791056,0.439869488,0.584,33,0.564
+4,Sci_Interest_Ave - Sci_Interest_Ave_post,-0.049019608,1.028654618,0.176412812,-0.407934172,0.309894956,-0.278,33,0.783
+4,Self_Determin_Ave - Self_Determin_Ave_post,0.264705882,0.867596284,0.148791535,-0.038012772,0.567424537,1.779,33,0.084
+4,Self_Efficacy_Ave - Self_Efficacy_Ave_post,0.323529412,0.933785223,0.160142845,-0.002283655,0.649342479,2.02,33,0.052
+4,Communal_Sci_Ave - Communal_Sci_Ave_post,0.058823529,0.76748129,0.131621955,-0.208963352,0.326610411,0.447,33,0.658
+5,Sci_Ident_AVE - Sci_Ident_AVE_post,-0.4,0.5774,0.2182,-0.934,0.134,-1.833,6,0.116
+5,Sci_Career_Mot_AVE - Sci_Career_Mot_AVE_post,-0.571428571,0.534522484,0.202030509,-1.065779418,-0.077077725,-2.828,6,0.03
+5,Sci_Interest_Ave - Sci_Interest_Ave_post,-0.523809524,0.690065559,0.260820266,-1.162013723,0.114394675,-2.008,6,0.091
+5,Self_Determin_Ave - Self_Determin_Ave_post,-0.714285714,0.487950037,0.184427778,-1.165564231,-0.263007197,-3.873,6,0.008
+5,Self_Efficacy_Ave - Self_Efficacy_Ave_post,-0.238095238,0.370899094,0.14018668,-0.581119688,0.104929212,-1.698,6,0.14
+5,Communal_Sci_Ave - Communal_Sci_Ave_post,-0.476190476,0.766356045,0.289655359,-1.184951606,0.232570654,-1.644,6,0.151
+")
+
+# Rename the columns
+colnames(data) <- c("interruptions", "Pair", "Mean", "Std.Deviation", "Std.Error.Mean",
+                    "Lower", "Upper", "t", "df", "Sig")
+
+# Get unique pair names
+pair_names <- unique(data$Pair)
+
+# List to store individual graphs
+graphs <- list()
+
+# New names for the pairs
+new_pair_names <- c("Science Identity", "Science Career Motivation", "Science Interest",
+                    "Self-Determination", "Self-Efficacy", "Community in Science")
+
+# Define the color gradient
+color_gradient <- colorRampPalette(c("#96c48f", "#136307"))
+
+# Generate graphs for each pair
+for (i in seq_along(pair_names)) {
+  # Filter data for the specific pair
+  pair_data <- data %>%
+    filter(Pair == pair_names[i])
+  
+  # Filter significant data points (Sig <= 0.05)
+  sig_data <- pair_data %>%
+    filter(Sig <= 0.05)
+  
+  # Create plot for the specific pair
+  plot <- ggplot(pair_data, aes(x = factor(interruptions), y = Mean, fill = factor(interruptions))) +
+    geom_bar(stat = "identity", position = "dodge") +
+    geom_errorbar(aes(ymin = Mean - Std.Error.Mean, ymax = Mean + Std.Error.Mean),
+                  position = position_dodge(width = 0.9), width = 0.25) +
+    labs(x = "Rate of Medical Interruptions") +
+    ggtitle(new_pair_names[i]) +
+    scale_fill_manual(values = color_gradient(length(unique(pair_data$interruptions)))) +
+    scale_x_discrete(labels = c("0" = "Control")) +  # Modify labels for "0"
+    theme_minimal() +
+    theme(legend.position = "none") +
+    theme(panel.border = element_rect(color = "black", fill = NA))
+  
+  # Add significance points to the plot
+  if (nrow(sig_data) > 0) {
+    plot <- plot +
+      geom_point(data = sig_data, aes(y = Mean + Std.Error.Mean + 0.2), shape = 16, size = 3, color = "black")
+  }
+  
+  # Store the plot in the list
+  graphs[[i]] <- plot
+}
+
+# Combine graphs into a grid
+combined_plot <- grid.arrange(grobs = graphs, nrow = 3, ncol = 2, padding = unit(10, "cm"))
+
+```
+
+<br>
+
+The graph visually presents the pre- and post-semester changes for different pairs of variables, highlighting significant differences between the two time points for each pair. Bars showing the deviation between each group with black dots indicate significance. Science identity had overall the most variance in mean over the course of the semester. While science carrier motivation had the largest single mean change. Science interest had a similar large change in one area like science career motivation did. Self determination was an outlier that had less variance overall. Self-efficacy and community in science changed similar but in difference sections with different means.
+
+<br>
+

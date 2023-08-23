@@ -1,0 +1,95 @@
+## Pie Chart
+As of **June 22, 2023**, I have been involved in **68.25** hours of shadowing. 
+
+
+<br> <br>
+
+
+```{r LAbels, include=FALSE}
+library(dplyr)
+library(janitor)
+library(stringr)
+library(readr)
+library(ggplot2)
+library(leaflet)
+library(viridis)
+library(htmltools)
+library(stringr)
+library(reshape2)
+library(plotly)
+library(gapminder)
+library(readxl)
+
+
+df <- read_excel("files/shadowing.xlsx")
+```
+<center>
+
+```{r include=FALSE}
+bp<- ggplot(df, aes(x="", y=hours, fill=description))+
+geom_bar(width = 1, stat = "identity")+
+  geom_text(aes(label=hours),
+             position = position_stack(vjust = 0.5))
+bp
+
+pie <- bp+coord_polar("y", start=0)
+pie
+```
+
+```{r echo=FALSE}
+pie + scale_fill_brewer(palette="Pastel2")+
+  theme_minimal()
+```
+
+</center>
+
+<br> <br>
+
+## Betty Wade, RD
+
+### Description
+Dr. Wade is a Registered Dietitian and Certified Diabetes Educator practicing in the Heber Valley Clinic. You can find more about Dr. Wade at [this link](https://intermountainhealthcare.org/blogs/authors/betty-wade-rd-cde/)
+
+### Learnings
+I spent [1/3/23](https://docs.google.com/document/d/1x-CrwNl6HCbE2yd857ot8W9OgynrYNgsKmcFs80ryE8/edit?usp=sharing) and [1/4/23](https://docs.google.com/document/d/1Oigj8poLgUFaI9Z1BQEBJxOk0PaPKnXVPuSkfC1CWa8/edit?usp=sharing) with Dr. Wade. Follow the links in order to see what I learned while spending time with her. 
+
+<br> <br>
+
+## Brian Christensen, NP
+
+### Description
+Dr. Christensen is a Nurse Practitioner practicing in the Utah Valley Hospital. You can find more about Dr. Christensen at [this link](https://intermountainhealthcare.org/find-a-doctor/c/christensen-brian-l/)
+
+### Learnings
+I spent [12/21/22](https://docs.google.com/document/d/1t4_vxPUhecswoWg5G9_3w0ZrbWtoUEFiTq4CyuGZ0Hc/edit?usp=sharing) and [1/5/23](https://docs.google.com/document/d/1J6B16h0VxqfFK7NxCJK03RkkB1gcagplcqSown9i47w/edit?usp=sharing) with Dr. Christensen. Follow the links in order to see what I learned while spending time with him. 
+
+<br> <br>
+
+## Course #1: University of Colorado ER (Virtual)
+
+### Description
+This virtual shadowing Canvas course, made available through the Department of Emergency Medicine at the University of Colorado, gave me an opportunity to watch how people practice medicine in a different place in the world than I am used to. In this first course, there were 9 Cases, and after each case there was a quiz regarding things that were covered in the video case. The cases covered were across a broad range: pregnancy and asthma, travelers' diarrhea, epilepsy, gastritis, heart attack, hematoma, anaphylaxis, COVID, and renal failure. The videos were given through a mock-visit with a patient, where the physician first meets the mock patient and cares for them as they would a typical patient. Essentially, we viewers were a fly on the wall who could see the whole process of treating these patients. You can learn more about this awesome course [here](https://www.coloradowm.org/virtual-shadowing/). I finished this course over 1 month, averaging 3 hours a week going through this shadowing experience. 
+<a href="files/PBischoff" download>Click here to download the certificate I was granted.</a> 
+
+### Learnings
+With my service in the [American Fork Emergency Room](https://pbischoff3.github.io/Hours/service/#IHC_Emergency_Room), I felt like I had a decent grasp on how emergency rooms worked already. This shadowing opportunity gave me new insights into the treatment of patients in the ER. In my experience, I usually saw the tests and labs being run, with me checking on the patients where I was able. Rarely, there was the major trauma patient that came in, and when that happened, I could see how the physicians quickly cared for that patient. This shadowing experience let me see what initial contact with a patient and physician would look like, depending on the case and the symptoms. Not every case was a major trauma, and therefore, the ability to collect information from the patient and think quickly on their feet was shown to me. I felt like it showed me how to create trust with a patient from the beginning, and it was very informative. I think it gave me a really good background for in person shadowing experiences.
+
+<br> <br>
+
+## Jill Faatz, MD
+
+### Description
+Dr. Faatz is a family care specialist practicing in the Heber Valley Clinic. You can find more about Dr. Faatz at [this link](https://intermountainhealthcare.org/find-a-doctor/Jill-B-Faatz-MD-1417981002)
+
+### Learnings
+I spent [12/27/22](https://docs.google.com/document/d/11SGUUwgkkfOZHv6kzWaILtemPs6n20HG39PQ9kBkytk/edit?usp=sharing) and [12/29/22](https://docs.google.com/document/d/1a8brs9NNwUqrOdmC26_bKOF1O2sAayoAfa1xSjEJ-FI/edit?usp=sharing) with Dr. Faatz. Follow the links in order to see what I learned while spending time with her. 
+
+<br> <br>
+
+## WebShadowers (Virtual)
+
+### Description
+This Youtube channel was created at the beginning of COVID with the goal of providing med students opportunities to shadow despite the ongoing pandemic taking over the medical world. The general process of the shadowing experiences included an introduction of the physician and the profession, running through a case or two that the physician has seen, and general questions and answers afterwards. These were given during a livestream, but I was able to watch it afterwards due to them being recorded. Each of the experiences took roughly 1.5 hours after I created a write up.
+
+### Learnings
+For these videos, I decided to write a report after each session, focusing on what I liked about the profession, what I liked about the physician, what was difficult to be excited about for the profession, and what I learned. These can be found at [this link](https://drive.google.com/drive/folders/15LCsdHaBxQyotqB11QI6l3bE0M_jXRpK?usp=sharing).

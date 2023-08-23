@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>porter - Methods</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script src="../../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body style="background-color:MintCream;" class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">porter</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-conferences" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Conferences</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-conferences">    
+        <li>
+    <a class="dropdown-item" href="../../../conf/conf_home.html" rel="" target="">
+ <span class="dropdown-text">Conferences</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../conf/2020/2020.html" rel="" target="">
+ <span class="dropdown-text">2020</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../conf/2021/2021.html" rel="" target="">
+ <span class="dropdown-text">2021</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../conf/2022/2022.html" rel="" target="">
+ <span class="dropdown-text">2022</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../conf/2023/2023.html" rel="" target="">
+ <span class="dropdown-text">2023</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-medical-school" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Medical School</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-medical-school">    
+        <li>
+    <a class="dropdown-item" href="../../../med/home.html" rel="" target="">
+ <span class="dropdown-text">Home</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../med/shadowing.html" rel="" target="">
+ <span class="dropdown-text">Shadowing</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../med/service.html" rel="" target="">
+ <span class="dropdown-text">Service</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#methods-background" id="toc-methods-background" class="nav-link active" data-scroll-target="#methods-background">Methods Background</a></li>
+  <li><a href="#aspects-of-the-survey" id="toc-aspects-of-the-survey" class="nav-link" data-scroll-target="#aspects-of-the-survey">Aspects of the Survey</a>
+  <ul class="collapse">
+  <li><a href="#stem-motivation-questions" id="toc-stem-motivation-questions" class="nav-link" data-scroll-target="#stem-motivation-questions">STEM Motivation Questions</a></li>
+  <li><a href="#medical-interruptions" id="toc-medical-interruptions" class="nav-link" data-scroll-target="#medical-interruptions">Medical Interruptions</a></li>
+  </ul></li>
+  <li><a href="#statistical-analysis" id="toc-statistical-analysis" class="nav-link" data-scroll-target="#statistical-analysis">Statistical Analysis</a></li>
+  <li><a href="#technology" id="toc-technology" class="nav-link" data-scroll-target="#technology">Technology</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Methods</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+
+<h3 style="text-align:center;font-size:185%;" class="anchored">
+<a href="https://pbischoff3.github.io/">Home</a> | <a href="https://pbischoff3.github.io/Conferences">Conferences</a> | <a href="https://pbischoff3.github.io/Projects">R Projects</a> | <a href="https://pbischoff3.github.io/Publications">Publications</a> | <a href="https://pbischoff3.github.io/Hours">Medical Hours</a>
+</h3>
+<h4 style="text-align:center;font-size:150%;" class="anchored">
+<a href="https://pbischoff3.github.io/Projects/MD_PhD">MD PhD</a> | <a href="https://pbischoff3.github.io/Projects/BIOL_3100">BIOL 3100 Final</a> | <a href="https://pbischoff3.github.io/Projects/SPUR_Prep">SPUR Preparation</a> | <a href="https://pbischoff3.github.io/Projects/2023_saber">SABER</a>
+</h4>
+<h5 style="text-align:center;font-size:125%;" class="anchored">
+<a href="https://pbischoff3.github.io/Projects/2023_saber/intro">Introduction</a> | <a href="https://pbischoff3.github.io/Projects/2023_saber/methods">Methods</a> | <a href="https://pbischoff3.github.io/Projects/2023_saber/results">Results</a> | <a href="https://pbischoff3.github.io/Projects/2023_saber/conclusion">Conclusion</a>
+</h5>
+<p>.</p>
+<section id="methods-background" class="level2">
+<h2 class="anchored" data-anchor-id="methods-background">Methods Background</h2>
+<p>We used an adapted survey from other literature to find information regarding STEM motivation. This survey was given pre-semester and post-semester to 14 different Biology courses at Utah Valley University. These classes had students who were both STEM majors and non-majors, as these classes were generally General Education classes. Utah Valley University is an open enrollment institution, making this data an interesting set to explore.</p>
+<p>390 students answered the pre/post-semester surveys. We have a large number of pre-semester data, but only 390 responded to both the beginning and end of the semester survey.</p>
+</section>
+<section id="aspects-of-the-survey" class="level2">
+<h2 class="anchored" data-anchor-id="aspects-of-the-survey">Aspects of the Survey</h2>
+<section id="stem-motivation-questions" class="level3">
+<h3 class="anchored" data-anchor-id="stem-motivation-questions">STEM Motivation Questions</h3>
+<p>Here are the questions that we asked to determine the different aspects of STEM motivation.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Category</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Statement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Science Identity</td>
+<td style="text-align: left;">I see myself as a biology person.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Science Identity</td>
+<td style="text-align: left;">I see myself as a science person.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Science Identity</td>
+<td style="text-align: left;">I see myself as a scientist.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Science Identity</td>
+<td style="text-align: left;">Other people (friends/family) see me as a science person.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Science Identity</td>
+<td style="text-align: left;">My science instructors see me as a science person.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Career Motivation</td>
+<td style="text-align: left;">Learning science will help me get a good job.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Career Motivation</td>
+<td style="text-align: left;">Understanding science will benefit me in my career.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Career Motivation</td>
+<td style="text-align: left;">Knowing science will give me a career advantage.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Career Motivation</td>
+<td style="text-align: left;">I will use science problem-solving skills in my career.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Career Motivation</td>
+<td style="text-align: left;">My career will involve science.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Instrinsic Motivation</td>
+<td style="text-align: left;">Learning science is interesting.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Instrinsic Motivation</td>
+<td style="text-align: left;">I am curious about discoveries in science.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Instrinsic Motivation</td>
+<td style="text-align: left;">The science I learn is relevant to my life.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Instrinsic Motivation</td>
+<td style="text-align: left;">Learning science makes my life more meaningful.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Instrinsic Motivation</td>
+<td style="text-align: left;">I enjoy learning science.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Self-Determination</td>
+<td style="text-align: left;">I study hard to learn science.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Self-Determination</td>
+<td style="text-align: left;">I prepare well for science tests and labs.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Self-Determination</td>
+<td style="text-align: left;">I put enough effort into learning science.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Self-Determination</td>
+<td style="text-align: left;">I spend a lot of time learning science.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Self-Determination</td>
+<td style="text-align: left;">I use strategies to learn science well.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Self-Efficacy</td>
+<td style="text-align: left;">I am confident that I will do well on science labs and projects.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Self-Efficacy</td>
+<td style="text-align: left;">I believe I can earn a grade of 'A' in science.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Self-Efficacy</td>
+<td style="text-align: left;">I am confident I will do well on science tests.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Self-Efficacy</td>
+<td style="text-align: left;">I believe I can master science knowledge and skills.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Grade Motivation</td>
+<td style="text-align: left;">Scoring high on science tests and labs matters to me.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Grade Motivation</td>
+<td style="text-align: left;">It is important that I get an 'A' in science.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Grade Motivation</td>
+<td style="text-align: left;">I think about the grade I will get in science.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Grade Motivation</td>
+<td style="text-align: left;">Getting a good science grade is important to me.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Grade Motivation</td>
+<td style="text-align: left;">I like to do better than other students on science tests.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Value of Peer Interactions</td>
+<td style="text-align: left;">My college science classes are more enjoyable when I work with other students.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Value of Peer Interactions</td>
+<td style="text-align: left;">I understand more when my classmates participate in college classroom discussions.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Value of Peer Interactions</td>
+<td style="text-align: left;">I learn best in college science classes when I work with classmates.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Value of Peer Interactions</td>
+<td style="text-align: left;">The amount I understand is increased by classmates' ideas in my college science classes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Value of Peer Interactions</td>
+<td style="text-align: left;">When classmates share their ideas in college science classes, this helps me learn.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sense of Belonging</td>
+<td style="text-align: left;">When I am in a science setting, I feel a connection with the science community.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sense of Belonging</td>
+<td style="text-align: left;">When I am in a science setting, I feel respected.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sense of Belonging</td>
+<td style="text-align: left;">When I am in a science setting, I feel comfortable.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sense of Belonging</td>
+<td style="text-align: left;">When I am in a science setting, I trust my instructors to be committed to helping me learn.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sense of Belonging</td>
+<td style="text-align: left;">When I am in a science setting, I enjoy being an active participant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sense of Belonging</td>
+<td style="text-align: left;">When I am in a science setting, I try to say as little as possible.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Competency in Science</td>
+<td style="text-align: left;">I am good at solving complicated scientific problems.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Competency in Science</td>
+<td style="text-align: left;">I read websites articles or books about scientific issues.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Competency in Science</td>
+<td style="text-align: left;">I work on a project involving scientific concepts.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Competency in Science</td>
+<td style="text-align: left;">I think about how my life is affected by science.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Community in Science</td>
+<td style="text-align: left;">To what extent is serving the community important to scientific work?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Community in Science</td>
+<td style="text-align: left;">To what extent is working with people important to scientific work?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Community in Science</td>
+<td style="text-align: left;">To what extent is helping others important to scientific work?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Community in Science</td>
+<td style="text-align: left;">To what extent is connecting with others important to scientific work?</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+<section id="medical-interruptions" class="level3">
+<h3 class="anchored" data-anchor-id="medical-interruptions">Medical Interruptions</h3>
+<p>Students self-identified whether or not they had medical experiences. After they answered that, students answered how often they had missed class due to their medical experiences on a scale from 1-5, from “Never” to “Always”.</p>
+</section>
+</section>
+<section id="statistical-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-analysis">Statistical Analysis</h2>
+<p>We used Pearson Correlations to properly understand the significance data for each of the aspects. We are excited to continue doing analysis on this data set, as we know that we can dive deeper into it.</p>
+</section>
+<section id="technology" class="level2">
+<h2 class="anchored" data-anchor-id="technology">Technology</h2>
+<p>SPSS was used to complete the Pearson Correlation. R packages were used, with <code>corrplot</code> to create the correlation plot, <code>waffle</code> to create the demographic plots, and <code>ggplot2</code>, <code>dplyr</code>, and <code>gridExtra</code> to create the pre/post semester change plot.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

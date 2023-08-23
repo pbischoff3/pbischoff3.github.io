@@ -1,0 +1,62 @@
+project:
+  type: website
+
+website:
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Conferences
+        menu: 
+          - text: Conferences
+            href: conf/conf_home.qmd
+          - text: "2020"
+            href: conf/2020/2020.qmd
+          - text: "2021"
+            href: conf/2021/2021.qmd
+          - text: "2022"
+            href: conf/2022/2022.qmd
+          - text: "2023"
+            href: conf/2023/2023.qmd  
+      - text: R Projects
+        menu: 
+          - text: About
+            href: rproj/rproj.qmd
+          - text: Seagrass Microbiome
+            href: https://github.com/gzahn/syringodium_bacteria
+            target: _blank
+          - text: netplot R Package
+            href: https://github.com/USCCANA/netplot
+            target: _blank
+          - text: SABER 2023
+            href: rproj/2023_saber/home.qmd
+      - text: Publications
+        href: publ/home.qmd
+      - text: Medical Hours
+        menu:
+          - text: Home
+            href: med/home.qmd
+          - text: Patient Interactions  
+            href: med/patient/patient.qmd
+          - text: Leadership
+            href: med/leadership/leadership.qmd
+          - text: Service
+            href: med/service/service.qmd  
+          - text: Shadowing
+            href: med/shadowing/shadowing.qmd
+    right:
+      - icon: github
+        href: https://github.com/pbischoff3
+        target: _blank
+      - icon: envelope
+        href: mailto:portergbischoff@gmail.com
+        
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: true
+
+editor: visual
+
+

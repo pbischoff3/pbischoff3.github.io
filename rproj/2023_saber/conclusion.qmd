@@ -1,0 +1,22 @@
+---
+title: "Conclusion"
+---
+
+In conclusion, this study sheds light on the potential impact of medical experiences and chronic conditions on students taking science classes at an open enrollment institution. The findings indicate that a considerable number of students, around 57%, reported having a medical experience, while 22% reported having a chronic condition. These numbers highlight the significance of investigating the influence of medical identities on students' experiences further. The study's main hypotheses were supported, revealing that an increase in academic interruptions due to medical experiences led to decreased science motivation, as well as lower senses of belonging, self-efficacy, and self-determination.
+
+# Negative Effects
+
+It was particularly interesting to observe that students who had more medical interruptions experienced a notable decrease in their sense of belonging and self-efficacy, emphasizing the potential challenges that medical experiences can pose to academic engagement and self-confidence. This insight is crucial for educators and institutions to recognize and address, as it may have profound implications for students' overall success and well-being in science courses.
+
+# Positive Effects
+
+However, a noteworthy and encouraging finding was that some students who had experienced medical experiences displayed higher levels of science immersion and motivation. This suggests that medical experiences can also positively influence student engagement with science, potentially prompting students to explore these experiences further within the context of scientific understanding. These positive associations between medical experiences and science motivation are promising, as they may indicate pathways for fostering increased interest and participation in scientific disciplines among affected students.
+
+# Importance
+
+In light of these results, it becomes evident that acknowledging and accommodating medical identities and experiences in science education is paramount. By recognizing the potential challenges students face due to medical interruptions and offering support and inclusive teaching strategies, educators can help mitigate the negative effects on students' sense of belonging and self-efficacy. Moreover, incorporating medical experiences into the curriculum could harness the positive influence they have on science motivation, thereby fostering a more engaging and supportive learning environment for all students.
+
+# Next Steps
+
+Moving forward, science instructors and institutions should consider the implications of this study as they modify course content and pedagogy to be more inclusive and supportive of students with medical experiences and chronic conditions. Emphasizing a student-centered approach and providing appropriate resources can help create a conducive learning environment where all identities, including those shaped by medical experiences, are embraced and empowered. By doing so, science education can evolve to be more inclusive, enriching the educational journey of all students and ultimately contributing to a more diverse and innovative scientific community.
+

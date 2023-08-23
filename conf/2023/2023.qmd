@@ -1,0 +1,25 @@
+---
+title: "2023"
+---
+
+In 2023, I feel like I really got my feet underneath me in research. The computational skills I had gained allowed me to really flourish in presenting my research. These experiences further solidified the idea that I need to include research in my future, as it is one of the areas in which I feel my creativity can really poke through.
+
+## Utah Council of Undergraduate Research ([UCUR](https://our.utah.edu/education-events/ucur/)) - February 2023
+
+This presentation took place in a venue for different undergraduate institutions across the state, and it was hosted at the University of Utah this year.
+
+<center>![](photos/ucur.png)</center>
+
+<a href="files/UCUR Presentation 2023.pptx" download>Click to Download</a> <br>
+
+### Abstract
+
+Prior research has investigated the recruitment and retention of certain student identities (such as gender and ethnicity) in STEM courses and careers. Recruitment and retention in STEM can be influenced by a student's connection to the STEM community, science identity, and engagement. Yet none of this research has investigated the impact of having either a medical experience or chronic condition on our STEM students despite other research indicating medical students with medical conditions are less likely to complete their degree. Additionally, individuals with medical conditions tend to feel disconnected from others and experience higher levels of stress during their life. Thus, it is important to study the potential impacts of medical experiences and conditions on undergraduate students. This study explores the potential impacts of having a medical experience or chronic condition on students taking science classes at an open enrollment institution. Specifically, we hypothesized acute medical experiences may include a limited number of interruptions to one's daily lifestyle and education and thus have a smaller impact on science students in comparison to students with chronic medical conditions. We specially focused on how acute medical experiences and chronic conditions may be related to varying levels of student science career motivation, science interest, science self-determination, engagement of science outside of the classroom, communal view of science, and value of peers in their classroom. Pre-course data was collected from 1280 students across 14 biology courses (including non-majors) taught by 16 different instructors at a focused-teaching institution. Surprisingly, 55% of students surveyed reported having an experience with an acute medical condition and 20% reported having a chronic condition. This indicates that medical experiences and chronic medical conditions are indeed an important and large identity to investigate further. Interestingly, there were no significant variations for students with acute medical experiences across science career motivation, science interest, science self-determination, engagement of science outside of the classroom, communal view of science, and value of peers in their classroom. However, we did see significant differences for students with chronic medical conditions depending on the major of the student (biology major, non-biology STEM major, pre-health professional major, or non-STEM major). Specifically, non-STEM majors had more appreciation and engagement with STEM if they also had a chronic medical condition. Further investigation of the potential differences for students with chronic medical conditions will continue to be explored with a post-survey.
+
+## X- Discipline-Based Education Research ([X-DBER](https://scimath.unl.edu/x-dber)) - April 2023
+
+X-DBER was hosted virtually by University of Nebraska-Lincoln. One of the goals of this conference is to "discuss how theories, methods, and application of education research cross disciplinary boundaries", and they do this by bringing together DBER researchers to discuss their research topics.
+
+<center>
+
+![](photos/x-dber.png)

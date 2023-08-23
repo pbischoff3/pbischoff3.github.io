@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>porter - Initial</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="../../../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="../../../site_libs/jquery-1.12.4/jquery.min.js"></script>
+<link href="../../../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="../../../site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="../../../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="../../../site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="../../../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="../../../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="../../../site_libs/leaflet-binding-2.1.2/leaflet.js"></script>
+<script src="../../../site_libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="../../../site_libs/leaflet-providers-plugin-2.1.2/leaflet-providers-plugin.js"></script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body style="background-color:MintCream;" class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">porter</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-conferences" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Conferences</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-conferences">    
+        <li>
+    <a class="dropdown-item" href="../../../conf/conf_home.html" rel="" target="">
+ <span class="dropdown-text">Conferences</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../conf/2020/2020.html" rel="" target="">
+ <span class="dropdown-text">2020</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../conf/2021/2021.html" rel="" target="">
+ <span class="dropdown-text">2021</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../conf/2022/2022.html" rel="" target="">
+ <span class="dropdown-text">2022</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../conf/2023/2023.html" rel="" target="">
+ <span class="dropdown-text">2023</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-r-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">R Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-r-projects">    
+        <li>
+    <a class="dropdown-item" href="../../../rproj/rproj.html" rel="" target="">
+ <span class="dropdown-text">About</span></a>
+  </li>  
+        <li class="dropdown-header">MD/PhD</li>
+        <li class="dropdown-header">BIOL 3100 Final</li>
+        <li class="dropdown-header">SPUR Preparation</li>
+        <li>
+    <a class="dropdown-item" href="../../../rproj/2023_saber/home.html" rel="" target="">
+ <span class="dropdown-text">SABER</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-medical-school" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Medical School</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-medical-school">    
+        <li>
+    <a class="dropdown-item" href="../../../med/home.html" rel="" target="">
+ <span class="dropdown-text">Home</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../med/shadowing.html" rel="" target="">
+ <span class="dropdown-text">Shadowing</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../med/service.html" rel="" target="">
+ <span class="dropdown-text">Service</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Initial</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../rproj/2023_saber/home.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../rproj/2023_saber/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../rproj/2023_saber/methods/methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Methods</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../rproj/2023_saber/results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Results</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../rproj/2023_saber/conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conclusion</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a>
+  <ul class="collapse">
+  <li><a href="#maps" id="toc-maps" class="nav-link" data-scroll-target="#maps">Maps</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Initial</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+
+<h3 style="text-align:center;font-size:185%;" class="anchored">
+<a href="https://pbischoff3.github.io/">Home</a> | <a href="https://pbischoff3.github.io/Conferences">Conferences</a> | <a href="https://pbischoff3.github.io/Projects">R Projects</a> | <a href="https://pbischoff3.github.io/Publications">Publications</a> | <a href="https://pbischoff3.github.io/Hours">Medical Hours</a>
+</h3>
+<h4 style="text-align:center;font-size:170%;" class="anchored">
+<a href="https://pbischoff3.github.io/Projects/MD_PhD">MD PhD</a> | <a href="https://pbischoff3.github.io/Projects/BIOL_3100">BIOL 3100 Final</a>
+</h4>
+<h5 style="text-align:center;font-size:150%;" class="anchored">
+<a href="https://pbischoff3.github.io/Projects/MD_PhD/initial">Initial</a> | <a href="https://pbischoff3.github.io/Projects/secondary">Secondary</a>
+</h5>
+<section id="section" class="level2 tabset">
+<h2 class="tabset anchored" data-anchor-id="section"></h2>
+<section id="maps" class="level3">
+<h3 class="anchored" data-anchor-id="maps">Maps</h3>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in validateCoords(lng, lat, funcName): Data contains 3 rows with either
+missing or invalid lat/lon values and will be ignored</code></pre>
+</div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-5a06fa9a20254d4085e9" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-5a06fa9a20254d4085e9">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[32.3288039,47.9320894,36.4744005,32.4806484,39.6541484,30.701111,null,40.4425645,null,40.4425645,null,34.74902,41.5041139,41.1032382,43.0775083,38.4070649,42.78251847,43.708376,38.0315304,37.5397168,32.7852642,38.9382707,36.1000011,29.6399157,42.6526495,35.609482,29.9566841,40.2637174,41.6627121,42.900028,39.1386038,33.4707867,41.6172093,44.0221375,30.5992685,29.3107692,33.4707867,43.0436558,29.9551861,38.0415341,43.0421729,39.7791467,40.8172842,41.8186879,40.9146884,42.2836966,41.3032539,42.2776789,40.4946428,39.2990126,37.4318309,39.2887536,43.1234994,29.7088702,41.7919898,40.7183421,29.7088702,25.7903635,41.0850622,41.8712895,41.860216,36.0036576,41.8960914,35.4797073,36.1679342,39.7816315,35.9062145,37.7627561,42.2997587,33.7428366,42.354659,36.1432484,38.5530095,38.2498351,44.9720736,40.8508611,34.0607106,40.7404073,35.1405125,33.499512,39.0562041,38.6221881,39.7464054,38.634886,33.790135,42.3361822,39.083167,40.6552617,35.0897475,29.5074845,47.6489136,28.0649837,34.0504666,38.9188587,38.9118112,39.9939334,45.4991229,32.8126824,32.240768,39.5451056,40.8415302,33.5894581,40.0193587,42.3356687,42.3498431,41.2389165,33.9807215,40.768901,40.0063028,41.7288071,40.7423032,40.7899333,39.9477614,33.6423121,40.7648978,32.8817088,39.9487624,34.0661937],[-90.1732873,-97.0679215,-81.7945803,-93.7609388,-79.9576894,-88.174782,null,-79.9617855,null,-79.9617855,null,-92.32011,-81.6200756,-81.2447316,-89.4302119,-82.4263833,-96.92156859,-72.2876779,-78.4990798,-77.4303941,-79.9478558,-92.3283897,-80.2400062,-82.3434195,-73.7769918,-77.4034148,-90.083638,-76.6756108,-91.5452595,-78.8693377,-84.5041951,-81.9895899,-83.6175792,-92.4666337,-96.3999032,-94.7759134,-81.9895899,-88.0215569,-90.0767549,-84.4941402,-76.138973,-84.0634917,-96.7004551,-71.408351,-73.1203744,-83.7321396,-72.9331105,-71.7608111,-74.4492378,-76.5927145,-122.1757486,-76.6256609,-77.6243443,-95.3953143,-87.6028007,-73.6021494,-95.3953143,-80.2120132,-73.8100743,-87.6733229,-87.8350177,-78.936231,-87.616922,-97.4999946,-86.8063916,-86.1651452,-79.0520881,-122.4594562,-87.8598145,-84.4117443,-83.0556337,-86.8004285,-121.4525282,-85.7475148,-93.2328501,-73.8453678,-118.2057739,-74.1906912,-90.0305146,-86.810181,-94.6113581,-90.237707,-105.0022068,-90.2628788,-84.3254849,-71.0722468,-94.5754191,-73.9450759,-106.6111286,-98.5754534,-122.3065775,-82.4250332,-117.2646764,-77.0200725,-77.0770024,-83.0169184,-122.6859844,-96.8399138,-110.944077,-119.8182742,-73.9413824,-101.8920263,-75.1797271,-71.1042406,-71.0614614,-96.0312117,-80.9630817,-111.8351306,-75.152221,-72.7909365,-73.9743014,-73.953623,-75.1925748,-117.851075,-73.9549405,-117.2350942,-75.1582031,-118.4435224],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["University of Mississippi School of Medicine","University of North Dakota School of Medicine","East Tennessee State University James H. Quillen College of Medicine","Louisiana State University, Shreveport School of Medicine","West Virginia University School of Medicine","University of South Alabama College of Medicine","<<<<<<< HEAD","University of Pittsburgh School of Medicine","=======","University of Pittsburgh School of Medicine",">>>>>>> 0598f0d1a0d33d4c85627d570710a553412f4582","University of Arkansas College of Medicine","Case Western Reserve University School of Medicine","Northeastern Ohio College of Medicine","University of Wisconsin Medical School","Marshall University School of Medicine","University of South Dakota School of Medicine","Geisel School of Medicine at Dartmouth","University of Virginia School of Medicine","Virginia Commonwealth University School of Medicine","Medical University of South Carolina","University of Missouri - Columbia School of Medicine","Wake Forest School of Medicine","University of Florida College of Medicine","Albany Medical College","Brody School of Medicine at East Carolina University ","Louisiana State University, New Orleans School of Medicine","Penn State University College of Medicine","University of Iowa College of Medicine","SUNY at Buffalo School of Medicine","University of Cincinnati College of Medicine","Medical College of Georgia at Augusta University","University of Toledo College of Medicine","Mayo Medical School","Texas A&M University Health Sciences Center College of Medicine College ","University of Texas Medical Branch at Galveston","Medical College of Georgia","Medical College of Wisconsin","Tulane University School of Medicine","University of Kentucky College of Medicine","SUNY Upstate Medical University ","Wright State University School of Medicine","University of Nebraska College of Medicine","Brown University School of Medicine","SUNY at Stony Brook Health Sciences Center","University of Michigan Medical School","Yale University School of Medicine","University of Massachusetts Medical School","University of Medicine & Dentistry of New Jersey - Robert Wood Johnson Medical School","Johns Hopkins University School of Medicine","Stanford University School of Medicine","University of Maryland at Baltimore School of Medicine","University of Rochester School of Medicine","McGovern Medical School at UTHealth / MD Anderson Cancer Center / University of Puerto Rico Tri-Institutional Program","University of Chicago Pritzker School of Medicine MTSP","Hofstra North Shore - LIJ School of Medicine","Baylor College of Medicine","University of Miami Miller School of Medicine ","New York Medical College ","University of Illinois at Chicago College of Medicine","Loyola University of chicago - Stritch School of Medicine","Duke University School of Medicine","Northwestern University Medical School","University of Oklahoma Health Sciences Center","Meharry Medical College School of Medicine","Indiana University School of Medicine","University of North Carolina at Chapel Hill School of Medicine","University of California, San Francisco School of Medicine","Rosalind Franklin University of Medicine and Science - Chicago Medical School","Morehouse School of Medicine","Wayne State University School of Medicine","Vanderbilt University School of Medicine","University of California, Davis School of Medicine","University of Louisville School of Medicine","University of Minnesota Medical School","Albert Einstein College of Medicine of Yeshiva University","Keck School of Medicine of the University of Southern California","University of Medicine & Dentistry of New Jersey - New Jersey Medical School","University of Tennessee, Memphis College of Medicine","University of Alabama School of Medicine","University of Kansas School of Medicine","Saint Louis University School of Medicine","University of Colorado Health Sciences Center","Washington University School of Medicine","Emory University School of Medicine","Boston University School of Medicine","University of Missouri - Kansas City School of Medicine","SUNY Downstate Medical Center College of Medicine","University of New Mexico School of Medicine","University of Texas Health San Antonio, Long School of Medicine","University of Washington School of Medicine","University of South Florida College of Medicine","Loma Linda University School of Medicine ","Howard University College of Medicine","Georgetown University School of Medicine","Ohio State University College of Medicine","Oregon Health Sciences University School of Medicine","University of Texas, Southwestern Med Center","University of Arizona College of Medicine","University of Nevada School of Medicine","Columbia University College of Physicians and Surgeons","Texas Tech University School of Medicine","Drexel University College of Medicine","Harvard Medical School","Tufts University School of Medicine","Creighton University School of Medicine","University of South Carolina School of Medicine","University of Utah School of Medicine","Temple University School of Medicine","University of Connecticut School of Medicine","New York University School of Medicine","Mount Sinai School of Medicine","University of Pennsylvania School of Medicine","University of California, Irvine School of Medicine","Weill Cornell / Rockefeller / Sloan-Kettering Tri-Institutional MD/PhD Program","University of California, San Diego School of Medicine","Sidney Kimmel Medical College at Thomas Jefferson University","University of California, Los Angeles School of Medicine"],null,null,null,["University of Mississippi School of Medicine","University of North Dakota School of Medicine","East Tennessee State University James H. Quillen College of Medicine","Louisiana State University, Shreveport School of Medicine","West Virginia University School of Medicine","University of South Alabama College of Medicine","&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD","University of Pittsburgh School of Medicine","=======","University of Pittsburgh School of Medicine","&gt;&gt;&gt;&gt;&gt;&gt;&gt; 0598f0d1a0d33d4c85627d570710a553412f4582","University of Arkansas College of Medicine","Case Western Reserve University School of Medicine","Northeastern Ohio College of Medicine","University of Wisconsin Medical School","Marshall University School of Medicine","University of South Dakota School of Medicine","Geisel School of Medicine at Dartmouth","University of Virginia School of Medicine","Virginia Commonwealth University School of Medicine","Medical University of South Carolina","University of Missouri - Columbia School of Medicine","Wake Forest School of Medicine","University of Florida College of Medicine","Albany Medical College","Brody School of Medicine at East Carolina University ","Louisiana State University, New Orleans School of Medicine","Penn State University College of Medicine","University of Iowa College of Medicine","SUNY at Buffalo School of Medicine","University of Cincinnati College of Medicine","Medical College of Georgia at Augusta University","University of Toledo College of Medicine","Mayo Medical School","Texas A&amp;M University Health Sciences Center College of Medicine College ","University of Texas Medical Branch at Galveston","Medical College of Georgia","Medical College of Wisconsin","Tulane University School of Medicine","University of Kentucky College of Medicine","SUNY Upstate Medical University ","Wright State University School of Medicine","University of Nebraska College of Medicine","Brown University School of Medicine","SUNY at Stony Brook Health Sciences Center","University of Michigan Medical School","Yale University School of Medicine","University of Massachusetts Medical School","University of Medicine &amp; Dentistry of New Jersey - Robert Wood Johnson Medical School","Johns Hopkins University School of Medicine","Stanford University School of Medicine","University of Maryland at Baltimore School of Medicine","University of Rochester School of Medicine","McGovern Medical School at UTHealth / MD Anderson Cancer Center / University of Puerto Rico Tri-Institutional Program","University of Chicago Pritzker School of Medicine MTSP","Hofstra North Shore - LIJ School of Medicine","Baylor College of Medicine","University of Miami Miller School of Medicine ","New York Medical College ","University of Illinois at Chicago College of Medicine","Loyola University of chicago - Stritch School of Medicine","Duke University School of Medicine","Northwestern University Medical School","University of Oklahoma Health Sciences Center","Meharry Medical College School of Medicine","Indiana University School of Medicine","University of North Carolina at Chapel Hill School of Medicine","University of California, San Francisco School of Medicine","Rosalind Franklin University of Medicine and Science - Chicago Medical School","Morehouse School of Medicine","Wayne State University School of Medicine","Vanderbilt University School of Medicine","University of California, Davis School of Medicine","University of Louisville School of Medicine","University of Minnesota Medical School","Albert Einstein College of Medicine of Yeshiva University","Keck School of Medicine of the University of Southern California","University of Medicine &amp; Dentistry of New Jersey - New Jersey Medical School","University of Tennessee, Memphis College of Medicine","University of Alabama School of Medicine","University of Kansas School of Medicine","Saint Louis University School of Medicine","University of Colorado Health Sciences Center","Washington University School of Medicine","Emory University School of Medicine","Boston University School of Medicine","University of Missouri - Kansas City School of Medicine","SUNY Downstate Medical Center College of Medicine","University of New Mexico School of Medicine","University of Texas Health San Antonio, Long School of Medicine","University of Washington School of Medicine","University of South Florida College of Medicine","Loma Linda University School of Medicine ","Howard University College of Medicine","Georgetown University School of Medicine","Ohio State University College of Medicine","Oregon Health Sciences University School of Medicine","University of Texas, Southwestern Med Center","University of Arizona College of Medicine","University of Nevada School of Medicine","Columbia University College of Physicians and Surgeons","Texas Tech University School of Medicine","Drexel University College of Medicine","Harvard Medical School","Tufts University School of Medicine","Creighton University School of Medicine","University of South Carolina School of Medicine","University of Utah School of Medicine","Temple University School of Medicine","University of Connecticut School of Medicine","New York University School of Medicine","Mount Sinai School of Medicine","University of Pennsylvania School of Medicine","University of California, Irvine School of Medicine","Weill Cornell / Rockefeller / Sloan-Kettering Tri-Institutional MD/PhD Program","University of California, San Diego School of Medicine","Sidney Kimmel Medical College at Thomas Jefferson University","University of California, Los Angeles School of Medicine"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]}],"limits":{"lat":[25.7903635,47.9320894],"lng":[-122.6859844,-71.0614614]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>Here is a description of all the MD/PhD programs offered in the nation. There are 115 schools, and my initial impression is how densely populated the schools are back east. Not a ton of Western options. <br></p>
+</section>
+<section id="data" class="level3 tabset">
+<h3 class="tabset anchored" data-anchor-id="data">Data</h3>
+<section id="total-admittance" class="level4">
+<h4 class="anchored" data-anchor-id="total-admittance">Total Admittance</h4>
+<p>Here is the top 30 Total MD Admittance according to school. <br></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>             short_name admittance_year
+1               Indiana            1436
+2              Illinois            1284
+3           Wayne State            1186
+4                Drexel            1095
+5            Washington            1092
+6      Thomas Jefferson            1082
+7             Minnesota            1033
+8               Augusta             969
+9  Mcgovern Puerto Rico             962
+10         Case Western             924
+11   Texas Southwestern             905
+12               Temple             866
+13             New York             863
+14    Texas San Antonio             857
+15                   KU             846
+16           Ohio State             830
+17                Miami             819
+18           Georgetown             809
+19                Tufts             809
+20              Alabama             806
+21      Albert Einstein             782
+22                  UNC             779
+23             Kentucky             778
+24                  VCU             746
+25              Rutgers             745
+26            Rutgers 2             742
+27           Texas Tech             733
+28            Creighton             730
+29                  USC             729
+30        South Florida             726</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>This is for medical students overall, not just MD/PhD students. It seems awfully toploaded. This is a good basis to understand where my odds of acceptance may be higher than in others. <br> Exploring admittance for MD/PhD students is important as well.</p>
+</section>
+<section id="mdphd-admittance" class="level4">
+<h4 class="anchored" data-anchor-id="mdphd-admittance">MD/PhD Admittance</h4>
+<p>Here is the top 30 MD/PhD admittance according to school. <br></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>            short_name md_ph_d_year_last_3_years
+1             Virginia                        35
+2  Washington St Louis                        25
+3         Pennsylvania                        25
+4              Harvard                        22
+5     Brown University                        20
+6                 Yale                        19
+7               U of U                        18
+8              Cornell                        18
+9                  NYU                        17
+10          Vanderbilt                        16
+11        Northwestern                        15
+12     Albert Einstein                        15
+13            Illinois                        14
+14                UCLA                        14
+15                Pitt                        13
+16                Pitt                        13
+17                 UNC                        13
+18            Columbia                        13
+19       Johns Hopkins                        12
+20   Cal San Francisco                        12
+21               Emory                        12
+22            Mt Sinai                        12
+23                 VCU                        11
+24            Michigan                        11
+25              Baylor                        11
+26             Alabama                        10
+27            Colorado                        10
+28          Washington                        10
+29          Ohio State                        10
+30       Cal San Diego                        10</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br></p>
+<p>Not many students admitted each year across the board. It may be interesting to see the percentage of MD/PhD students admitted versus MD students admitted.</p>
+</section>
+<section id="md-vs-mdphd-admittance" class="level4">
+<h4 class="anchored" data-anchor-id="md-vs-mdphd-admittance">MD vs MD/PhD Admittance %</h4>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>            short_name admitpercent
+1  Washington St Louis     5.580357
+2             Virginia     5.537975
+3                 Yale     4.656863
+4                  NYU     4.156479
+5         Pennsylvania     3.993610
+6              Cornell     3.991131
+7           Vanderbilt     3.911980
+8               U of U     3.680982
+9     Brown University     3.294893
+10             Harvard     3.147353
+11       Johns Hopkins     2.553191
+12        Northwestern     2.311248
+13            Mt Sinai     2.259887
+14            Columbia     2.253033
+15                Mayo     2.200489
+16                Pitt     2.131148
+17                Pitt     2.131148
+18           Rochester     2.054795
+19               Emory     2.023609
+20                UCLA     1.941748
+21       Cal San Diego     1.919386
+22     Albert Einstein     1.918159
+23   Cal San Francisco     1.857585
+24            Stanford     1.832994
+25              U Conn     1.769912
+26                 UNC     1.668806
+27    SUNY Stony Brook     1.651376
+28             Arizona     1.629328
+29            Michigan     1.582734
+30                Duke     1.577909</code></pre>
+</div>
+</div>
+<p><br> This graph shows us the highest percentage of MD/PhD students per the total of those admitted to medical school. Again, sort of a highest odds, kind of thing.</p>
+</section>
+<section id="furthest-distance-from-temple" class="level4">
+<h4 class="anchored" data-anchor-id="furthest-distance-from-temple">40 Furthest Distance from Temple</h4>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>          short_name distance_to_temple_mi
+1        Mississippi                   275
+2       North Dakota                   253
+3     East Tennessee                   251
+4     LSU Shreveport                   200
+5      West Virginia                   198
+6      South Alabama                   196
+7           Arkansas                   156
+8       Case Western                   150
+9  Northeastern Ohio                   145
+10       U Wisconsin                   143
+11          Marshall                   142
+12      South Dakota                   129
+13         Dartmouth                   128
+14          Virginia                   121
+15               VCU                   121
+16    South Carolina                   120
+17          Missouri                   110
+18       Wake Forest                   107
+19           Florida                   106
+20            Albany                    97
+21     East Carolina                    96
+22   LSU New Orleans                    95
+23        Penn State                    95
+24              Iowa                    94
+25      SUNY Buffalo                    94
+26        Cincinnati                    88
+27           Augusta                    84
+28            Toledo                    84
+29              Mayo                    82
+30         Texas A&amp;M                    76
+31   Texas Galveston                    76
+32           Georgia                    75
+33         Wisconsin                    75
+34            Tulane                    73
+35          Kentucky                    72
+36      SUNY Upstate                    67
+37      Wright State                    66
+38          Nebraska                    63
+39  Brown University                    57
+40  SUNY Stony Brook                    56</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br> The temple is entirely important to me, so let’s see which medical schools are the furthest from the temple.</p>
+</section>
+<section id="closest-distance-to-temple" class="level4">
+<h4 class="anchored" data-anchor-id="closest-distance-to-temple">60 Closest Distance to Temple</h4>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>            short_name distance_to_temple_mi
+1                 UCLA                   1.2
+2     Thomas Jefferson                   1.6
+3        Cal San Diego                   1.8
+4           Cal Irvine                   2.0
+5              Cornell                   2.0
+6         Pennsylvania                   2.2
+7             Mt Sinai                   2.5
+8                  NYU                   3.2
+9               U Conn                   3.6
+10              Temple                   3.8
+11              U of U                   3.9
+12    U South Carolina                   4.8
+13             Harvard                   5.0
+14               Tufts                   5.0
+15           Creighton                   5.0
+16              Drexel                   6.0
+17          Texas Tech                   6.2
+18            Columbia                   6.4
+19              Nevada                   6.7
+20             Arizona                   7.0
+21  Texas Southwestern                   8.5
+22          Ohio State                   9.0
+23              Oregon                   9.0
+24          Georgetown                   9.2
+25              Howard                   9.3
+26          Loma Linda                   9.6
+27       South Florida                   9.8
+28          New Mexico                  12.0
+29   Texas San Antonio                  12.0
+30          Washington                  12.0
+31      SUNY Downstate                  12.3
+32            Boston U                  13.0
+33         KC Missouri                  13.0
+34               Emory                  13.6
+35            Colorado                  14.0
+36 Washington St Louis                  14.0
+37             Alabama                  15.0
+38                  KU                  15.0
+39         Saint Louis                  15.0
+40                 USC                  16.0
+41           Rutgers 2                  16.0
+42   Memphis Tennessee                  16.0
+43          Louisville                  17.0
+44           Minnesota                  17.0
+45     Albert Einstein                  17.0
+46           Cal Davis                  18.0
+47           Morehouse                  19.0
+48         Wayne State                  19.0
+49          Vanderbilt                  19.0
+50   Cal San Francisco                  20.0
+51     Chicago Medical                  20.0
+52                 UNC                  21.0
+53             Indiana                  22.0
+54             Meharry                  22.3
+55        Northwestern                  24.0
+56            Oklahoma                  24.0
+57                Pitt                  25.0
+58                Pitt                  25.0
+59            Illinois                  25.0
+60              Loyola                  25.0</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br> And this shows the ones that are closest to the temple.</p>
+</section>
+<section id="lowest-home-prices" class="level4">
+<h4 class="anchored" data-anchor-id="lowest-home-prices">40 Lowest Home Prices</h4>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>            short_name   home
+1          Wayne State  66000
+2          Mississippi  81000
+3         Case Western 106000
+4         Wright State 106000
+5               Toledo 108000
+6         SUNY Upstate 139000
+7             Marshall 140000
+8            Rochester 149000
+9    Memphis Tennessee 149000
+10             Augusta 163000
+11             Georgia 163000
+12             Alabama 169900
+13                  KU 171000
+14         Saint Louis 172000
+15 Washington St Louis 172000
+16       South Alabama 175000
+17           Wisconsin 180000
+18      LSU Shreveport 185000
+19            Oklahoma 192000
+20          Texas Tech 201000
+21    U South Carolina 206000
+22        SUNY Buffalo 209000
+23       Johns Hopkins 210000
+24            Maryland 210000
+25             Indiana 217000
+26            Arkansas 224000
+27        South Dakota 224000
+28         KC Missouri 226000
+29          Louisville 228000
+30          Cincinnati 229000
+31              Drexel 230000
+32              Temple 230000
+33        Pennsylvania 230000
+34    Thomas Jefferson 230000
+35              Loyola 234000
+36                Pitt 237000
+37                Pitt 237000
+38          Ohio State 237000
+39              Albany 239000
+40       East Carolina 250000</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br> An interesting part of data, but not one that I think I need to use to make the decision of what schools to apply to. This would be important for a tertiary level of decision making, or even as a means to help decide after being accepted to multiple schools.</p>
+</section>
+<section id="highest-home-prices" class="level4">
+<h4 class="anchored" data-anchor-id="highest-home-prices">40 Highest Home Prices</h4>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>          short_name    home
+1           Stanford 4047000
+2      Cal San Diego 2600000
+3  Cal San Francisco 1300000
+4         Cal Irvine 1200000
+5         Washington  984000
+6                USC  965000
+7               UCLA  965000
+8          Dartmouth  912000
+9          Cal Davis  875000
+10  SUNY Stony Brook  759000
+11           Hofstra  759000
+12          New York  759000
+13   Albert Einstein  759000
+14    SUNY Downstate  759000
+15          Columbia  759000
+16               NYU  759000
+17          Mt Sinai  759000
+18           Cornell  759000
+19             Tufts  741000
+20           Harvard  740000
+21          Boston U  739000
+22            U of U  625000
+23            Nevada  624000
+24            Howard  600000
+25        Georgetown  600000
+26            Oregon  600000
+27               UNC  591000
+28        Loma Linda  591000
+29          Colorado  575000
+30             Miami  494000
+31    South Carolina  477000
+32          Michigan  471000
+33          Virginia  467000
+34           Rutgers  439000
+35           Meharry  437000
+36        Vanderbilt  437000
+37     South Florida  405000
+38         Rutgers 2  402000
+39         Morehouse  390000
+40             Emory  390000</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br> Again, not a decision maker, but something to be mindful of for the future.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

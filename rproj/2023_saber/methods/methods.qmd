@@ -1,0 +1,85 @@
+---
+title: "Methods"
+---
+## Methods Background
+
+We used an adapted survey from other literature to find information regarding STEM motivation. This survey was given pre-semester and post-semester to 14 different Biology courses at Utah Valley University. These classes had students who were both STEM majors and non-majors, as these classes were generally General Education classes. Utah Valley University is an open enrollment institution, making this data an interesting set to explore.
+
+390 students answered the pre/post-semester surveys. We have a large number of pre-semester data, but only 390 responded to both the beginning and end of the semester survey.
+
+## Aspects of the Survey
+
+### STEM Motivation Questions
+
+Here are the questions that we asked to determine the different aspects of STEM motivation.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+
+# Define the data
+data <- data.frame(
+  Category = c("Science Identity", "Science Identity", "Science Identity", "Science Identity", "Science Identity",
+               "Career Motivation", "Career Motivation", "Career Motivation", "Career Motivation", "Career Motivation",
+               "Instrinsic Motivation", "Instrinsic Motivation", "Instrinsic Motivation", "Instrinsic Motivation", "Instrinsic Motivation",
+               "Self-Determination", "Self-Determination", "Self-Determination", "Self-Determination", "Self-Determination",
+               "Self-Efficacy", "Self-Efficacy", "Self-Efficacy", "Self-Efficacy",
+               "Grade Motivation", "Grade Motivation", "Grade Motivation", "Grade Motivation", "Grade Motivation",
+               "Value of Peer Interactions", "Value of Peer Interactions", "Value of Peer Interactions", "Value of Peer Interactions", "Value of Peer Interactions",
+               "Sense of Belonging", "Sense of Belonging", "Sense of Belonging", "Sense of Belonging", "Sense of Belonging", "Sense of Belonging",
+               "Competency in Science", "Competency in Science", "Competency in Science", "Competency in Science",
+               "Community in Science", "Community in Science", "Community in Science", "Community in Science"
+  ),
+  Statement = c("I see myself as a biology person.", "I see myself as a science person.", "I see myself as a scientist.",
+                "Other people (friends/family) see me as a science person.", "My science instructors see me as a science person.",
+                "Learning science will help me get a good job.", "Understanding science will benefit me in my career.",
+                "Knowing science will give me a career advantage.", "I will use science problem-solving skills in my career.",
+                "My career will involve science.", "Learning science is interesting.", "I am curious about discoveries in science.",
+                "The science I learn is relevant to my life.", "Learning science makes my life more meaningful.", "I enjoy learning science.",
+                "I study hard to learn science.", "I prepare well for science tests and labs.", "I put enough effort into learning science.",
+                "I spend a lot of time learning science.", "I use strategies to learn science well.", "I am confident that I will do well on science labs and projects.",
+                "I believe I can earn a grade of 'A' in science.", "I am confident I will do well on science tests.",
+                "I believe I can master science knowledge and skills.", "Scoring high on science tests and labs matters to me.",
+                "It is important that I get an 'A' in science.", "I think about the grade I will get in science.",
+                "Getting a good science grade is important to me.", "I like to do better than other students on science tests.",
+                "My college science classes are more enjoyable when I work with other students.",
+                "I understand more when my classmates participate in college classroom discussions.",
+                "I learn best in college science classes when I work with classmates.",
+                "The amount I understand is increased by classmates' ideas in my college science classes.",
+                "When classmates share their ideas in college science classes, this helps me learn.",
+                "When I am in a science setting, I feel a connection with the science community.",
+                "When I am in a science setting, I feel respected.",
+                "When I am in a science setting, I feel comfortable.",
+                "When I am in a science setting, I trust my instructors to be committed to helping me learn.",
+                "When I am in a science setting, I enjoy being an active participant.",
+                "When I am in a science setting, I try to say as little as possible.",
+                "I am good at solving complicated scientific problems.",
+                "I read websites articles or books about scientific issues.",
+                "I work on a project involving scientific concepts.",
+                "I think about how my life is affected by science.",
+                "To what extent is serving the community important to scientific work?",
+                "To what extent is working with people important to scientific work?",
+                "To what extent is helping others important to scientific work?",
+                "To what extent is connecting with others important to scientific work?"
+  )
+)
+
+# Create the table
+table <- kable(data, format = "html", row.names = FALSE) %>%
+  kable_styling(bootstrap_options = "striped", full_width = FALSE)
+
+# Display the table
+table
+```
+
+### Medical Interruptions
+
+Students self-identified whether or not they had medical experiences. After they answered that, students answered how often they had missed class due to their medical experiences on a scale from 1-5, from "Never" to "Always".
+
+## Statistical Analysis
+
+We used Pearson Correlations to properly understand the significance data for each of the aspects. We are excited to continue doing analysis on this data set, as we know that we can dive deeper into it.
+
+## Technology
+
+SPSS was used to complete the Pearson Correlation. R packages were used, with `corrplot` to create the correlation plot, `waffle` to create the demographic plots, and `ggplot2`, `dplyr`, and `gridExtra` to create the pre/post semester change plot.
+

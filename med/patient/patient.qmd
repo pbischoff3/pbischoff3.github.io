@@ -1,0 +1,84 @@
+---
+title: "Patient Interaction"
+---
+## Pie Chart
+
+As of **June 22, 2023**, I have spent **1250** hours with patients. <br> <br> *Due to confidentiality, I decided to put the main reason for care as the identifier for each patient.*
+
+```{r LAbels, include=FALSE}
+library(dplyr)
+library(janitor)
+library(stringr)
+library(readr)
+library(ggplot2)
+library(leaflet)
+library(sf)
+library(viridis)
+library(htmltools)
+library(stringr)
+library(reshape2)
+library(plotly)
+library(gapminder)
+library(readxl)
+
+
+df <- read_excel("files/patient.xlsx")
+```
+
+<center>
+
+```{r include=FALSE}
+bp<- ggplot(df, aes(x="", y=hours, fill=description))+
+geom_bar(width = 1, stat = "identity")+
+  geom_text(aes(label=hours),
+             position = position_stack(vjust = 0.5))
+bp
+
+pie <- bp+coord_polar("y", start=0)
+pie
+```
+
+```{r echo=FALSE}
+pie + scale_fill_brewer(palette="Pastel2")+
+  theme_minimal()
+```
+
+</center>
+
+<br> <br>
+
+## Seizures
+
+### Description
+
+From the August 2020 to June 2021, I lived in the basement of a family who had a 27 year old severely autistic child with drop-fall seizures. Each morning, I was responsible for the feeding, bathing, dressing, and care for this man. He had majorly stunted mental capabilities, and each seizure had the potential to further stunt his mental abilities or even cause death. As these drop-fall seizures were dangerous and unexpected, my job was to catch and hold him through the seizure to avoid further injuries. I worked in this position for 9 months, working approximately 13 hours a week.
+
+### Learnings
+
+This job was a stressful one, as the family told me from day one that the man would one day pass away from his seizures, and there was a chance that could happen while I worked with him. This helped me learn how to "leave work at work". I was attending school full-time, and I didn't have the mental fortitude to deal with that stress along with my academics at the beginning. At the end of this experience, I am happy to say that I had learned how to effectively manage my mental load.
+
+Also, as the man had severe autism, I learned how to be compassionate with those who struggled in expressing themselves. The patient was unable to communicate at all, but he was receptive to social expressions. By the end of my time at this job, the patient and I had a relationship, something that was difficult for the patient to do.
+
+<br> <br>
+
+## Dementia
+
+### Description
+
+In the summer of 2022, I worked with an elderly man (mid-80's) in his rest home. Due to recent surgeries and medical experiences, this man required somebody with him at all times in addition to the rest home staff. I filled that role and spent the mornings and evenings with him. Much of the work was typical CNA-type things, including toileting, dressing, feeding, and medication assistance. I worked in this position for 2 months, working roughly 9 hours a week.
+
+### Learnings
+
+Spending time with this man was very informative for me in my path in becoming a physician. Up until this experience, I hadn't spent much time with elderly patients. I was able to see the functions of a rest home while only being responsible for one patient. Also, as the patient had dementia, he was quite frustrated during the majority of my visits, and this helped me develop more patience in my healthcare skills.
+
+<br> <br>
+
+## Mobility
+
+### Description
+
+Starting in May 2022 to November 2022, I worked with a 19 year old man who had type 2 spinal muscular atrophy. I was responsible for the overnight care of the patient. Where he has muscle atrophy, he cannot roll around, but where it isn't paralysis, he could feel when bed sores were being formed. Therefore, my main task was to help him get into bed, roll him when he needed rolled, and provide CNA-type care when needed, including toileting, transferring, and cooking. I worked in this position for 6 months, working roughly 28 hours a week. Over Winter Break 2022, I was able to work with the man for 20 hours as well.
+
+### Learnings
+
+This job was informative because it was my first form of patient contact where the patient was competent mentally. This allowed for a different kind of caretaker/patient relationship. The patient and I truly became friends. With his condition and his mental wellbeing, he was able to tell me when he was uncomfortable, showing me a new light in being as careful and kind to patients as possible. This position turned into so much more than a job; instead it turned into an opportunity to provide help to someone who physically cannot themselves. This has been a transformative experience for me thus far, and I am excited to continue to learn.

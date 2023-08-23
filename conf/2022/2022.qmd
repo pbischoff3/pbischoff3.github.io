@@ -1,0 +1,36 @@
+---
+title: "2022"
+---
+
+2022 was my first real opportunity to present on what I had been learning. The Covid project came to a head where we could present at both UCUR and the UVU Showcase, while initial results from the Medical Conditions project was presented on at ASMCUE. <br>
+
+## Utah Council of Undergraduate Research ([UCUR](https://www.ucur.org/)) - February 2022
+
+This presentation took place virtually in tandem with the undergraduate schools in Utah, being hosted by Dixie State University.
+
+<br>
+
+<center>
+
+```{r echo=FALSE}
+library(vembedr)
+embed_url("https://www.youtube.com/watch?v=ljhjICzPYfw")
+```
+
+</center>
+
+<br>
+
+### Abstract
+
+First-generation students (FGSs) are less likely to earn a four-year degree than their continuing generation peers (CGSs). This trend is particularly pronounced in STEM disciplines. FGSs are more likely to be communally oriented which contrasts the typical values of universities that value individual accomplishments. This generates a disconnect between FGS's values and the perceived values of STEM. However, limited data is available from teaching institutions that are open-enrollment. In addition, few studies have examined peer interactions as a specific source of science motivation and communal views of science. This study examined student's cooperative experiences with peers and STEM motivation through pre/post-test survey collection within STEM classes. Students were asked questions addressing STEM motivation, the value of working with others and their community, and the community orientation of STEM disciplines. Early results show that FGS do indeed rely on cooperative experiences with peers to judge the communal orientation of science which then impacts their science motivation. We predict that similar trends will be seen for women and that these trends will be significantly weaker for CGSs. Our next steps include continuing with the data analysis. Also, this survey was taken when COVID-19 caused an emergency transition to online learning. Future data collection will provide a comparison to better understand the impacts of the emergency transition on STEM students.
+
+<br>
+
+## [UVU Showcase](https://www.uvu.edu/sculpt/events/showcase.html) - April 2022
+
+Similar to UCUR, I was able to present on my Covid project, but this time, presenting in person was a wonderful experience for me. <br>
+
+<center>
+
+![](photos/Poster%20Draft%206-1.png)
