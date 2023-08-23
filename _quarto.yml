@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  google-analytics: "G-KXEXV9F02B"
   navbar:
     left:
       - text: Home
