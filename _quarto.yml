@@ -38,10 +38,12 @@ website:
         menu:
           - text: Home
             href: med/home.qmd
-          - text: Patient Interactions  
-            href: med/patient/patient.qmd
           - text: Leadership
             href: med/leadership/leadership.qmd
+          - text: Patient Interactions  
+            href: med/patient/patient.qmd
+          - text: Research
+            href: med/research/research.qmd
           - text: Service
             href: med/service/service.qmd  
           - text: Shadowing
