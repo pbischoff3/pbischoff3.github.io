@@ -1,0 +1,610 @@
+---
+title: "RedCap Demographic Info"
+execute: 
+  echo: false
+  warning: false
+format: html
+editor: visual
+toc: true
+theme: cosmo
+---
+
+```{r loading_data}
+# loading data ####
+#Clear existing data and graphics
+rm(list=ls())
+graphics.off()
+#Load Hmisc library
+library(Hmisc)
+#Read Data
+data=read.csv('../deaf_diabetes/LITCHMANIVORYCTSI563-Demographics_DATA_2023-08-30_2126.csv')
+#Setting Labels
+
+label(data$record_id)="Record ID"
+label(data$redcap_event_name)="Event Name"
+label(data$redcap_repeat_instrument)="Repeat Instrument"
+label(data$redcap_repeat_instance)="Repeat Instance"
+label(data$age)="Current age in years"
+label(data$dx_year)="What year, roughly, were you diagnosed with diabetes?"
+label(data$dx_length)="How many years have you been living with diabetes? (round to the nearest number of years for example 5 )."
+label(data$romanticrelationship)="Select the option that best describes your romantic relationship "
+label(data$childstatus)="Select the option that best describes your child status "
+label(data$education)="Select the option that best describes your education "
+label(data$education_status)="Part-time or full-time enrollment?"
+label(data$livingsetting)="What type of setting do you live?"
+label(data$livingsituation)="Select the option that best describes your living situation "
+label(data$livingsituation_other)="If other living situation, please describe"
+label(data$race)="With which race do you identify? Check all that apply "
+label(data$race_othermultiple)="If other or multiple, please specify "
+label(data$ethnicity)="What is your ethnicity?  "
+label(data$work_status)="What is your current work status?"
+label(data$work_status_other)="If other work status, please describe"
+label(data$syringepens)="Are you using insulin syringes and/or pens? "
+label(data$diab_tech___1)="Are you using diabetes technology devices? Select all that apply  (choice=Continuous Glucose Monitor (CGM))"
+label(data$diab_tech___2)="Are you using diabetes technology devices? Select all that apply  (choice=Insulin pump)"
+label(data$diab_tech___3)="Are you using diabetes technology devices? Select all that apply  (choice=Smart insulin pens/Connected insulin pens)"
+label(data$diab_tech___4)="Are you using diabetes technology devices? Select all that apply  (choice=Im currently not using any diabetes devices)"
+label(data$insulinpump___1)="What type of insulin pump do you use? (choice=Regular pump - does not make automatic changes)"
+label(data$insulinpump___2)="What type of insulin pump do you use? (choice=Automated pump - low glucose suspend, hybrid closed loop, or closed loop pump, makes automatic changes or shuts off based on glucose level)"
+label(data$insulinpump___3)="What type of insulin pump do you use? (choice=Other)"
+label(data$insulinpump___4)="What type of insulin pump do you use? (choice=Not Sure)"
+label(data$insulinpump_other)="Please specify what type of insulin pump you use"
+label(data$insulinpump_unsure)="What is your pump?"
+label(data$insulinpen)="If you are using smart insulin pens, please specify what kind "
+label(data$insulinpen_other)="If other, please specify"
+label(data$appointmentpay)="Who pays for your diabetes clinic appointments? "
+label(data$appointmentpay_other)="Who pays for your diabetes clinic appointments? "
+label(data$insulinpay___1)="Who pays for your insulin/diabetes medications? (choice=Myself)"
+label(data$insulinpay___2)="Who pays for your insulin/diabetes medications? (choice=Parent(s))"
+label(data$insulinpay___3)="Who pays for your insulin/diabetes medications? (choice=Other Family Member)"
+label(data$insulinpay___4)="Who pays for your insulin/diabetes medications? (choice=Significant other)"
+label(data$insulinpay___5)="Who pays for your insulin/diabetes medications? (choice=Other)"
+label(data$insulinpay_other)="If other, please specify"
+label(data$supplypay)="Who pays for your diabetes supplies, such as insulin pumps, CGM, CGM sensors, lancets?"
+label(data$supplypay_other)="If other, please specify"
+label(data$insurance___1)="What type of health insurance do you have? Check all that apply (choice=Private (from a commercial insurer))"
+label(data$insurance___2)="What type of health insurance do you have? Check all that apply (choice=Public (for example, CHIP, Medicaid, Medicare))"
+label(data$insurance___3)="What type of health insurance do you have? Check all that apply (choice=County Health Care Coverage (for example, Salt Lake County offers SelectHealth (IHC) and PEHP (non-IHC)))"
+label(data$insurance___4)="What type of health insurance do you have? Check all that apply (choice=Other (Specify))"
+label(data$insurance___5)="What type of health insurance do you have? Check all that apply (choice=No Insurance)"
+label(data$insurance___6)="What type of health insurance do you have? Check all that apply (choice=Im not sure)"
+label(data$insurance_other)="If other insurance, please specify"
+label(data$familydiab___1)="Do you have other family members living with Type 1 Diabetes?  (choice=Sibling(s))"
+label(data$familydiab___2)="Do you have other family members living with Type 1 Diabetes?  (choice=Parent(s))"
+label(data$familydiab___3)="Do you have other family members living with Type 1 Diabetes?  (choice=Other)"
+label(data$familydiab___4)="Do you have other family members living with Type 1 Diabetes?  (choice=No, I do not have other family members living with Type 1 Diabetes)"
+label(data$familydiab_other)="If other, please specify"
+label(data$privateinsurance)="Through whom do you have private health insurance?"
+label(data$privateinsurance_other)="Please specify"
+label(data$gender)="What is your gender?"
+label(data$gender_other)="If prefer to self-describe, please specify"
+label(data$genderattraction)="Which gender are you attracted to?       "
+label(data$genderattraction_other)="If other, please specify."
+label(data$pronouns___0)="Pronouns that should be used to refer to you (select all that apply):  (choice=She/her/hers)"
+label(data$pronouns___1)="Pronouns that should be used to refer to you (select all that apply):  (choice=He/him/his)"
+label(data$pronouns___2)="Pronouns that should be used to refer to you (select all that apply):  (choice=They/them/theirs)"
+label(data$pronouns___3)="Pronouns that should be used to refer to you (select all that apply):  (choice=Ze/zir/zirs)"
+label(data$pronouns___4)="Pronouns that should be used to refer to you (select all that apply):  (choice=Something else)"
+label(data$pronouns_other)="What are your pronouns?"
+label(data$pwd_demographics_complete)="Complete?"
+#Setting Units
+
+
+#Setting Factors(will create new variable for factors)
+data$redcap_event_name.factor = factor(data$redcap_event_name,levels=c("enrollment_arm_1","personnel_arm_1","communication_arm_1","month1_arm_1","month2_arm_1","post_arm_1","visit1_arm_1","visit2_arm_1","visit3_arm_1","visit4_arm_1","visit5_arm_1","visit6_arm_1","month6_arm_1","enrollment_arm_2","session_1_arm_2","session_2_arm_2","session_3_arm_2","session_4_arm_2","session_5_arm_2","session_6_arm_2"))
+data$redcap_repeat_instrument.factor = factor(data$redcap_repeat_instrument,levels=c("personnel_with_pwd_comm_notes","personnel_adverse_events_log"))
+data$romanticrelationship.factor = factor(data$romanticrelationship,levels=c("1","2","3","4"))
+data$childstatus.factor = factor(data$childstatus,levels=c("1","2","3"))
+data$education.factor = factor(data$education,levels=c("1","2","3","4"))
+data$education_status.factor = factor(data$education_status,levels=c("1","2"))
+data$livingsetting.factor = factor(data$livingsetting,levels=c("1","2","3"))
+data$livingsituation.factor = factor(data$livingsituation,levels=c("1","2","3","4","5","6"))
+data$race.factor = factor(data$race,levels=c("1","2","3","4","5","6"))
+data$ethnicity.factor = factor(data$ethnicity,levels=c("1","2","3"))
+data$work_status.factor = factor(data$work_status,levels=c("1","2","3","4","5","6","7"))
+data$syringepens.factor = factor(data$syringepens,levels=c("1","0"))
+data$diab_tech___1.factor = factor(data$diab_tech___1,levels=c("0","1"))
+data$diab_tech___2.factor = factor(data$diab_tech___2,levels=c("0","1"))
+data$diab_tech___3.factor = factor(data$diab_tech___3,levels=c("0","1"))
+data$diab_tech___4.factor = factor(data$diab_tech___4,levels=c("0","1"))
+data$insulinpump___1.factor = factor(data$insulinpump___1,levels=c("0","1"))
+data$insulinpump___2.factor = factor(data$insulinpump___2,levels=c("0","1"))
+data$insulinpump___3.factor = factor(data$insulinpump___3,levels=c("0","1"))
+data$insulinpump___4.factor = factor(data$insulinpump___4,levels=c("0","1"))
+data$insulinpen.factor = factor(data$insulinpen,levels=c("1","2","3"))
+data$appointmentpay.factor = factor(data$appointmentpay,levels=c("1","2","3","4","5"))
+data$insulinpay___1.factor = factor(data$insulinpay___1,levels=c("0","1"))
+data$insulinpay___2.factor = factor(data$insulinpay___2,levels=c("0","1"))
+data$insulinpay___3.factor = factor(data$insulinpay___3,levels=c("0","1"))
+data$insulinpay___4.factor = factor(data$insulinpay___4,levels=c("0","1"))
+data$insulinpay___5.factor = factor(data$insulinpay___5,levels=c("0","1"))
+data$supplypay.factor = factor(data$supplypay,levels=c("1","2","3","4","5"))
+data$insurance___1.factor = factor(data$insurance___1,levels=c("0","1"))
+data$insurance___2.factor = factor(data$insurance___2,levels=c("0","1"))
+data$insurance___3.factor = factor(data$insurance___3,levels=c("0","1"))
+data$insurance___4.factor = factor(data$insurance___4,levels=c("0","1"))
+data$insurance___5.factor = factor(data$insurance___5,levels=c("0","1"))
+data$insurance___6.factor = factor(data$insurance___6,levels=c("0","1"))
+data$familydiab___1.factor = factor(data$familydiab___1,levels=c("0","1"))
+data$familydiab___2.factor = factor(data$familydiab___2,levels=c("0","1"))
+data$familydiab___3.factor = factor(data$familydiab___3,levels=c("0","1"))
+data$familydiab___4.factor = factor(data$familydiab___4,levels=c("0","1"))
+data$privateinsurance.factor = factor(data$privateinsurance,levels=c("1","2","3","4","5","6","7","8"))
+data$gender.factor = factor(data$gender,levels=c("0","1","2","3","4"))
+data$genderattraction.factor = factor(data$genderattraction,levels=c("0","1","2","3","4"))
+data$pronouns___0.factor = factor(data$pronouns___0,levels=c("0","1"))
+data$pronouns___1.factor = factor(data$pronouns___1,levels=c("0","1"))
+data$pronouns___2.factor = factor(data$pronouns___2,levels=c("0","1"))
+data$pronouns___3.factor = factor(data$pronouns___3,levels=c("0","1"))
+data$pronouns___4.factor = factor(data$pronouns___4,levels=c("0","1"))
+data$pwd_demographics_complete.factor = factor(data$pwd_demographics_complete,levels=c("0","1","2"))
+
+levels(data$redcap_event_name.factor)=c("enrollment (Arm 1: Participant)","Personnel (Arm 1: Participant)","communication (Arm 1: Participant)","Month1 (Arm 1: Participant)","Month2 (Arm 1: Participant)","post (Arm 1: Participant)","Visit1 (Arm 1: Participant)","Visit2 (Arm 1: Participant)","Visit3 (Arm 1: Participant)","Visit4 (Arm 1: Participant)","Visit5 (Arm 1: Participant)","visit6 (Arm 1: Participant)","Month6 (Arm 1: Participant)","enrollment (Arm 2: Peer Connector)","Session 1 (Arm 2: Peer Connector)","Session 2 (Arm 2: Peer Connector)","Session 3 (Arm 2: Peer Connector)","Session 4 (Arm 2: Peer Connector)","Session 5 (Arm 2: Peer Connector)","Session 6 (Arm 2: Peer Connector)")
+levels(data$redcap_repeat_instrument.factor)=c("Personnel with PWD Comm Notes","Personnel Adverse Events Log")
+levels(data$romanticrelationship.factor)=c("No current romantic relationship","Dating, but not in a committed relationship","Dating for a period of time, but no long-term commitment","In a committed, long-term relationship")
+levels(data$childstatus.factor)=c("I do not have any children","My partner or I are currently pregnant","I have one or more children")
+levels(data$education.factor)=c("Not currently in school","Enrolled in a technical college/trade school","Enrolled in a community college","Enrolled at a university")
+levels(data$education_status.factor)=c("Part-time","Full-time")
+levels(data$livingsetting.factor)=c("Rural","Suburban","Urban")
+levels(data$livingsituation.factor)=c("Living alone","Living with romantic partner","Living with friends or roommates","Living with parents","Living with another family member","Other")
+levels(data$race.factor)=c("American Indian or Alaska Native","Asian or Asian American","Black or African American","Native Hawaiian or Other Pacific Islander","White","Multiple, other, or not listed")
+levels(data$ethnicity.factor)=c("Hispanic or Latino","Not Hispanic or Latino","Prefer not to answer")
+levels(data$work_status.factor)=c("Full-time","Part-time","Currently not working","Retired","On disability","Other","Homemaker")
+levels(data$syringepens.factor)=c("Yes","No")
+levels(data$diab_tech___1.factor)=c("Unchecked","Checked")
+levels(data$diab_tech___2.factor)=c("Unchecked","Checked")
+levels(data$diab_tech___3.factor)=c("Unchecked","Checked")
+levels(data$diab_tech___4.factor)=c("Unchecked","Checked")
+levels(data$insulinpump___1.factor)=c("Unchecked","Checked")
+levels(data$insulinpump___2.factor)=c("Unchecked","Checked")
+levels(data$insulinpump___3.factor)=c("Unchecked","Checked")
+levels(data$insulinpump___4.factor)=c("Unchecked","Checked")
+levels(data$insulinpen.factor)=c("InPen","BigFoot","Other")
+levels(data$appointmentpay.factor)=c("Myself","Parent(s)","Other Family Member","Significant other","Other")
+levels(data$insulinpay___1.factor)=c("Unchecked","Checked")
+levels(data$insulinpay___2.factor)=c("Unchecked","Checked")
+levels(data$insulinpay___3.factor)=c("Unchecked","Checked")
+levels(data$insulinpay___4.factor)=c("Unchecked","Checked")
+levels(data$insulinpay___5.factor)=c("Unchecked","Checked")
+levels(data$supplypay.factor)=c("Myself","Parent(s)","Other Family Member","Significant other","Other")
+levels(data$insurance___1.factor)=c("Unchecked","Checked")
+levels(data$insurance___2.factor)=c("Unchecked","Checked")
+levels(data$insurance___3.factor)=c("Unchecked","Checked")
+levels(data$insurance___4.factor)=c("Unchecked","Checked")
+levels(data$insurance___5.factor)=c("Unchecked","Checked")
+levels(data$insurance___6.factor)=c("Unchecked","Checked")
+levels(data$familydiab___1.factor)=c("Unchecked","Checked")
+levels(data$familydiab___2.factor)=c("Unchecked","Checked")
+levels(data$familydiab___3.factor)=c("Unchecked","Checked")
+levels(data$familydiab___4.factor)=c("Unchecked","Checked")
+levels(data$privateinsurance.factor)=c("My employer","My school","My parents","My partner","Military","Marketplace (Healthcare.gov)","Purchased directly from insurer","Other (specify)")
+levels(data$gender.factor)=c("Male","Female","Non-binary","Prefer to self-describe","Prefer not to answer")
+levels(data$genderattraction.factor)=c("Male","Female","Both","Other","I prefer not to respond")
+levels(data$pronouns___0.factor)=c("Unchecked","Checked")
+levels(data$pronouns___1.factor)=c("Unchecked","Checked")
+levels(data$pronouns___2.factor)=c("Unchecked","Checked")
+levels(data$pronouns___3.factor)=c("Unchecked","Checked")
+levels(data$pronouns___4.factor)=c("Unchecked","Checked")
+levels(data$pwd_demographics_complete.factor)=c("Incomplete","Unverified","Complete")
+```
+
+# Ages
+
+## Bar Chart
+
+```{r age_bar_chart}
+# Load necessary libraries
+library(ggplot2)
+library(RColorBrewer)
+
+# Create a data frame with age and counts
+age_counts <- data.frame(
+  Age = data$age,
+  Count = 1  # Each row represents one count
+)
+
+# Create a bar chart
+ggplot(age_counts, aes(x = Age)) +
+  geom_bar(stat = "count", fill = "red") +
+  labs(title = "Distribution of Ages", x = "Age", y = "Count") +
+  theme_minimal()
+```
+
+## Box and Whisker
+
+```{r age_box_whisker}
+# Create a horizontal box and whisker plot
+ggplot(data, aes(x = age)) +
+  geom_boxplot(fill = "red", color = "black", horizontal = TRUE) +
+  labs(title = "Box Plot of Age Distribution",
+       x = "Age",
+       y = "Summary Statistics") +
+  theme_minimal() 
+```
+
+<br>
+
+```{r}
+summary(data$age)
+```
+
+# Diagnosis Year
+
+## Bar Chart
+
+```{r dx_year_bar}
+# Create a data frame with dx_year and counts
+dx_year_counts <- data.frame(
+  dx_year = data$dx_year,
+  Count = 1  # Each row represents one count
+)
+
+# Create a bar chart based on dx_year with rotated x-axis labels
+ggplot(dx_year_counts, aes(x = factor(dx_year))) +
+  geom_bar(stat = "count", fill = "red") +
+  labs(title = "Distribution of dx_year", x = "dx_year", y = "Count") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 270, hjust = 1))
+
+```
+
+## Box and Whisker
+
+```{r dx_year_bw}
+# Create a horizontal box and whisker plot for dx_year_counts
+ggplot(dx_year_counts, aes(x = dx_year)) +
+  geom_boxplot(fill = "red", color = "black", horizontal = TRUE) +
+  labs(title = "Box Plot of dx_year Counts",
+       x = "dx_year",
+       y = "Summary Statistics") +
+  theme_minimal()
+
+```
+
+```{r}
+summary(data$dx_year)
+```
+
+# Diagnosis Length
+
+## Bar Chart
+
+```{r dx_length_bar}
+# Create a data frame with dx_length and counts
+dx_length_counts <- data.frame(
+  dx_length = data$dx_length,
+  Count = 1  # Each row represents one count
+)
+
+# Create a bar chart
+ggplot(dx_length_counts, aes(x = dx_length)) +
+  geom_bar(stat = "count", fill = "red") +
+  labs(title = "Distribution of dx_length", x = "dx_length", y = "Count") +
+  theme_minimal()
+
+
+```
+
+## Box and Whisker
+
+```{r dx_length_bw}
+# Create a box and whisker plot for dx_length
+ggplot(dx_length_counts, aes(x = dx_length)) +
+  geom_boxplot(fill = "red", color = "black", horizontal = TRUE) +
+  labs(title = "Box Plot of dx_length Counts",
+       x = "dx_length",
+       y = "Summary Statistics") +
+  theme_minimal()
+
+```
+
+<br>
+
+```{r}
+summary(data$dx_length)
+```
+
+# Romantic Relationship
+
+## Pie Chart
+
+```{r relations_pie}
+# Assuming data$romanticrelationship.factor is a factor variable
+# Create a table of counts for romanticrelationship.factor
+relationship_counts <- table(data$romanticrelationship.factor)
+
+# Convert the table to a data frame
+relationship_counts_df <- as.data.frame(relationship_counts)
+
+# Rename the columns for clarity
+colnames(relationship_counts_df) <- c("Category", "Count")
+
+# Create a pie chart
+library(ggplot2)
+ggplot(relationship_counts_df, aes(x = "", y = Count, fill = Category)) +
+  geom_bar(stat = "identity") +
+  coord_polar(theta = "y") +
+  labs(title = "Pie Chart of Romantic Relationship Factor") +
+  theme_void()
+
+```
+
+## Table
+
+```{r relations_table}
+# Load necessary libraries
+library(gt)
+
+# Assuming you have the counts in a data frame like this:
+relationship_data <- data.frame(
+  Relationship_Status = c(
+    "No current romantic relationship",
+    "Dating, but not in a committed relationship",
+    "Dating for a period of time, but no long-term commitment",
+    "In a committed, long-term relationship",
+    "NA's"
+  ),
+  Count = c(46, 9, 8, 70, 2)
+)
+
+# Create a table using gt
+relationship_data %>%
+  gt() %>%
+  tab_header(title = "Distribution of Relationship Status") %>%
+  fmt_number(columns = "Count", decimals = 0)  # Format the Count column as integers
+
+```
+
+# Child Status
+
+## Pie Chart
+
+```{r child_pie}
+# Assuming data$childstatus.factor is a factor variable
+# Create a table of counts for childstatus.factor
+childstatus_counts <- table(data$childstatus.factor)
+
+# Convert the table to a data frame
+childstatus_counts_df <- as.data.frame(childstatus_counts)
+
+# Rename the columns for clarity
+colnames(childstatus_counts_df) <- c("Category", "Count")
+
+# Load necessary libraries
+library(ggplot2)
+
+# Create a pie chart
+ggplot(childstatus_counts_df, aes(x = "", y = Count, fill = Category)) +
+  geom_bar(stat = "identity") +
+  coord_polar(theta = "y") +
+  labs(title = "Pie Chart of Child Status") +
+  theme_void()
+
+```
+
+## Table
+
+```{r child_table}
+# Assuming data$childstatus.factor is a factor variable
+# Create a table of counts for childstatus.factor
+childstatus_counts <- table(data$childstatus.factor)
+
+# Convert the table to a data frame
+childstatus_counts_df <- as.data.frame(childstatus_counts)
+
+# Rename the columns for clarity
+colnames(childstatus_counts_df) <- c("Category", "Count")
+
+# Load necessary libraries
+library(gt)
+
+# Create a table using gt
+childstatus_counts_df %>%
+  gt() %>%
+  tab_header(title = "Distribution of Child Status") %>%
+  fmt_number(columns = "Count", decimals = 0)  # Format the Count column as integers
+
+```
+
+# Education
+
+## Pie Chart
+
+```{r edu_pie}
+# Assuming data$education.factor is a factor variable
+# Create a table of counts for education.factor
+education_counts <- table(data$education.factor)
+
+# Convert the table to a data frame
+education_counts_df <- as.data.frame(education_counts)
+
+# Rename the columns for clarity
+colnames(education_counts_df) <- c("Education Level", "Count")
+
+# Load necessary libraries
+library(ggplot2)
+
+# Create a pie chart
+ggplot(education_counts_df, aes(x = "", y = Count, fill = `Education Level`)) +
+  geom_bar(stat = "identity") +
+  coord_polar(theta = "y") +
+  labs(title = "Pie Chart of Education Levels") +
+  theme_void()
+
+```
+
+## Table
+
+```{r school_table}
+# Assuming data$education.factor is a factor variable
+# Create a table of counts for education.factor
+education_counts <- table(data$education.factor)
+
+# Convert the table to a data frame
+education_counts_df <- as.data.frame(education_counts)
+
+# Rename the columns for clarity
+colnames(education_counts_df) <- c("Education Level", "Count")
+
+# Load necessary libraries
+library(gt)
+
+# Create a table using gt
+education_counts_df %>%
+  gt() %>%
+  tab_header(title = "Distribution of Education Levels") %>%
+  fmt_number(columns = "Count", decimals = 0)  # Format the Count column as integers
+
+```
+
+## Education Status
+
+### Pie Chart
+
+```{r edu_stat_pie}
+# Assuming data$education_status.factor is a factor variable
+# Create a table of counts for education_status.factor
+education_status_counts <- table(data$education_status.factor)
+
+# Convert the table to a data frame
+education_status_counts_df <- as.data.frame(education_status_counts)
+
+# Rename the columns for clarity
+colnames(education_status_counts_df) <- c("Education Status", "Count")
+
+# Load necessary libraries
+library(ggplot2)
+
+# Create a pie chart
+ggplot(education_status_counts_df, aes(x = "", y = Count, fill = `Education Status`)) +
+  geom_bar(stat = "identity") +
+  coord_polar(theta = "y") +
+  labs(title = "Pie Chart of Education Status") +
+  theme_void()
+
+```
+
+### Table
+
+```{r edu_stat_table}
+# Create a table of counts for education_status.factor
+education_status_counts <- table(data$education_status.factor)
+
+# Convert the table to a data frame
+education_status_counts_df <- as.data.frame(education_status_counts)
+
+# Rename the columns for clarity
+colnames(education_status_counts_df) <- c("Education Status", "Count")
+
+# Load necessary libraries
+library(gt)
+
+# Create a table using gt
+education_status_counts_df %>%
+  gt() %>%
+  tab_header(title = "Distribution of Education Status") %>%
+  fmt_number(columns = "Count", decimals = 0)  # Format the Count column as integers
+```
+
+# Living Setting
+
+## Pie Chart
+
+```{r live_set_pie}
+# Assuming data$livingsetting.factor is a factor variable
+# Create a table of counts for livingsetting.factor
+livingsetting_counts <- table(data$livingsetting.factor)
+
+# Convert the table to a data frame
+livingsetting_counts_df <- as.data.frame(livingsetting_counts)
+
+# Rename the columns for clarity
+colnames(livingsetting_counts_df) <- c("Living Setting", "Count")
+
+# Load necessary libraries
+library(ggplot2)
+
+# Create a pie chart
+ggplot(livingsetting_counts_df, aes(x = "", y = Count, fill = `Living Setting`)) +
+  geom_bar(stat = "identity") +
+  coord_polar(theta = "y") +
+  labs(title = "Pie Chart of Living Setting") +
+  theme_void()
+
+```
+
+## Table
+
+```{r}
+# Assuming data$livingsetting.factor is a factor variable
+# Create a table of counts for livingsetting.factor
+livingsetting_counts <- table(data$livingsetting.factor)
+
+# Convert the table to a data frame
+livingsetting_counts_df <- as.data.frame(livingsetting_counts)
+
+# Rename the columns for clarity
+colnames(livingsetting_counts_df) <- c("Living Setting", "Count")
+
+# Load necessary libraries
+library(gt)
+
+# Create a table using gt
+livingsetting_counts_df %>%
+  gt() %>%
+  tab_header(title = "Distribution of Living Settings") %>%
+  fmt_number(columns = "Count", decimals = 0)  # Format the Count column as integers
+
+```
+
+# Living Situation
+
+## Pie Chart
+
+```{r}
+# Assuming data$livingsituation.factor is a factor variable
+# Create a table of counts for livingsituation.factor
+livingsituation_counts <- table(data$livingsituation.factor)
+
+# Convert the table to a data frame
+livingsituation_counts_df <- as.data.frame(livingsituation_counts)
+
+# Rename the columns for clarity
+colnames(livingsituation_counts_df) <- c("Living Situation", "Count")
+
+# Load necessary libraries
+library(ggplot2)
+
+# Create a pie chart
+ggplot(livingsituation_counts_df, aes(x = "", y = Count, fill = `Living Situation`)) +
+  geom_bar(stat = "identity") +
+  coord_polar(theta = "y") +
+  labs(title = "Pie Chart of Living Situation") +
+  theme_void()
+
+
+```
+
+## Table
+
+```{r}
+# Assuming data$livingsituation.factor is a factor variable
+# Create a table of counts for livingsituation.factor
+livingsituation_counts <- table(data$livingsituation.factor)
+
+# Convert the table to a data frame
+livingsituation_counts_df <- as.data.frame(livingsituation_counts)
+
+# Rename the columns for clarity
+colnames(livingsituation_counts_df) <- c("Living Situation", "Count")
+
+# Load necessary libraries
+library(gt)
+
+# Create a table using gt
+livingsituation_counts_df %>%
+  gt() %>%
+  tab_header(title = "Distribution of Living Situations") %>%
+  fmt_number(columns = "Count", decimals = 0)  # Format the Count column as integers
+
+```

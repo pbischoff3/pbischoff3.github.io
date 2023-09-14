@@ -1,0 +1,534 @@
+[
+  {
+    "objectID": "temp_workup.html",
+    "href": "temp_workup.html",
+    "title": "RedCap Demographic Info",
+    "section": "",
+    "text": "Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's \n  18.00   22.00   24.00   24.29   27.00   30.00       2"
+  },
+  {
+    "objectID": "temp_workup.html#box-and-whisker",
+    "href": "temp_workup.html#box-and-whisker",
+    "title": "RedCap Demographic Info",
+    "section": "",
+    "text": "Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's \n  18.00   22.00   24.00   24.29   27.00   30.00       2"
+  },
+  {
+    "objectID": "temp_workup.html#bar-chart-1",
+    "href": "temp_workup.html#bar-chart-1",
+    "title": "RedCap Demographic Info",
+    "section": "Bar Chart",
+    "text": "Bar Chart"
+  },
+  {
+    "objectID": "temp_workup.html#box-and-whisker-1",
+    "href": "temp_workup.html#box-and-whisker-1",
+    "title": "RedCap Demographic Info",
+    "section": "Box and Whisker",
+    "text": "Box and Whisker\n\n\n\n\n\n\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's \n   1994    2005    2010    2010    2014    2023       2"
+  },
+  {
+    "objectID": "temp_workup.html#bar-chart-2",
+    "href": "temp_workup.html#bar-chart-2",
+    "title": "RedCap Demographic Info",
+    "section": "Bar Chart",
+    "text": "Bar Chart"
+  },
+  {
+    "objectID": "temp_workup.html#box-and-whisker-2",
+    "href": "temp_workup.html#box-and-whisker-2",
+    "title": "RedCap Demographic Info",
+    "section": "Box and Whisker",
+    "text": "Box and Whisker\n\n\n\n\n\n\n\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's \n   0.50    8.00   13.00   12.49   17.00   28.00       2"
+  },
+  {
+    "objectID": "temp_workup.html#pie-chart",
+    "href": "temp_workup.html#pie-chart",
+    "title": "RedCap Demographic Info",
+    "section": "Pie Chart",
+    "text": "Pie Chart"
+  },
+  {
+    "objectID": "temp_workup.html#table",
+    "href": "temp_workup.html#table",
+    "title": "RedCap Demographic Info",
+    "section": "Table",
+    "text": "Table\n\n\n\n\n\n\n  \n    \n      Distribution of Relationship Status\n    \n    \n    \n      Relationship_Status\n      Count\n    \n  \n  \n    No current romantic relationship\n46\n    Dating, but not in a committed relationship\n9\n    Dating for a period of time, but no long-term commitment\n8\n    In a committed, long-term relationship\n70\n    NA's\n2"
+  },
+  {
+    "objectID": "temp_workup.html#pie-chart-1",
+    "href": "temp_workup.html#pie-chart-1",
+    "title": "RedCap Demographic Info",
+    "section": "Pie Chart",
+    "text": "Pie Chart"
+  },
+  {
+    "objectID": "temp_workup.html#table-1",
+    "href": "temp_workup.html#table-1",
+    "title": "RedCap Demographic Info",
+    "section": "Table",
+    "text": "Table\n\n\n\n\n\n\n  \n    \n      Distribution of Child Status\n    \n    \n    \n      Category\n      Count\n    \n  \n  \n    I do not have any children\n107\n    My partner or I are currently pregnant\n4\n    I have one or more children\n22"
+  },
+  {
+    "objectID": "temp_workup.html#pie-chart-2",
+    "href": "temp_workup.html#pie-chart-2",
+    "title": "RedCap Demographic Info",
+    "section": "Pie Chart",
+    "text": "Pie Chart"
+  },
+  {
+    "objectID": "temp_workup.html#table-2",
+    "href": "temp_workup.html#table-2",
+    "title": "RedCap Demographic Info",
+    "section": "Table",
+    "text": "Table\n\n\n\n\n\n\n  \n    \n      Distribution of Education Levels\n    \n    \n    \n      Education Level\n      Count\n    \n  \n  \n    Not currently in school\n76\n    Enrolled in a technical college/trade school\n5\n    Enrolled in a community college\n4\n    Enrolled at a university\n48"
+  },
+  {
+    "objectID": "temp_workup.html#education-status",
+    "href": "temp_workup.html#education-status",
+    "title": "RedCap Demographic Info",
+    "section": "Education Status",
+    "text": "Education Status\n\nPie Chart\n\n\n\n\n\n\n\nTable\n\n\n\n\n\n\n  \n    \n      Distribution of Education Status\n    \n    \n    \n      Education Status\n      Count\n    \n  \n  \n    Part-time\n16\n    Full-time\n41"
+  },
+  {
+    "objectID": "temp_workup.html#pie-chart-4",
+    "href": "temp_workup.html#pie-chart-4",
+    "title": "RedCap Demographic Info",
+    "section": "Pie Chart",
+    "text": "Pie Chart"
+  },
+  {
+    "objectID": "temp_workup.html#table-4",
+    "href": "temp_workup.html#table-4",
+    "title": "RedCap Demographic Info",
+    "section": "Table",
+    "text": "Table\n\n\n\n\n\n\n  \n    \n      Distribution of Living Settings\n    \n    \n    \n      Living Setting\n      Count\n    \n  \n  \n    Rural\n7\n    Suburban\n77\n    Urban\n49"
+  },
+  {
+    "objectID": "temp_workup.html#pie-chart-5",
+    "href": "temp_workup.html#pie-chart-5",
+    "title": "RedCap Demographic Info",
+    "section": "Pie Chart",
+    "text": "Pie Chart"
+  },
+  {
+    "objectID": "temp_workup.html#table-5",
+    "href": "temp_workup.html#table-5",
+    "title": "RedCap Demographic Info",
+    "section": "Table",
+    "text": "Table\n\n\n\n\n\n\n  \n    \n      Distribution of Living Situations\n    \n    \n    \n      Living Situation\n      Count\n    \n  \n  \n    Living alone\n11\n    Living with romantic partner\n52\n    Living with friends or roommates\n30\n    Living with parents\n20\n    Living with another family member\n15\n    Other\n5"
+  },
+  {
+    "objectID": "rproj/rproj.html",
+    "href": "rproj/rproj.html",
+    "title": "R Projects",
+    "section": "",
+    "text": "Following the links under the associated tabs, see different R projects I have been involved in, either in classes or on my own."
+  },
+  {
+    "objectID": "rproj/2023_saber/pre-post/pre-post.html",
+    "href": "rproj/2023_saber/pre-post/pre-post.html",
+    "title": "Pre-Post Analysis",
+    "section": "",
+    "text": "# Load required packages\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(gridExtra)\n\n# Create a data frame from the provided .csv data\ndata &lt;- read.csv(\"../data/pre_post.csv\")\n\n# Rename the columns\ncolnames(data) &lt;- c(\"interruptions\", \"Pair\", \"Mean\", \"Std.Deviation\", \"Std.Error.Mean\",\n                    \"Lower\", \"Upper\", \"t\", \"df\", \"Sig\")\n\n# Get unique pair names\npair_names &lt;- unique(data$Pair)\n\n# List to store individual graphs\ngraphs &lt;- list()\n\n# New names for the pairs\nnew_pair_names &lt;- c(\"Science Identity\", \"Science Career Motivation\", \"Science Interest\",\n                    \"Self-Determination\", \"Self-Efficacy\", \"Community in Science\")\n\n# Define the color gradient\ncolor_gradient &lt;- colorRampPalette(c(\"#96c48f\", \"#136307\"))\n\n# Generate graphs for each pair\nfor (i in seq_along(pair_names)) {\n  # Filter data for the specific pair\n  pair_data &lt;- data %&gt;%\n    filter(Pair == pair_names[i])\n  \n  # Filter significant data points (Sig &lt;= 0.05)\n  sig_data &lt;- pair_data %&gt;%\n    filter(Sig &lt;= 0.05)\n  \n  # Create plot for the specific pair\n  plot &lt;- ggplot(pair_data, aes(x = factor(interruptions), y = Mean, fill = factor(interruptions))) +\n    geom_bar(stat = \"identity\", position = \"dodge\") +\n    geom_errorbar(aes(ymin = Mean - Std.Error.Mean, ymax = Mean + Std.Error.Mean),\n                  position = position_dodge(width = 0.9), width = 0.25) +\n    labs(x = \"Number of Medical Interruptions\", y = \"Mean\") +\n    ggtitle(new_pair_names[i]) +\n    scale_fill_manual(values = color_gradient(length(unique(pair_data$interruptions)))) +\n    theme_minimal() +\n    theme(legend.position = \"none\") +\n    theme(panel.border = element_rect(color = \"black\", fill = NA))\n  \n  # Add significance points to the plot\n  if (nrow(sig_data) &gt; 0) {\n    plot &lt;- plot +\n      geom_point(data = sig_data, aes(y = Mean + Std.Error.Mean + 0.2), shape = 16, size = 3, color = \"black\")\n  }\n  \n  # Store the plot in the list\n  graphs[[i]] &lt;- plot\n}\n\n# Combine graphs into a grid\ncombined_plot &lt;- grid.arrange(grobs = graphs, nrow = 2, ncol = 3, padding = unit(10, \"cm\"))\n\n\n\n# Display the combined plot\nprint(combined_plot)\n\nTableGrob (2 x 3) \"arrange\": 6 grobs\n  z     cells    name           grob\n1 1 (1-1,1-1) arrange gtable[layout]\n2 2 (1-1,2-2) arrange gtable[layout]\n3 3 (1-1,3-3) arrange gtable[layout]\n4 4 (2-2,1-1) arrange gtable[layout]\n5 5 (2-2,2-2) arrange gtable[layout]\n6 6 (2-2,3-3) arrange gtable[layout]\n\n## Specify the file path and name\n# file_path &lt;- \"Projects/2023_saber/plots/\"\n# file_name &lt;- \"pre_post_mean.PNG\"\n\n## Set the width and height in inches\n# width &lt;- 11.5\n# height &lt;- 7.9\n\n## Save the combined plot as a PNG file\n# ggsave(file = paste0(file_path, file_name), plot = combined_plot, width = width, height = height)"
+  },
+  {
+    "objectID": "rproj/2023_saber/intro.html",
+    "href": "rproj/2023_saber/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "About Introduction Methods Results Conclusion\n\n\n\nExperiences in the classrooms can lead to an increase of STEM motivation. This can come through many different aspects of the classroom experience. One study explored the positive impact that performing science practices (like hypothesizing or explaining results) can increase a students’ “felt recognition” and “classroom climate”, and these two factors increases students’ STEM motivation, STEM identity, and STEM career aspirations. Another study shares that an “intervention emphasizing communal utility value of biomedical research” can greatly increase a students’ motivation for biomedical sciences. The study also compared “self-oriented” versus “other-oriented” utility values, showing that “other-oriented” unity values shows a higher student motivation.\nPersonal experiences can also have a large influence on one’s STEM motivation. A study explored a cohort of medical students in Norway and their motivation to go into medicine. Though this is not necessarily “STEM” motivation, the comparison of medicine to STEM fields is important to note. This study went through different life experiences that the students had and compared those back to motivation for different fields in medicine. This was done through a survey, and they asked questions like “opportunity to perform research”, opportunity to care for people”, or “interest in relations between health, well-being and society”. All of these are based on experiences that students might have had on in the past in their lives, and findings show that these experiences can have a significant impact on the paths medical doctors choose. Another study explores literature regarding Black and Latinx students’ STEM motivation. In this literature review, it is clear that the life experiences that these student have can have a significant impact on their STEM motivation, compared back to experiences of the whole student population.\nPersonal experiences with medicine can influence career choice. A study explores the literature out there regarding how experiences in surgery can have an impact on their career choice. Particularly, much of the literature explores the role that rotations in medical school can influence career choice. This study makes it clear that the experiences people have with medicine can significantly impact what they choose to become. Another study explores the reasons students choose to go into medicine. Many of the common answers included “intellectual curiosity, professional autonomy, altruism, and interest in human relationships”. However, in this study, it was clear that students motivated by personal illness or family member’s illness “revealed significant[ly] greater emotional exhaustion”. This makes it clear that our experiences in life can influence our decision to go into medicine.\nChronic illnesses and medical experiences can potentially lead to more interruptions. One study explores the connection between chronic illness and suicidal ideation in adults in South Korea. What they found was that people with chronic illnesses need attention given to them in order to decrease suicidal ideation. Where suicide is tied to depression, the connection between having a chronic condition and potentially missing class becomes clear, as the students could miss more class due to the increase in depression. Another study explores how having chronic illnesses increase the incidence of pneumococcal pneumonia in older adults. In particular, it goes into what specific illnesses could cause an increase in incidence of pneumonia. Comparing this back to our study, students with chronic conditions could miss more classes due to illnesses (like pneumonia). Lastly, another study shows the influence that chronic illnesses (especially diabetes and psychiatric conditions) have on a person’s self-esteem. If a student has lower self-esteem, they may feel less likely to attend class, and therefore, these chronic conditions can lead to more medical interruptions.\n\n\n\nPorter has had a slew of medical experiences, and these experiences led him to pursue a career path in medicine. While going through his undergraduate experience, preparing for medical school, he found a real passion for science as well as medicine. Because this was relatively late in his education, he wishes that he knew this passion he had before his undergraduate studies. Therefore, this project was born, hoping to find that Porter wasn’t uncommon in his experience and assisting other students understand their passions for science sooner than later. To learn more about how this project became to be, please go to this link!"
+  },
+  {
+    "objectID": "rproj/2023_saber/intro.html#background",
+    "href": "rproj/2023_saber/intro.html#background",
+    "title": "Introduction",
+    "section": "",
+    "text": "Experiences in the classrooms can lead to an increase of STEM motivation. This can come through many different aspects of the classroom experience. One study explored the positive impact that performing science practices (like hypothesizing or explaining results) can increase a students’ “felt recognition” and “classroom climate”, and these two factors increases students’ STEM motivation, STEM identity, and STEM career aspirations. Another study shares that an “intervention emphasizing communal utility value of biomedical research” can greatly increase a students’ motivation for biomedical sciences. The study also compared “self-oriented” versus “other-oriented” utility values, showing that “other-oriented” unity values shows a higher student motivation.\nPersonal experiences can also have a large influence on one’s STEM motivation. A study explored a cohort of medical students in Norway and their motivation to go into medicine. Though this is not necessarily “STEM” motivation, the comparison of medicine to STEM fields is important to note. This study went through different life experiences that the students had and compared those back to motivation for different fields in medicine. This was done through a survey, and they asked questions like “opportunity to perform research”, opportunity to care for people”, or “interest in relations between health, well-being and society”. All of these are based on experiences that students might have had on in the past in their lives, and findings show that these experiences can have a significant impact on the paths medical doctors choose. Another study explores literature regarding Black and Latinx students’ STEM motivation. In this literature review, it is clear that the life experiences that these student have can have a significant impact on their STEM motivation, compared back to experiences of the whole student population.\nPersonal experiences with medicine can influence career choice. A study explores the literature out there regarding how experiences in surgery can have an impact on their career choice. Particularly, much of the literature explores the role that rotations in medical school can influence career choice. This study makes it clear that the experiences people have with medicine can significantly impact what they choose to become. Another study explores the reasons students choose to go into medicine. Many of the common answers included “intellectual curiosity, professional autonomy, altruism, and interest in human relationships”. However, in this study, it was clear that students motivated by personal illness or family member’s illness “revealed significant[ly] greater emotional exhaustion”. This makes it clear that our experiences in life can influence our decision to go into medicine.\nChronic illnesses and medical experiences can potentially lead to more interruptions. One study explores the connection between chronic illness and suicidal ideation in adults in South Korea. What they found was that people with chronic illnesses need attention given to them in order to decrease suicidal ideation. Where suicide is tied to depression, the connection between having a chronic condition and potentially missing class becomes clear, as the students could miss more class due to the increase in depression. Another study explores how having chronic illnesses increase the incidence of pneumococcal pneumonia in older adults. In particular, it goes into what specific illnesses could cause an increase in incidence of pneumonia. Comparing this back to our study, students with chronic conditions could miss more classes due to illnesses (like pneumonia). Lastly, another study shows the influence that chronic illnesses (especially diabetes and psychiatric conditions) have on a person’s self-esteem. If a student has lower self-esteem, they may feel less likely to attend class, and therefore, these chronic conditions can lead to more medical interruptions."
+  },
+  {
+    "objectID": "rproj/2023_saber/intro.html#motivation-for-the-project",
+    "href": "rproj/2023_saber/intro.html#motivation-for-the-project",
+    "title": "Introduction",
+    "section": "",
+    "text": "Porter has had a slew of medical experiences, and these experiences led him to pursue a career path in medicine. While going through his undergraduate experience, preparing for medical school, he found a real passion for science as well as medicine. Because this was relatively late in his education, he wishes that he knew this passion he had before his undergraduate studies. Therefore, this project was born, hoping to find that Porter wasn’t uncommon in his experience and assisting other students understand their passions for science sooner than later. To learn more about how this project became to be, please go to this link!"
+  },
+  {
+    "objectID": "rproj/2023_saber/correlations/correlations.html",
+    "href": "rproj/2023_saber/correlations/correlations.html",
+    "title": "Correlations",
+    "section": "",
+    "text": "# Install and load the 'readr' package for reading the data\n# install.packages(\"readr\")\nlibrary(readr)\nlibrary(corrplot)\n\ncorrplot 0.92 loaded\n\n# Create a variable with the dataset\ndata &lt;- \"Variable,Sci_Ident_AVE,Sci_Engagement_Ave,Sci_SenseOfBelong_Ave,Sci_Career_Mot_AVE,Sci_Interest_Ave,Self_Determin_Ave,Self_Efficacy_Ave,Value_Peers_Ave,Communal_Sci_Ave,Med_interrupt_academics\nSci_Ident_AVE,1,.664**,.602**,.579**,.676**,.452**,.523**,.110*,.261**,-0.001\nSci_Engagement_Ave,.664**,1,.601**,.507**,.609**,.448**,.454**,.158**,.285**,0.102\nSci_SenseOfBelong_Ave,.602**,.601**,1,.471**,.583**,.497**,.532**,.312**,.315**,-.150*\nSci_Career_Mot_AVE,.579**,.507**,.471**,1,.581**,.425**,.440**,.247**,.257**,0.006\nSci_Interest_Ave,.676**,.609**,.583**,.581**,1,.520**,.500**,.189**,.343**,0.029\nSelf_Determin_Ave,.452**,.448**,.497**,.425**,.520**,1,.509**,.260**,.221**,-0.095\nSelf_Efficacy_Ave,.523**,.454**,.532**,.440**,.500**,.509**,1,.201**,.216**,-.164*\nValue_Peers_Ave,.110*,.158**,.312**,.247**,.189**,.260**,.201**,1,.214**,0.004\nCommunal_Sci_Ave,.261**,.285**,.315**,.257**,.343**,.221**,.216**,.214**,1,-0.013\nMed_interrupt_academics,-0.001,0.102,-.150*,0.006,0.029,-0.095,-.164*,0.004,-0.013,1\"\n\n# Read the data into a dataframe\ndf &lt;- read.csv(text = data, check.names = FALSE)\n\n# Remove the asterisks and convert the columns to numeric\ndf[-1] &lt;- sapply(df[-1], function(x) as.numeric(gsub(\"\\\\**\", \"\", x)))\n\n# View the reformatted dataframe\ndf\n\n                  Variable Sci_Ident_AVE Sci_Engagement_Ave\n1            Sci_Ident_AVE         1.000              0.664\n2       Sci_Engagement_Ave         0.664              1.000\n3    Sci_SenseOfBelong_Ave         0.602              0.601\n4       Sci_Career_Mot_AVE         0.579              0.507\n5         Sci_Interest_Ave         0.676              0.609\n6        Self_Determin_Ave         0.452              0.448\n7        Self_Efficacy_Ave         0.523              0.454\n8          Value_Peers_Ave         0.110              0.158\n9         Communal_Sci_Ave         0.261              0.285\n10 Med_interrupt_academics        -0.001              0.102\n   Sci_SenseOfBelong_Ave Sci_Career_Mot_AVE Sci_Interest_Ave Self_Determin_Ave\n1                  0.602              0.579            0.676             0.452\n2                  0.601              0.507            0.609             0.448\n3                  1.000              0.471            0.583             0.497\n4                  0.471              1.000            0.581             0.425\n5                  0.583              0.581            1.000             0.520\n6                  0.497              0.425            0.520             1.000\n7                  0.532              0.440            0.500             0.509\n8                  0.312              0.247            0.189             0.260\n9                  0.315              0.257            0.343             0.221\n10                -0.150              0.006            0.029            -0.095\n   Self_Efficacy_Ave Value_Peers_Ave Communal_Sci_Ave Med_interrupt_academics\n1              0.523           0.110            0.261                  -0.001\n2              0.454           0.158            0.285                   0.102\n3              0.532           0.312            0.315                  -0.150\n4              0.440           0.247            0.257                   0.006\n5              0.500           0.189            0.343                   0.029\n6              0.509           0.260            0.221                  -0.095\n7              1.000           0.201            0.216                  -0.164\n8              0.201           1.000            0.214                   0.004\n9              0.216           0.214            1.000                  -0.013\n10            -0.164           0.004           -0.013                   1.000\n\n# Install and load the 'corrplot' package\n# install.packages(\"corrplot\")\nlibrary(corrplot)\n\n# Create a subset of the dataframe without the first row and column\ndf_subset &lt;- df[-1, -1]\n\n# Extract the labels for the columns from the first row of df\ncol_labels &lt;- unname(df[1, -1])\n\n# Extract the labels for the rows from the first column of df\nrow_labels &lt;- unname(df[-1, 1])\n\n# Convert the subset to a correlation matrix\ncorr_matrix &lt;- cor(df_subset)\n\n# Create the correlation plot using corrplot\nplot &lt;- corrplot(corr_matrix, type = 'lower', method = 'color', tl.col = \"black\", tl.srt = 45)\n\n\n\n## To Save####\n# Save the plot as a PNG file\n##png(file = \"Projects/2023_saber/plots/correlations.png\", width = 800, height = 600, bg = \"transparent\")\n# Replace \"/path/to/save/plot.png\" with your desired file path\n\n# Plot the correlation matrix\n##corrplot(corr_matrix, type = 'lower', method = 'color', tl.col = \"black\", tl.srt = 45)\n\n# Close the PNG device\n## dev.off()"
+  },
+  {
+    "objectID": "publ/home.html",
+    "href": "publ/home.html",
+    "title": "Publications",
+    "section": "",
+    "text": "There are none yet, but watch for them here, as they will come."
+  },
+  {
+    "objectID": "med/shadowing/index.html",
+    "href": "med/shadowing/index.html",
+    "title": "Shadowing",
+    "section": "",
+    "text": "Home | Conferences | R Projects | Publications | Medical Hours"
+  },
+  {
+    "objectID": "med/shadowing/index.html#pie-chart",
+    "href": "med/shadowing/index.html#pie-chart",
+    "title": "Shadowing",
+    "section": "Pie Chart",
+    "text": "Pie Chart\nAs of June 22, 2023, I have been involved in 68.25 hours of shadowing."
+  },
+  {
+    "objectID": "med/shadowing/index.html#betty-wade-rd",
+    "href": "med/shadowing/index.html#betty-wade-rd",
+    "title": "Shadowing",
+    "section": "Betty Wade, RD",
+    "text": "Betty Wade, RD\n\nDescription\nDr. Wade is a Registered Dietitian and Certified Diabetes Educator practicing in the Heber Valley Clinic. You can find more about Dr. Wade at this link\n\n\nLearnings\nI spent 1/3/23 and 1/4/23 with Dr. Wade. Follow the links in order to see what I learned while spending time with her."
+  },
+  {
+    "objectID": "med/shadowing/index.html#brian-christensen-np",
+    "href": "med/shadowing/index.html#brian-christensen-np",
+    "title": "Shadowing",
+    "section": "Brian Christensen, NP",
+    "text": "Brian Christensen, NP\n\nDescription\nDr. Christensen is a Nurse Practitioner practicing in the Utah Valley Hospital. You can find more about Dr. Christensen at this link\n\n\nLearnings\nI spent 12/21/22 and 1/5/23 with Dr. Christensen. Follow the links in order to see what I learned while spending time with him."
+  },
+  {
+    "objectID": "med/shadowing/index.html#course-1-university-of-colorado-er-virtual",
+    "href": "med/shadowing/index.html#course-1-university-of-colorado-er-virtual",
+    "title": "Shadowing",
+    "section": "Course #1: University of Colorado ER (Virtual)",
+    "text": "Course #1: University of Colorado ER (Virtual)\n\nDescription\nThis virtual shadowing Canvas course, made available through the Department of Emergency Medicine at the University of Colorado, gave me an opportunity to watch how people practice medicine in a different place in the world than I am used to. In this first course, there were 9 Cases, and after each case there was a quiz regarding things that were covered in the video case. The cases covered were across a broad range: pregnancy and asthma, travelers’ diarrhea, epilepsy, gastritis, heart attack, hematoma, anaphylaxis, COVID, and renal failure. The videos were given through a mock-visit with a patient, where the physician first meets the mock patient and cares for them as they would a typical patient. Essentially, we viewers were a fly on the wall who could see the whole process of treating these patients. You can learn more about this awesome course here. I finished this course over 1 month, averaging 3 hours a week going through this shadowing experience. Click here to download the certificate I was granted.\n\n\nLearnings\nWith my service in the American Fork Emergency Room, I felt like I had a decent grasp on how emergency rooms worked already. This shadowing opportunity gave me new insights into the treatment of patients in the ER. In my experience, I usually saw the tests and labs being run, with me checking on the patients where I was able. Rarely, there was the major trauma patient that came in, and when that happened, I could see how the physicians quickly cared for that patient. This shadowing experience let me see what initial contact with a patient and physician would look like, depending on the case and the symptoms. Not every case was a major trauma, and therefore, the ability to collect information from the patient and think quickly on their feet was shown to me. I felt like it showed me how to create trust with a patient from the beginning, and it was very informative. I think it gave me a really good background for in person shadowing experiences."
+  },
+  {
+    "objectID": "med/shadowing/index.html#jill-faatz-md",
+    "href": "med/shadowing/index.html#jill-faatz-md",
+    "title": "Shadowing",
+    "section": "Jill Faatz, MD",
+    "text": "Jill Faatz, MD\n\nDescription\nDr. Faatz is a family care specialist practicing in the Heber Valley Clinic. You can find more about Dr. Faatz at this link\n\n\nLearnings\nI spent 12/27/22 and 12/29/22 with Dr. Faatz. Follow the links in order to see what I learned while spending time with her."
+  },
+  {
+    "objectID": "med/shadowing/index.html#webshadowers-virtual",
+    "href": "med/shadowing/index.html#webshadowers-virtual",
+    "title": "Shadowing",
+    "section": "WebShadowers (Virtual)",
+    "text": "WebShadowers (Virtual)\n\nDescription\nThis Youtube channel was created at the beginning of COVID with the goal of providing med students opportunities to shadow despite the ongoing pandemic taking over the medical world. The general process of the shadowing experiences included an introduction of the physician and the profession, running through a case or two that the physician has seen, and general questions and answers afterwards. These were given during a livestream, but I was able to watch it afterwards due to them being recorded. Each of the experiences took roughly 1.5 hours after I created a write up.\n\n\nLearnings\nFor these videos, I decided to write a report after each session, focusing on what I liked about the profession, what I liked about the physician, what was difficult to be excited about for the profession, and what I learned. These can be found at this link."
+  },
+  {
+    "objectID": "med/service/service.html",
+    "href": "med/service/service.html",
+    "title": "Service",
+    "section": "",
+    "text": "As of June 22, 2023, I have spent 299 hours doing volunteer service."
+  },
+  {
+    "objectID": "med/service/service.html#pie-chart",
+    "href": "med/service/service.html#pie-chart",
+    "title": "Service",
+    "section": "",
+    "text": "As of June 22, 2023, I have spent 299 hours doing volunteer service."
+  },
+  {
+    "objectID": "med/service/service.html#food-pantry",
+    "href": "med/service/service.html#food-pantry",
+    "title": "Service",
+    "section": "Food Pantry",
+    "text": "Food Pantry\n\nDescription\nI have been volunteering at the Springville Food Pantry sporadically over the last couple of months. My role there is to provide assistance to those coming to get food for their families, particularly helping those who are unable to speak English know what food they are choosing.\n\n\nLearnings\nThis service opportunity taught me that I am lucky where I came from. I have had so many great opportunities in my life, and that is something that I need not take for granted. This experience has taught me that it is now my role to give back to those who are less fortunate."
+  },
+  {
+    "objectID": "med/service/service.html#honors-program",
+    "href": "med/service/service.html#honors-program",
+    "title": "Service",
+    "section": "Honor’s Program",
+    "text": "Honor’s Program\n\nDescription\nAs a member of the Honor’s Program at UVU, during the first 2 semesters you are involved in the program, you are required to take a “Honor’s Colloquium” class. Part of this class required us to do service in the community that we wouldn’t otherwise do. Between both semesters, I was able to use some of the life experiences I had in order to help other students going through similar issues. My mother is a health aide at the local school district, and there was a student who was type one diabetic and was about to graduate. He had poor diabetes habits, and I was asked to work with him to provide tips and tricks to adjusting to living on your own with diabetes. That was roughly 8 of these hours.\nThe other 7 hours came as I met with other individual students. I shared things I had learned from my experiences, such as with Station 1, the things I shared in my Wolverine Story, among other things. My goal here was to help each person I met with know that there is a place for them here.\n\n\nLearnings\nOverall, the thing I learned the most with these experiences was that I have a need to give back. I have had many people help me along my path, guiding me through diabetes, through school, and through general life challenges. I need to give back to others and be the same voice for them that I had in my life. Overall, students need to know they are not alone, that they are not “weirdos”, and this service helped me convey that to others. All in all, it helped me step outside of myself and be aware of the needs and struggles of others."
+  },
+  {
+    "objectID": "med/service/service.html#ihc-emergency-room",
+    "href": "med/service/service.html#ihc-emergency-room",
+    "title": "Service",
+    "section": "IHC Emergency Room",
+    "text": "IHC Emergency Room\n\nDescription\nI volunteered in the emergency room at the American Fork Intermountain Healthcare Hospital. My role in this position was to make the patient comfortable. I was not there to provide care; instead my role was to offer blankets, toys for kids, or food and beverages. I was involved with this for 2 months in 2021 (ended due to COVID) and then 4 months (and still ongoing) in 2022, giving roughly 2 hours a week here.\n\n\nLearnings\nI loved this service opportunity, as I was able to help others in the height of their struggles while seeing how an emergency room operates. Much of this service was during one of the peaks of the pandemic, so I was able to understand a little more how the pandemic effected caregivers."
+  },
+  {
+    "objectID": "med/service/service.html#cards-4-kidz",
+    "href": "med/service/service.html#cards-4-kidz",
+    "title": "Service",
+    "section": "Cards 4 Kidz",
+    "text": "Cards 4 Kidz\n\nDescription\nI am currently in the middle of this service opportunity. My time in the hospital was stressful and traumatic, and unfortunately, I spent a lot of time there. I learned first hand how having people reach out helped lift my spirits. With that in mind, I found this service opportunity with the Loma Linda University Hospital. I have been making notes for these young patients that will be delivered to them with their breakfast. I have focused on making them silly and fun, helping them take their minds off the fact that they are in the hospital. I have been working on this for 2 months now, with an average of 1 hour a week being devoted to this project.\n\n\nLearnings\nWhat I have learned the most from this service is that looking outside yourself is the means by which amazing things can happen. When I was in the hospital, I had so many different people touch my life, and they made it easier for me to continue fighting the illnesses I had. I can provide an empathetic approach to making their days better, and that is the way by which I can give back to those that helped me."
+  },
+  {
+    "objectID": "med/service/service.html#church-volunteer-service",
+    "href": "med/service/service.html#church-volunteer-service",
+    "title": "Service",
+    "section": "Church Volunteer Service",
+    "text": "Church Volunteer Service\n\nDescription\nAs a member of my church, I made the decision to pursue missionary service in the Kansas City, MO area. It was here that I spent 2 years serving those great people. The majority of that time was spent proselyting and supporting local church units, but I spent roughly 2 hours a week doing community service. At different points of time over the two years, I worked at a food pantry, set up a community event, worked at a thrift store, spent countless hours doing yard work, among other things.\n\n\nLearnings\nThis was the first time in my life where I feel I truly looked outside of myself. I was 19 years old when I began this service, and I felt like I truly dived in with the communities in which I lived. I feel that I learned empathy, love, and how important a kind word is, regardless of the person, the location, or the circumstance. It taught me to be less judgmental, and it increased my ability to strive to understand everybody."
+  },
+  {
+    "objectID": "med/service/service.html#primary-childrens-booth",
+    "href": "med/service/service.html#primary-childrens-booth",
+    "title": "Service",
+    "section": "Primary Children’s Booth",
+    "text": "Primary Children’s Booth\n\nDescription\nWhen I was in the Primary Children’s Medical Hospital, there were events that were hosted to help us patients get our minds off of things. One time when I was there, it was the beginning of college football season, and the mascots from two local rival colleges came handing out toys, coloring books, stress balls, and high fives. It truly lifted my spirits as a patient.\nWith the research that I do on campus, I knew that I wanted to implement some of the same sort of event at Primary Children’s. Seeing as I am studying how having medical conditions leads to science motivation, I want to provide an event where the science behind the medical care is made fun. We plan on teaching how x-rays work, what the heart looks like, what laboratory work looks like, etc. I applied for and was granted an URSCA Grant to pay for the toys and such needed for the event. Some of that funding is also going to an assistant student employee that will work underneath me, assisting me in this project. I will not be funded for this project, but he will, allowing him to add things to his medical school application.\n\n\nLearnings\nSo far, the majority of the work has been with preparing the grant. Now that we are approved, we need to make a connection with those at Primary Children’s. I am excited to report back on some of my learnings from this project."
+  },
+  {
+    "objectID": "med/shadowing/shadowing.html",
+    "href": "med/shadowing/shadowing.html",
+    "title": "Shadowing",
+    "section": "",
+    "text": "As of June 22, 2023, I have been involved in 68.25 hours of shadowing."
+  },
+  {
+    "objectID": "med/shadowing/shadowing.html#pie-chart",
+    "href": "med/shadowing/shadowing.html#pie-chart",
+    "title": "Shadowing",
+    "section": "",
+    "text": "As of June 22, 2023, I have been involved in 68.25 hours of shadowing."
+  },
+  {
+    "objectID": "med/shadowing/shadowing.html#betty-wade-rd",
+    "href": "med/shadowing/shadowing.html#betty-wade-rd",
+    "title": "Shadowing",
+    "section": "Betty Wade, RD",
+    "text": "Betty Wade, RD\n\nDescription\nDr. Wade is a Registered Dietitian and Certified Diabetes Educator practicing in the Heber Valley Clinic. You can find more about Dr. Wade at this link\n\n\nLearnings\nI spent 1/3/23 and 1/4/23 with Dr. Wade. Follow the links in order to see what I learned while spending time with her."
+  },
+  {
+    "objectID": "med/shadowing/shadowing.html#brian-christensen-np",
+    "href": "med/shadowing/shadowing.html#brian-christensen-np",
+    "title": "Shadowing",
+    "section": "Brian Christensen, NP",
+    "text": "Brian Christensen, NP\n\nDescription\nDr. Christensen is a Nurse Practitioner practicing in the Utah Valley Hospital. You can find more about Dr. Christensen at this link\n\n\nLearnings\nI spent 12/21/22 and 1/5/23 with Dr. Christensen. Follow the links in order to see what I learned while spending time with him."
+  },
+  {
+    "objectID": "med/shadowing/shadowing.html#course-1-university-of-colorado-er-virtual",
+    "href": "med/shadowing/shadowing.html#course-1-university-of-colorado-er-virtual",
+    "title": "Shadowing",
+    "section": "Course #1: University of Colorado ER (Virtual)",
+    "text": "Course #1: University of Colorado ER (Virtual)\n\nDescription\nThis virtual shadowing Canvas course, made available through the Department of Emergency Medicine at the University of Colorado, gave me an opportunity to watch how people practice medicine in a different place in the world than I am used to. In this first course, there were 9 Cases, and after each case there was a quiz regarding things that were covered in the video case. The cases covered were across a broad range: pregnancy and asthma, travelers’ diarrhea, epilepsy, gastritis, heart attack, hematoma, anaphylaxis, COVID, and renal failure. The videos were given through a mock-visit with a patient, where the physician first meets the mock patient and cares for them as they would a typical patient. Essentially, we viewers were a fly on the wall who could see the whole process of treating these patients. You can learn more about this awesome course here. I finished this course over 1 month, averaging 3 hours a week going through this shadowing experience. Click here to download the certificate I was granted.\n\n\nLearnings\nWith my service in the American Fork Emergency Room, I felt like I had a decent grasp on how emergency rooms worked already. This shadowing opportunity gave me new insights into the treatment of patients in the ER. In my experience, I usually saw the tests and labs being run, with me checking on the patients where I was able. Rarely, there was the major trauma patient that came in, and when that happened, I could see how the physicians quickly cared for that patient. This shadowing experience let me see what initial contact with a patient and physician would look like, depending on the case and the symptoms. Not every case was a major trauma, and therefore, the ability to collect information from the patient and think quickly on their feet was shown to me. I felt like it showed me how to create trust with a patient from the beginning, and it was very informative. I think it gave me a really good background for in person shadowing experiences."
+  },
+  {
+    "objectID": "med/shadowing/shadowing.html#jill-faatz-md",
+    "href": "med/shadowing/shadowing.html#jill-faatz-md",
+    "title": "Shadowing",
+    "section": "Jill Faatz, MD",
+    "text": "Jill Faatz, MD\n\nDescription\nDr. Faatz is a family care specialist practicing in the Heber Valley Clinic. You can find more about Dr. Faatz at this link\n\n\nLearnings\nI spent 12/27/22 and 12/29/22 with Dr. Faatz. Follow the links in order to see what I learned while spending time with her."
+  },
+  {
+    "objectID": "med/shadowing/shadowing.html#webshadowers-virtual",
+    "href": "med/shadowing/shadowing.html#webshadowers-virtual",
+    "title": "Shadowing",
+    "section": "WebShadowers (Virtual)",
+    "text": "WebShadowers (Virtual)\n\nDescription\nThis Youtube channel was created at the beginning of COVID with the goal of providing med students opportunities to shadow despite the ongoing pandemic taking over the medical world. The general process of the shadowing experiences included an introduction of the physician and the profession, running through a case or two that the physician has seen, and general questions and answers afterwards. These were given during a livestream, but I was able to watch it afterwards due to them being recorded. Each of the experiences took roughly 1.5 hours after I created a write up.\n\n\nLearnings\nFor these videos, I decided to write a report after each session, focusing on what I liked about the profession, what I liked about the physician, what was difficult to be excited about for the profession, and what I learned. These can be found at this link."
+  },
+  {
+    "objectID": "rproj/2023_saber/conclusion.html",
+    "href": "rproj/2023_saber/conclusion.html",
+    "title": "Conclusion",
+    "section": "",
+    "text": "In conclusion, this study sheds light on the potential impact of medical experiences and chronic conditions on students taking science classes at an open enrollment institution. The findings indicate that a considerable number of students, around 57%, reported having a medical experience, while 22% reported having a chronic condition. These numbers highlight the significance of investigating the influence of medical identities on students’ experiences further. The study’s main hypotheses were supported, revealing that an increase in academic interruptions due to medical experiences led to decreased science motivation, as well as lower senses of belonging, self-efficacy, and self-determination.\n\nNegative Effects\nIt was particularly interesting to observe that students who had more medical interruptions experienced a notable decrease in their sense of belonging and self-efficacy, emphasizing the potential challenges that medical experiences can pose to academic engagement and self-confidence. This insight is crucial for educators and institutions to recognize and address, as it may have profound implications for students’ overall success and well-being in science courses.\n\n\nPositive Effects\nHowever, a noteworthy and encouraging finding was that some students who had experienced medical experiences displayed higher levels of science immersion and motivation. This suggests that medical experiences can also positively influence student engagement with science, potentially prompting students to explore these experiences further within the context of scientific understanding. These positive associations between medical experiences and science motivation are promising, as they may indicate pathways for fostering increased interest and participation in scientific disciplines among affected students.\n\n\nImportance\nIn light of these results, it becomes evident that acknowledging and accommodating medical identities and experiences in science education is paramount. By recognizing the potential challenges students face due to medical interruptions and offering support and inclusive teaching strategies, educators can help mitigate the negative effects on students’ sense of belonging and self-efficacy. Moreover, incorporating medical experiences into the curriculum could harness the positive influence they have on science motivation, thereby fostering a more engaging and supportive learning environment for all students.\n\n\nNext Steps\nMoving forward, science instructors and institutions should consider the implications of this study as they modify course content and pedagogy to be more inclusive and supportive of students with medical experiences and chronic conditions. Emphasizing a student-centered approach and providing appropriate resources can help create a conducive learning environment where all identities, including those shaped by medical experiences, are embraced and empowered. By doing so, science education can evolve to be more inclusive, enriching the educational journey of all students and ultimately contributing to a more diverse and innovative scientific community."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html",
+    "href": "rproj/2023_saber/home.html",
+    "title": "SABER 2023",
+    "section": "",
+    "text": "Welcome to the website for our poster! It is here we will go through some of the traditional aspects of a poster, including the “Introduction”, “Methods”, “Results”, and “Conclusion”. If you have any questions, please do not hesitate to reach out to Porter at portergbischoff@gmail.com !\n\n\nPrior research has investigated the recruitment and retention of certain student identities (such as gender and ethnicity) in STEM courses and careers. Success in STEM can be influenced by a student’s connection to the STEM community, science identity, and engagement. Despite this, no research has investigated the impact of having either a medical experience or chronic condition on STEM students despite research indicating medical students with medical conditions are less likely to complete their degree. Additionally, individuals with medical conditions tend to feel disconnected from others and experience higher levels of stress during their life. Thus, it is important to study the potential impacts of medical experiences and conditions on undergraduate students’ STEM motivation.\nThis study explores the potential impact of having a medical experience or chronic condition for students taking science classes at an open enrollment institution. Specifically, we hypothesized that an increase in academic interruptions due to a medical experience would result in decreased science motivation, a lower sense of belonging, self-efficacy, and self-determination. Pre- and post-course data were collected from 390 students across 14 biology courses (including non-majors) at a teaching-focused institution. Surprisingly, 57% of students surveyed reported having a medical experience and 22% reported having a chronic condition, indicating these are indeed an important and large identity to investigate further.\nAs predicted, students who have more medical interruptions have a significantly lower sense of belonging and self-efficacy (small effect size). Interestingly, students who indicated that they have had medical experiences and as a result, more engagement with science, have significantly higher science immersion and motivation. Therefore, medical experiences could be influencing student engagement with science in both positive and negative ways. The more interruptions to a student’s academics, the more impact it can have on their sense of belonging and self-efficacy. However, if those medical experiences result in more engagement with science, students may be more motivated to understand those experiences in the context of science. Information on the impact medical experiences can have on students is crucial to investigate as science instructors modify course content and pedagogy to be more inclusive of all identities present in the student population.\n\n\n\nPorter Bischoff*, Kody Garrett, Clayton Rawson, Joshua Premo, Brittney N. Wyatt\nDepartment of Biology, Utah Valley University, Orem, UT, 84058, USA.\n*Corresponding author: portergbischoff@gmail.com\nAcknowledgements: URSCA grant, NSF grant\nConflicts of Interest: The authors have no conflicts of interest to declare."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#abstract",
+    "href": "rproj/2023_saber/home.html#abstract",
+    "title": "SABER 2023",
+    "section": "",
+    "text": "Prior research has investigated the recruitment and retention of certain student identities (such as gender and ethnicity) in STEM courses and careers. Success in STEM can be influenced by a student’s connection to the STEM community, science identity, and engagement. Despite this, no research has investigated the impact of having either a medical experience or chronic condition on STEM students despite research indicating medical students with medical conditions are less likely to complete their degree. Additionally, individuals with medical conditions tend to feel disconnected from others and experience higher levels of stress during their life. Thus, it is important to study the potential impacts of medical experiences and conditions on undergraduate students’ STEM motivation.\nThis study explores the potential impact of having a medical experience or chronic condition for students taking science classes at an open enrollment institution. Specifically, we hypothesized that an increase in academic interruptions due to a medical experience would result in decreased science motivation, a lower sense of belonging, self-efficacy, and self-determination. Pre- and post-course data were collected from 390 students across 14 biology courses (including non-majors) at a teaching-focused institution. Surprisingly, 57% of students surveyed reported having a medical experience and 22% reported having a chronic condition, indicating these are indeed an important and large identity to investigate further.\nAs predicted, students who have more medical interruptions have a significantly lower sense of belonging and self-efficacy (small effect size). Interestingly, students who indicated that they have had medical experiences and as a result, more engagement with science, have significantly higher science immersion and motivation. Therefore, medical experiences could be influencing student engagement with science in both positive and negative ways. The more interruptions to a student’s academics, the more impact it can have on their sense of belonging and self-efficacy. However, if those medical experiences result in more engagement with science, students may be more motivated to understand those experiences in the context of science. Information on the impact medical experiences can have on students is crucial to investigate as science instructors modify course content and pedagogy to be more inclusive of all identities present in the student population."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#author-information",
+    "href": "rproj/2023_saber/home.html#author-information",
+    "title": "SABER 2023",
+    "section": "",
+    "text": "Porter Bischoff*, Kody Garrett, Clayton Rawson, Joshua Premo, Brittney N. Wyatt\nDepartment of Biology, Utah Valley University, Orem, UT, 84058, USA.\n*Corresponding author: portergbischoff@gmail.com\nAcknowledgements: URSCA grant, NSF grant\nConflicts of Interest: The authors have no conflicts of interest to declare."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#motivation-for-the-project",
+    "href": "rproj/2023_saber/home.html#motivation-for-the-project",
+    "title": "SABER 2023",
+    "section": "Motivation for the Project",
+    "text": "Motivation for the Project\nPorter has had a slew of medical experiences, and these experiences led him to pursue a career path in medicine. While going through his undergraduate experience, preparing for medical school, he found a real passion for science as well as medicine. Because this was relatively late in his education, he wishes that he knew this passion he had before his undergraduate studies. Therefore, this project was born, hoping to find that Porter wasn’t uncommon in his experience and assisting other students understand their passions for science sooner than later. To learn more about how this project became to be, please go to this link!"
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#aspects-of-the-survey",
+    "href": "rproj/2023_saber/home.html#aspects-of-the-survey",
+    "title": "SABER 2023",
+    "section": "Aspects of the Survey",
+    "text": "Aspects of the Survey\n\nSTEM Motivation Questions\nHere are the questions that we asked to determine the different aspects of STEM motivation.\n\n\n\n\n\nCategory\nStatement\n\n\n\n\nScience Identity\nI see myself as a biology person.\n\n\nScience Identity\nI see myself as a science person.\n\n\nScience Identity\nI see myself as a scientist.\n\n\nScience Identity\nOther people (friends/family) see me as a science person.\n\n\nScience Identity\nMy science instructors see me as a science person.\n\n\nCareer Motivation\nLearning science will help me get a good job.\n\n\nCareer Motivation\nUnderstanding science will benefit me in my career.\n\n\nCareer Motivation\nKnowing science will give me a career advantage.\n\n\nCareer Motivation\nI will use science problem-solving skills in my career.\n\n\nCareer Motivation\nMy career will involve science.\n\n\nInstrinsic Motivation\nLearning science is interesting.\n\n\nInstrinsic Motivation\nI am curious about discoveries in science.\n\n\nInstrinsic Motivation\nThe science I learn is relevant to my life.\n\n\nInstrinsic Motivation\nLearning science makes my life more meaningful.\n\n\nInstrinsic Motivation\nI enjoy learning science.\n\n\nSelf-Determination\nI study hard to learn science.\n\n\nSelf-Determination\nI prepare well for science tests and labs.\n\n\nSelf-Determination\nI put enough effort into learning science.\n\n\nSelf-Determination\nI spend a lot of time learning science.\n\n\nSelf-Determination\nI use strategies to learn science well.\n\n\nSelf-Efficacy\nI am confident that I will do well on science labs and projects.\n\n\nSelf-Efficacy\nI believe I can earn a grade of 'A' in science.\n\n\nSelf-Efficacy\nI am confident I will do well on science tests.\n\n\nSelf-Efficacy\nI believe I can master science knowledge and skills.\n\n\nGrade Motivation\nScoring high on science tests and labs matters to me.\n\n\nGrade Motivation\nIt is important that I get an 'A' in science.\n\n\nGrade Motivation\nI think about the grade I will get in science.\n\n\nGrade Motivation\nGetting a good science grade is important to me.\n\n\nGrade Motivation\nI like to do better than other students on science tests.\n\n\nValue of Peer Interactions\nMy college science classes are more enjoyable when I work with other students.\n\n\nValue of Peer Interactions\nI understand more when my classmates participate in college classroom discussions.\n\n\nValue of Peer Interactions\nI learn best in college science classes when I work with classmates.\n\n\nValue of Peer Interactions\nThe amount I understand is increased by classmates' ideas in my college science classes.\n\n\nValue of Peer Interactions\nWhen classmates share their ideas in college science classes, this helps me learn.\n\n\nSense of Belonging\nWhen I am in a science setting, I feel a connection with the science community.\n\n\nSense of Belonging\nWhen I am in a science setting, I feel respected.\n\n\nSense of Belonging\nWhen I am in a science setting, I feel comfortable.\n\n\nSense of Belonging\nWhen I am in a science setting, I trust my instructors to be committed to helping me learn.\n\n\nSense of Belonging\nWhen I am in a science setting, I enjoy being an active participant.\n\n\nSense of Belonging\nWhen I am in a science setting, I try to say as little as possible.\n\n\nCompetency in Science\nI am good at solving complicated scientific problems.\n\n\nCompetency in Science\nI read websites articles or books about scientific issues.\n\n\nCompetency in Science\nI work on a project involving scientific concepts.\n\n\nCompetency in Science\nI think about how my life is affected by science.\n\n\nCommunity in Science\nTo what extent is serving the community important to scientific work?\n\n\nCommunity in Science\nTo what extent is working with people important to scientific work?\n\n\nCommunity in Science\nTo what extent is helping others important to scientific work?\n\n\nCommunity in Science\nTo what extent is connecting with others important to scientific work?\n\n\n\n\n\n\n\n\n\nMedical Interruptions\nStudents self-identified whether or not they had medical experiences. After they answered that, students answered how often they had missed class due to their medical experiences on a scale from 1-5, from “Never” to “Always”."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#statistical-analysis",
+    "href": "rproj/2023_saber/home.html#statistical-analysis",
+    "title": "SABER 2023",
+    "section": "Statistical Analysis",
+    "text": "Statistical Analysis\nWe used Pearson Correlations to properly understand the significance data for each of the aspects. We are excited to continue doing analysis on this data set, as we know that we can dive deeper into it."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#technology",
+    "href": "rproj/2023_saber/home.html#technology",
+    "title": "SABER 2023",
+    "section": "Technology",
+    "text": "Technology\nSPSS was used to complete the Pearson Correlation. R packages were used, with corrplot to create the correlation plot, waffle to create the demographic plots, and ggplot2, dplyr, and gridExtra to create the pre/post semester change plot."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#demographics",
+    "href": "rproj/2023_saber/home.html#demographics",
+    "title": "SABER 2023",
+    "section": "Demographics",
+    "text": "Demographics\n\nMajor\n\n\n\n\n\n\nThe data indicates the distribution of career aspirations among the respondents. Approximately 29% of them expressed an interest in Biology, while Non-biology STEM fields accounted for around 16% of the responses. Pre-Professional aspirations represented approximately 21% of the respondents, and Non-STEM career paths comprised about 34% of the total aspirations reported.\n\n\n\nYear in School\n\n\n\n\n\n\nThe data represents the distribution of students across different academic years. Among the students surveyed, 36% were Freshmen, 31% were Sophomores, 18% were Juniors, and the remaining 22% were Seniors.\n\n\n\nCareer Aspiration\n\n\n\n\n\n\nNon-STEM took the largest percent of the graph with 39%. STEM professionals took nearly twenty percent (20%), which was similar to the 21% of those who wished to be health care professionals. Those who wish to be a dentist or a doctor took a combined 20% (with those who wish to be dentists taking 7% and those who wished to be doctors taking 13%).\n\n\n\nEthnicity\n\n\n\n\n\n\nThe data illustrates the racial and ethnic distribution of the surveyed individuals. Among the respondents, 1.6% identified as Black, 0.6% as Native American, 0.2% as Middle Eastern, 3.8% as Asian, 6.4% as Latina/o, 1.6% as Multiracial, 1% as Pacific Islander, and the majority, 78.7%, identified as White.\n\n\n\nGender\n\n\n\n\n\n\nThe data represents the gender distribution of the respondents. Among those surveyed, 50.8% identified as Men, 0.5% as Transgender, 46% as Women, and 1.3% as Fluid / Gender Non-Conforming.\n\n\n\nReligious?\n\n\n\n\n\n\nThe data indicates the distribution of respondents based on their religious affiliations. Among those surveyed, approximately 27% identified as Non-Religious, while around 73% identified as Religious.\n\n\n\nFirst Generation Student?\n\n\n\n\n\n\nThe data represents the distribution of students based on their generational status. Among those surveyed, approximately 76% identified as Continuing Generation Students (at least one parent attended college), while around 24% identified as First Generation Students (no parents attended college).\n\n\n\nMedical Experience?\n\n\n\n\n\n\nThe data illustrates the percentage of those who identified to have had a medical experience. Among those surveyed, approximately 44% answered “No” while around 56% answered “Yes”.\n\n\n\nChronic Condition?\n\n\n\n\n\n\nOf those who identified as had a medical experience, approximately 60% answered “No” while around 40% answered “Yes” to whether they have a chronic condition."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#correlations",
+    "href": "rproj/2023_saber/home.html#correlations",
+    "title": "SABER 2023",
+    "section": "Correlations",
+    "text": "Correlations\n\n\n\n\n\n\nThe graph uses a gradient system done by color to represent the strength and direction of correlations, with darker colors indicating stronger positive or negative correlations and lighter colors representing weaker correlations. This is done over 10 categories that are compared on a scale from -1 to 1."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#pre-post-semester-analysis",
+    "href": "rproj/2023_saber/home.html#pre-post-semester-analysis",
+    "title": "SABER 2023",
+    "section": "Pre & Post Semester Analysis",
+    "text": "Pre & Post Semester Analysis\n\n\n\n\n\n\nThe graph visually presents the pre- and post-semester changes for different pairs of variables, highlighting significant differences between the two time points for each pair. Bars showing the deviation between each group with black dots indicate significance. Science identity had overall the most variance in mean over the course of the semester. While science carrier motivation had the largest single mean change. Science interest had a similar large change in one area like science career motivation did. Self determination was an outlier that had less variance overall. Self-efficacy and community in science changed similar but in difference sections with different means."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#negative-effects",
+    "href": "rproj/2023_saber/home.html#negative-effects",
+    "title": "SABER 2023",
+    "section": "Negative Effects",
+    "text": "Negative Effects\nIt was particularly interesting to observe that students who had more medical interruptions experienced a notable decrease in their sense of belonging and self-efficacy, emphasizing the potential challenges that medical experiences can pose to academic engagement and self-confidence. This insight is crucial for educators and institutions to recognize and address, as it may have profound implications for students’ overall success and well-being in science courses."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#positive-effects",
+    "href": "rproj/2023_saber/home.html#positive-effects",
+    "title": "SABER 2023",
+    "section": "Positive Effects",
+    "text": "Positive Effects\nHowever, a noteworthy and encouraging finding was that some students who had experienced medical experiences displayed higher levels of science immersion and motivation. This suggests that medical experiences can also positively influence student engagement with science, potentially prompting students to explore these experiences further within the context of scientific understanding. These positive associations between medical experiences and science motivation are promising, as they may indicate pathways for fostering increased interest and participation in scientific disciplines among affected students."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#importance",
+    "href": "rproj/2023_saber/home.html#importance",
+    "title": "SABER 2023",
+    "section": "Importance",
+    "text": "Importance\nIn light of these results, it becomes evident that acknowledging and accommodating medical identities and experiences in science education is paramount. By recognizing the potential challenges students face due to medical interruptions and offering support and inclusive teaching strategies, educators can help mitigate the negative effects on students’ sense of belonging and self-efficacy. Moreover, incorporating medical experiences into the curriculum could harness the positive influence they have on science motivation, thereby fostering a more engaging and supportive learning environment for all students."
+  },
+  {
+    "objectID": "rproj/2023_saber/home.html#next-steps",
+    "href": "rproj/2023_saber/home.html#next-steps",
+    "title": "SABER 2023",
+    "section": "Next Steps",
+    "text": "Next Steps\nMoving forward, science instructors and institutions should consider the implications of this study as they modify course content and pedagogy to be more inclusive and supportive of students with medical experiences and chronic conditions. Emphasizing a student-centered approach and providing appropriate resources can help create a conducive learning environment where all identities, including those shaped by medical experiences, are embraced and empowered. By doing so, science education can evolve to be more inclusive, enriching the educational journey of all students and ultimately contributing to a more diverse and innovative scientific community."
+  },
+  {
+    "objectID": "rproj/2023_saber/methods/methods.html",
+    "href": "rproj/2023_saber/methods/methods.html",
+    "title": "Methods",
+    "section": "",
+    "text": "We used an adapted survey from other literature to find information regarding STEM motivation. This survey was given pre-semester and post-semester to 14 different Biology courses at Utah Valley University. These classes had students who were both STEM majors and non-majors, as these classes were generally General Education classes. Utah Valley University is an open enrollment institution, making this data an interesting set to explore.\n390 students answered the pre/post-semester surveys. We have a large number of pre-semester data, but only 390 responded to both the beginning and end of the semester survey."
+  },
+  {
+    "objectID": "rproj/2023_saber/methods/methods.html#methods-background",
+    "href": "rproj/2023_saber/methods/methods.html#methods-background",
+    "title": "Methods",
+    "section": "",
+    "text": "We used an adapted survey from other literature to find information regarding STEM motivation. This survey was given pre-semester and post-semester to 14 different Biology courses at Utah Valley University. These classes had students who were both STEM majors and non-majors, as these classes were generally General Education classes. Utah Valley University is an open enrollment institution, making this data an interesting set to explore.\n390 students answered the pre/post-semester surveys. We have a large number of pre-semester data, but only 390 responded to both the beginning and end of the semester survey."
+  },
+  {
+    "objectID": "rproj/2023_saber/methods/methods.html#aspects-of-the-survey",
+    "href": "rproj/2023_saber/methods/methods.html#aspects-of-the-survey",
+    "title": "Methods",
+    "section": "Aspects of the Survey",
+    "text": "Aspects of the Survey\n\nSTEM Motivation Questions\nHere are the questions that we asked to determine the different aspects of STEM motivation.\n\n\n\n\n\nCategory\nStatement\n\n\n\n\nScience Identity\nI see myself as a biology person.\n\n\nScience Identity\nI see myself as a science person.\n\n\nScience Identity\nI see myself as a scientist.\n\n\nScience Identity\nOther people (friends/family) see me as a science person.\n\n\nScience Identity\nMy science instructors see me as a science person.\n\n\nCareer Motivation\nLearning science will help me get a good job.\n\n\nCareer Motivation\nUnderstanding science will benefit me in my career.\n\n\nCareer Motivation\nKnowing science will give me a career advantage.\n\n\nCareer Motivation\nI will use science problem-solving skills in my career.\n\n\nCareer Motivation\nMy career will involve science.\n\n\nInstrinsic Motivation\nLearning science is interesting.\n\n\nInstrinsic Motivation\nI am curious about discoveries in science.\n\n\nInstrinsic Motivation\nThe science I learn is relevant to my life.\n\n\nInstrinsic Motivation\nLearning science makes my life more meaningful.\n\n\nInstrinsic Motivation\nI enjoy learning science.\n\n\nSelf-Determination\nI study hard to learn science.\n\n\nSelf-Determination\nI prepare well for science tests and labs.\n\n\nSelf-Determination\nI put enough effort into learning science.\n\n\nSelf-Determination\nI spend a lot of time learning science.\n\n\nSelf-Determination\nI use strategies to learn science well.\n\n\nSelf-Efficacy\nI am confident that I will do well on science labs and projects.\n\n\nSelf-Efficacy\nI believe I can earn a grade of 'A' in science.\n\n\nSelf-Efficacy\nI am confident I will do well on science tests.\n\n\nSelf-Efficacy\nI believe I can master science knowledge and skills.\n\n\nGrade Motivation\nScoring high on science tests and labs matters to me.\n\n\nGrade Motivation\nIt is important that I get an 'A' in science.\n\n\nGrade Motivation\nI think about the grade I will get in science.\n\n\nGrade Motivation\nGetting a good science grade is important to me.\n\n\nGrade Motivation\nI like to do better than other students on science tests.\n\n\nValue of Peer Interactions\nMy college science classes are more enjoyable when I work with other students.\n\n\nValue of Peer Interactions\nI understand more when my classmates participate in college classroom discussions.\n\n\nValue of Peer Interactions\nI learn best in college science classes when I work with classmates.\n\n\nValue of Peer Interactions\nThe amount I understand is increased by classmates' ideas in my college science classes.\n\n\nValue of Peer Interactions\nWhen classmates share their ideas in college science classes, this helps me learn.\n\n\nSense of Belonging\nWhen I am in a science setting, I feel a connection with the science community.\n\n\nSense of Belonging\nWhen I am in a science setting, I feel respected.\n\n\nSense of Belonging\nWhen I am in a science setting, I feel comfortable.\n\n\nSense of Belonging\nWhen I am in a science setting, I trust my instructors to be committed to helping me learn.\n\n\nSense of Belonging\nWhen I am in a science setting, I enjoy being an active participant.\n\n\nSense of Belonging\nWhen I am in a science setting, I try to say as little as possible.\n\n\nCompetency in Science\nI am good at solving complicated scientific problems.\n\n\nCompetency in Science\nI read websites articles or books about scientific issues.\n\n\nCompetency in Science\nI work on a project involving scientific concepts.\n\n\nCompetency in Science\nI think about how my life is affected by science.\n\n\nCommunity in Science\nTo what extent is serving the community important to scientific work?\n\n\nCommunity in Science\nTo what extent is working with people important to scientific work?\n\n\nCommunity in Science\nTo what extent is helping others important to scientific work?\n\n\nCommunity in Science\nTo what extent is connecting with others important to scientific work?\n\n\n\n\n\n\n\n\n\nMedical Interruptions\nStudents self-identified whether or not they had medical experiences. After they answered that, students answered how often they had missed class due to their medical experiences on a scale from 1-5, from “Never” to “Always”."
+  },
+  {
+    "objectID": "rproj/2023_saber/methods/methods.html#statistical-analysis",
+    "href": "rproj/2023_saber/methods/methods.html#statistical-analysis",
+    "title": "Methods",
+    "section": "Statistical Analysis",
+    "text": "Statistical Analysis\nWe used Pearson Correlations to properly understand the significance data for each of the aspects. We are excited to continue doing analysis on this data set, as we know that we can dive deeper into it."
+  },
+  {
+    "objectID": "rproj/2023_saber/methods/methods.html#technology",
+    "href": "rproj/2023_saber/methods/methods.html#technology",
+    "title": "Methods",
+    "section": "Technology",
+    "text": "Technology\nSPSS was used to complete the Pearson Correlation. R packages were used, with corrplot to create the correlation plot, waffle to create the demographic plots, and ggplot2, dplyr, and gridExtra to create the pre/post semester change plot."
+  },
+  {
+    "objectID": "rproj/2023_saber/results.html",
+    "href": "rproj/2023_saber/results.html",
+    "title": "Results",
+    "section": "",
+    "text": "Please see the following for the results we got for each demographic group. To see the R code for this, follow this link!"
+  },
+  {
+    "objectID": "rproj/2023_saber/results.html#major",
+    "href": "rproj/2023_saber/results.html#major",
+    "title": "Results",
+    "section": "Major",
+    "text": "Major\n\n\n\n\n\n\nThe data indicates the distribution of career aspirations among the respondents. Approximately 29% of them expressed an interest in Biology, while Non-biology STEM fields accounted for around 16% of the responses. Pre-Professional aspirations represented approximately 21% of the respondents, and Non-STEM career paths comprised about 34% of the total aspirations reported."
+  },
+  {
+    "objectID": "rproj/2023_saber/results.html#year-in-school",
+    "href": "rproj/2023_saber/results.html#year-in-school",
+    "title": "Results",
+    "section": "Year in School",
+    "text": "Year in School\n\n\n\n\n\n\nThe data represents the distribution of students across different academic years. Among the students surveyed, 36% were Freshmen, 31% were Sophomores, 18% were Juniors, and the remaining 22% were Seniors."
+  },
+  {
+    "objectID": "rproj/2023_saber/results.html#career-aspiration",
+    "href": "rproj/2023_saber/results.html#career-aspiration",
+    "title": "Results",
+    "section": "Career Aspiration",
+    "text": "Career Aspiration\n\n\n\n\n\n\nNon-STEM took the largest percent of the graph with 39%. STEM professionals took nearly twenty percent (20%), which was similar to the 21% of those who wished to be health care professionals. Those who wish to be a dentist or a doctor took a combined 20% (with those who wish to be dentists taking 7% and those who wished to be doctors taking 13%)."
+  },
+  {
+    "objectID": "rproj/2023_saber/results.html#ethnicity",
+    "href": "rproj/2023_saber/results.html#ethnicity",
+    "title": "Results",
+    "section": "Ethnicity",
+    "text": "Ethnicity\n\n\n\n\n\n\nThe data illustrates the racial and ethnic distribution of the surveyed individuals. Among the respondents, 1.6% identified as Black, 0.6% as Native American, 0.2% as Middle Eastern, 3.8% as Asian, 6.4% as Latina/o, 1.6% as Multiracial, 1% as Pacific Islander, and the majority, 78.7%, identified as White."
+  },
+  {
+    "objectID": "rproj/2023_saber/results.html#gender",
+    "href": "rproj/2023_saber/results.html#gender",
+    "title": "Results",
+    "section": "Gender",
+    "text": "Gender\n\n\n\n\n\n\nThe data represents the gender distribution of the respondents. Among those surveyed, 50.8% identified as Men, 0.5% as Transgender, 46% as Women, and 1.3% as Fluid / Gender Non-Conforming."
+  },
+  {
+    "objectID": "rproj/2023_saber/results.html#religious",
+    "href": "rproj/2023_saber/results.html#religious",
+    "title": "Results",
+    "section": "Religious?",
+    "text": "Religious?\n\n\n\n\n\n\nThe data indicates the distribution of respondents based on their religious affiliations. Among those surveyed, approximately 27% identified as Non-Religious, while around 73% identified as Religious."
+  },
+  {
+    "objectID": "rproj/2023_saber/results.html#first-generation-student",
+    "href": "rproj/2023_saber/results.html#first-generation-student",
+    "title": "Results",
+    "section": "First Generation Student?",
+    "text": "First Generation Student?\n\n\n\n\n\n\nThe data represents the distribution of students based on their generational status. Among those surveyed, approximately 76% identified as Continuing Generation Students (at least one parent attended college), while around 24% identified as First Generation Students (no parents attended college)."
+  },
+  {
+    "objectID": "rproj/2023_saber/results.html#medical-experience",
+    "href": "rproj/2023_saber/results.html#medical-experience",
+    "title": "Results",
+    "section": "Medical Experience?",
+    "text": "Medical Experience?\n\n\n\n\n\n\nThe data illustrates the percentage of those who identified to have had a medical experience. Among those surveyed, approximately 44% answered “No” while around 56% answered “Yes”."
+  },
+  {
+    "objectID": "rproj/2023_saber/results.html#chronic-condition",
+    "href": "rproj/2023_saber/results.html#chronic-condition",
+    "title": "Results",
+    "section": "Chronic Condition?",
+    "text": "Chronic Condition?\n\n\n\n\n\n\nOf those who identified as had a medical experience, approximately 60% answered “No” while around 40% answered “Yes” to whether they have a chronic condition."
+  }
+]
