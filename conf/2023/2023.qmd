@@ -10,7 +10,7 @@ This presentation took place in a venue for different undergraduate institutions
 
 <center>![](photos/ucur.png)</center>
 
-<a href="files/UCUR Presentation 2023.pptx" download>Click to Download</a> <br>
+<a href="files/UCUR Presentation 2023.pptx" download>Click to Download Presentation</a> <br>
 
 ### Abstract
 
@@ -23,3 +23,34 @@ X-DBER was hosted virtually by University of Nebraska-Lincoln. One of the goals 
 <center>
 
 ![](photos/x-dber.png)
+
+## American Diabetes Association Scientific Sessions ([ADA](https://professional.diabetes.org/scientific-sessions)) - June 2023
+
+The ADA Scientific Sessions have a goal of showing "the latest, cutting-edge advances in diabetes research, prevention, and care".
+
+### The Diabetes Link NextGen Fellowship ([TDL](https://thediabeteslink.org/take-action/become-a-nextgen-fellow/))
+
+At ADA, I represented The Diabetes Link, sharing this amazing resource to those who in attendance. We held a booth where people could learn more about the resource. This was a great opportunity, as I was able to connect with my wonderful mentor, Dr. Mick Davidson, in person, attend sessions regarding the latest and greatest in diabetes research, was introduced to Adhera Health and Dr. Michelle Litchman, and mt some of the future greatest leaders in diabetes care in the other Fellows. It was an opportunity that changed my career path, totally strengthening my desire to go into diabetes care. 
+
+<center>
+
+![](photos/diabetes_link.png)
+
+## International Network for Social Network Analysis Sunbelt Conference ([INSNA](https://www.insna.org/events/sunbelt-2023)) - July 2023
+
+"INSNA is the professional association for researchers interested in social network analysis. The association is a non-profit organization incorporated in the state of Delaware and founded by Barry Wellman in 1977.
+
+The principal functions of INSNA are as follows:
+
+- We publish Connections, a bulletin containing news, scholarly articles, technical columns, and abstracts and book reviews.
+- We sponsor the annual International Social Networks Conference (also known as Sunbelt)."
+
+### Abstract
+Network visualization is a fundamental part of social network analysis. As one of the first things we are taught, visualizing social networks (and networks in general) can be informative and exciting. We introduce the R programming package netplot for network visualization. netplot provides out-of-the-box high-quality graph visualizations. It was designed with the primary goal of creating beautiful figures with minimal effort. netplot provides a flexible way to personalize network drawing by allowing the user an extensive array of graphical parameters.
+Netplot was designed on top of 'The Grid Graphics Package,' the same powering the popular R package ggplot2. netplot provides automatic vertex scaling, full-screen mode, edge color mixer, and low dependency footprint among its main features. To date, this R package has over 6,000 downloads. This poster project will showcase its usage and the new features implemented in the University of Utah's "Summer Program for Undergraduate Research (SPUR)." We will present an application of netplot to two different types of epidemiological datasets: one with multiple networks and another with a single large graph. The first dataset features interactions between patients and providers in long-term healthcare facilities in the Veterans Affairs (VA) system. This bipartite graph contains multiple vertex classes, including the type of healthcare professional and the patient's health condition. The second example will depict the usage of the package in a large inferred transmission network of COVID-19. With it, we will illustrate the capabilities of netplot to handle large network data, which can often be challenging to manage. Both examples will highlight netplot's features and best practices for network visualization.
+
+![](photos/insna_sunbelt.png)
+
+<a href="photos/insna.pdf" download>Click to Download Poster</a> <br>
+
+## Society for the Advancement of Biology Education Research ([SABER](https://saberbio.wildapricot.org/)) - July 2023
