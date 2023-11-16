@@ -4,7 +4,7 @@ title: "Research"
 
 ## Pie Chart
 
-As of **June 22, 2023**, I have spent **1330** hours doing research. <br> <br>
+As of **November 14, 2023**, I have spent **1957** hours doing research. <br> <br>
 
 ```{r LAbels, include=FALSE}
 library(dplyr)
@@ -86,7 +86,7 @@ Following my time with Station1, GCTx offered me the opportunity to stay on as a
 
 Much as before, this was an experience that was totally virtual with even less meetings with our advisors. This helped me improve on my self motivation regarding research. Also, we were expected to do almost double the work in less than half the amount of time that we had in the summer, requiring better, more concise research. Lastly, this all occurred during 2 busy school semesters that both included 16 credit hours and Organic Chemistry. I had to learn how to effectively manage so many things on my plate at the time.
 
-## Summer Program for Undergraduate Research \[SPUR (https://our.utah.edu/research-scholarship-opportunities/spur/)\]
+## Summer Program for Undergraduate Research [SPUR](https://our.utah.edu/research-scholarship-opportunities/spur/)
 
 ### Description
 

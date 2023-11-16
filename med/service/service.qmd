@@ -4,7 +4,7 @@ title: "Service"
 
 ## Pie Chart
 
-As of **June 22, 2023**, I have spent **299** hours doing volunteer service. <br> <br>
+As of **November 14, 2023**, I have spent **353** hours doing volunteer service. <br> <br>
 
 ```{r LAbels, include=FALSE}
 library(dplyr)
