@@ -1,9 +1,10 @@
 ---
 title: "Patient Interaction"
 ---
+
 ## Pie Chart
 
-As of **June 22, 2023**, I have spent **1250** hours with patients. <br> <br> *Due to confidentiality, I decided to put the main reason for care as the identifier for each patient.*
+As of **November 14, 2023**, I have spent **1250** hours with patients. <br> <br> *Due to confidentiality, I decided to put the main reason for care as the identifier for each patient.*
 
 ```{r LAbels, include=FALSE}
 library(dplyr)

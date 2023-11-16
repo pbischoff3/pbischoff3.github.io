@@ -6,7 +6,7 @@ In 2023, I feel like I really got my feet underneath me in research. The computa
 
 ## Utah Council of Undergraduate Research ([UCUR](https://our.utah.edu/education-events/ucur/)) - February 2023
 
-This presentation took place in a venue for different undergraduate institutions across the state, and it was hosted at the University of Utah this year.
+This presentation took place in a venue for different undergraduate institutions across the state, and it was hosted at the University of Utah this year. This was a great experience for me, as it was the first time that I gave a presentation about my research. This was a whole different perspective for science teaching. It was unexpected, but presenting at this conference helped me see insights for better ways effective write about the research that I was doing. 
 
 <center>![](photos/ucur.png)</center>
 
@@ -18,7 +18,12 @@ Prior research has investigated the recruitment and retention of certain student
 
 ## X- Discipline-Based Education Research ([X-DBER](https://scimath.unl.edu/x-dber)) - April 2023
 
-X-DBER was hosted virtually by University of Nebraska-Lincoln. One of the goals of this conference is to "discuss how theories, methods, and application of education research cross disciplinary boundaries", and they do this by bringing together DBER researchers to discuss their research topics.
+X-DBER was hosted virtually by University of Nebraska-Lincoln. One of the goals of this conference is to "discuss how theories, methods, and application of education research cross disciplinary boundaries", and they do this by bringing together DBER researchers to discuss their research topics. Our whole iSPIRE research group presented at this conference together. I really enjoyed this opportunity, as it gave me more experience in a peer mentoring role, as this was many of the students' first conferences. I was able to share my experiences from before, and it was a great experience seeing  all of them share research they are passionate about.
+
+### Abstract 
+I REALLY REALLY REALLY NEED THIS ABSTRACT.
+
+## UVU Showcase 
 
 <center>
 
@@ -30,7 +35,7 @@ The ADA Scientific Sessions have a goal of showing "the latest, cutting-edge adv
 
 ### The Diabetes Link NextGen Fellowship ([TDL](https://thediabeteslink.org/take-action/become-a-nextgen-fellow/))
 
-At ADA, I represented The Diabetes Link, sharing this amazing resource to those who in attendance. We held a booth where people could learn more about the resource. This was a great opportunity, as I was able to connect with my wonderful mentor, Dr. Mick Davidson, in person, attend sessions regarding the latest and greatest in diabetes research, was introduced to Adhera Health and Dr. Michelle Litchman, and mt some of the future greatest leaders in diabetes care in the other Fellows. It was an opportunity that changed my career path, totally strengthening my desire to go into diabetes care. 
+At ADA, I represented The Diabetes Link, sharing this amazing resource to those who in attendance. We held a booth where people could learn more about the resource. This was a great opportunity, as I was able to connect with my wonderful mentor, Dr. Mick Davidson, in person, attend sessions regarding the latest and greatest in diabetes research, was introduced to Adhera Health and Dr. Michelle Litchman, and met some of the future greatest leaders in diabetes care in the other Fellows. It was an opportunity that changed my career path, totally strengthening my desire to go into diabetes care. Attending ADA and being a NextGen Fellow changed my professional life. 
 
 <center>
 
@@ -42,15 +47,26 @@ At ADA, I represented The Diabetes Link, sharing this amazing resource to those 
 
 The principal functions of INSNA are as follows:
 
-- We publish Connections, a bulletin containing news, scholarly articles, technical columns, and abstracts and book reviews.
-- We sponsor the annual International Social Networks Conference (also known as Sunbelt)."
+-   We publish Connections, a bulletin containing news, scholarly articles, technical columns, and abstracts and book reviews.
+-   We sponsor the annual International Social Networks Conference (also known as Sunbelt)."
+
+Presenting at INSNA was a wonderful opportunity, as I attended this conference directly after ADA (my flight flew from San Diego to Portland directly). This experience was more difficult for me, as social networking is a field I am very new in. Presenting to experts in the field from across the world was very intimidating. This experience required me to get confident really quickly or else I would sound like a fool. I was able to stand firmly in the research that I had done to that point, and I was able to present the work that we had done well. 
 
 ### Abstract
-Network visualization is a fundamental part of social network analysis. As one of the first things we are taught, visualizing social networks (and networks in general) can be informative and exciting. We introduce the R programming package netplot for network visualization. netplot provides out-of-the-box high-quality graph visualizations. It was designed with the primary goal of creating beautiful figures with minimal effort. netplot provides a flexible way to personalize network drawing by allowing the user an extensive array of graphical parameters.
-Netplot was designed on top of 'The Grid Graphics Package,' the same powering the popular R package ggplot2. netplot provides automatic vertex scaling, full-screen mode, edge color mixer, and low dependency footprint among its main features. To date, this R package has over 6,000 downloads. This poster project will showcase its usage and the new features implemented in the University of Utah's "Summer Program for Undergraduate Research (SPUR)." We will present an application of netplot to two different types of epidemiological datasets: one with multiple networks and another with a single large graph. The first dataset features interactions between patients and providers in long-term healthcare facilities in the Veterans Affairs (VA) system. This bipartite graph contains multiple vertex classes, including the type of healthcare professional and the patient's health condition. The second example will depict the usage of the package in a large inferred transmission network of COVID-19. With it, we will illustrate the capabilities of netplot to handle large network data, which can often be challenging to manage. Both examples will highlight netplot's features and best practices for network visualization.
+
+Network visualization is a fundamental part of social network analysis. As one of the first things we are taught, visualizing social networks (and networks in general) can be informative and exciting. We introduce the R programming package netplot for network visualization. netplot provides out-of-the-box high-quality graph visualizations. It was designed with the primary goal of creating beautiful figures with minimal effort. netplot provides a flexible way to personalize network drawing by allowing the user an extensive array of graphical parameters. Netplot was designed on top of 'The Grid Graphics Package,' the same powering the popular R package ggplot2. netplot provides automatic vertex scaling, full-screen mode, edge color mixer, and low dependency footprint among its main features. To date, this R package has over 6,000 downloads. This poster project will showcase its usage and the new features implemented in the University of Utah's "Summer Program for Undergraduate Research (SPUR)." We will present an application of netplot to two different types of epidemiological datasets: one with multiple networks and another with a single large graph. The first dataset features interactions between patients and providers in long-term healthcare facilities in the Veterans Affairs (VA) system. This bipartite graph contains multiple vertex classes, including the type of healthcare professional and the patient's health condition. The second example will depict the usage of the package in a large inferred transmission network of COVID-19. With it, we will illustrate the capabilities of netplot to handle large network data, which can often be challenging to manage. Both examples will highlight netplot's features and best practices for network visualization.
 
 ![](photos/insna_sunbelt.png)
 
 <a href="photos/insna.pdf" download>Click to Download Poster</a> <br>
 
 ## Society for the Advancement of Biology Education Research ([SABER](https://saberbio.wildapricot.org/)) - July 2023
+
+SABER is blah blah blah
+
+At SABER, it was a rewarding experience to present the work I am so passionate about to the experts of the field. I attended this conference with the majority of the research lab. While attending the conference, I had many gratifying conversations with people who were both excited about my research and were willing to share me insights for how I could make the project better. After this major conference, our goal was to write a paper on what we have done, but leaving this conference, we had ideas for another aspect of our project that could contribute to another publication. Being here was a great experience for me. 
+
+### Abstract
+
+## University of Utah Nursing conference 
+### get all of this stuff lets do this now 

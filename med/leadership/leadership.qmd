@@ -1,9 +1,10 @@
 ---
 title: "Leadership"
 ---
+
 ## Pie Chart
 
-As of **June 22, 2023**, I have spent **2181** hours in leadership capabilities.
+As of **November 14, 2023**, I have spent **2436** hours in leadership capabilities.
 
 ```{r LAbels, warning=TRUE, include=FALSE}
 library(dplyr)
@@ -75,11 +76,11 @@ This assignment pulled me right out of my comfort zone. Before this, I was typic
 
 ### Description
 
-This was another position I served in my church community. Similar to the Ward Executive Secretary, my position with the Stake Executive Secretary was to work with the Stake President and his presidency to assist them in running the Stake. Responsibilities include creating agendas for meetings, serve as members of councils for the stake, coordinate business in the stake, schedule appointments, and train new ward executive secretaries in their positions. For more information, follow [this link](https://www.churchofjesuschrist.org/study/manual/general-handbook/6-stake-leadership?lang=eng#title_number17).This is my current assignment. I have been involved here for 2.5 months, and I put in 12 hours a week in this service.
+This was another position I served in my church community. Similar to the Ward Executive Secretary, my position with the Stake Executive Secretary was to work with the Stake President and his presidency to assist them in running the Stake. This was another position I was asked to fulfill, and accepting this role has been a stretching but gratifying experience. Responsibilities include creating agendas for meetings, serve as members of councils for the stake, coordinate business in the stake, schedule appointments, and train new ward executive secretaries in their positions. For more information, follow [this link](https://www.churchofjesuschrist.org/study/manual/general-handbook/6-stake-leadership?lang=eng#title_number17).This is my current assignment. I spend an average of 12 hours a week on this role. 
 
 ### Learning
 
-This position came at a really tough time for me. I have been working as a Presidential Intern, going to school full time, and studying for the MCAT. Overall, I would say I have learned the most about my personal way to manage time. There is a lot on my plate, and I needed to find out quickly how to juggle it all at once. This has made me a better organized person. Also, managing the schedule for the Stake Presidency requires me to work with the members of the stake extensively. This helps me better treat people one by one, providing them the same love and care that I would hope is provided to me.
+This position came at a really tough time for me. I had been working as a Presidential Intern, going to school full time, and studying for the MCAT. Overall, I would say I have learned the most about my personal way to manage time. There was a lot on my plate, and I needed to find out quickly how to juggle it all at once. This has made me a better organized person. Also, managing the schedule for the Stake Presidency requires me to work with the members of the stake extensively. This helped me better treat people one by one, providing them the same love and care that I would hope is provided to me. Also, this is a position that I cannot fulfill on my own, and because of that, I have began to learn the importance of delegation. Asking for help is a hard thing, but this position requires me to. It is a growing experience, and I am so grateful to be a part of it. 
 
 <br> <br>
 
@@ -87,7 +88,7 @@ This position came at a really tough time for me. I have been working as a Presi
 
 ### Description
 
-"The Honors Ambassadors is an established committee of UVU Honors students who, along with the Steering Committee, help govern the Program. As student representatives, they act as advocates to their fellow Honors students when problems and questions arise concerning the Program itself, or from their interaction with professors, Honors Program Coordinators, and other students. The Honors Ambassadors work directly with Honors Program Director and student information is kept confidential ([Source](https://www.uvu.edu/honors/new.about.us.html))." I put roughly 6 hours a month into this position, and I have been involved here for 3 months.
+"The Honors Ambassadors is an established committee of UVU Honors students who, along with the Steering Committee, help govern the Program. As student representatives, they act as advocates to their fellow Honors students when problems and questions arise concerning the Program itself, or from their interaction with professors, Honors Program Coordinators, and other students. The Honors Ambassadors work directly with Honors Program Director and student information is kept confidential ([Source](https://www.uvu.edu/honors/new.about.us.html))." For my first year, I put roughly 6 hours a month into this position. Starting in the Fall 2023 semester, I was appointed as the Lead Honors Ambassador. I was still given a handful of students to provide mentorship for, but with the new assignment, I was also given the responsibility to provide mentorship to other ambassadors. Lots of times, the "ministers" are the ones who need the most "ministering", and being able to be a part of some of the support for the other ambassadors. With this new assignment, I spent an average of 15 hours a month.
 
 ### Learning
 
@@ -128,4 +129,3 @@ One of the aspects of the Fellowship I loved most occurred as we learned to "eng
 ### Learning
 
 Being a Fellow in this program taught me how to be a better part of a team, particularly in a virtual nature. The idea of science and technology being socially-directed taught me the importance of making and maintaining relationships. This helped me become a better leader because I put a higher value on my relationships.
-
