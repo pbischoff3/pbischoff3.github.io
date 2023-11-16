@@ -6,6 +6,9 @@ title: "ABRCMS 2023"
 
 Welcome to the website for our poster! It is here we will go through some of the traditional aspects of a poster, including the "Introduction", "Methods", "Results", and "Conclusion". If you have any questions, please do not hesitate to reach out to Porter at [portergbischoff\@gmail.com](mailto:portergbischoff@gmail.com){.email} !
 
+## Download the Presentation
+<a href="ABRCMS.pdf" download>Click to Download Presentation</a> <br>
+
 ## Abstract
 
 Prior research has investigated the recruitment and retention of certain student identities (like gender (Master 2021), person excluded because of ethnicity or race (PEER) (Museus et al., 2010), and first-generation students (Bettencourt et al., 2020)) in STEM. No research has investigated the impact of having medical experiences on these groups. As such, our research questions were: What percentage of students indicate that they have medical experiences (Research Question #1)? Are medical experiences a benefit or barrier to students connecting and engaging with science? Specifically, do students who have medical experiences have higher or lower science motivation, sense of belonging, and science relevance (Research Question #2)?
@@ -848,3 +851,6 @@ Moreover, the study aligns with a larger initiative exploring the impact of bein
 In light of these findings, science education should evolve towards inclusivity, where students with varied backgrounds and medical histories feel not only welcomed but empowered. Institutions can play a pivotal role by providing resources that cater to the specific needs of these students. Emphasizing inclusivity not only enhances the educational journey of individuals with medical experiences but also contributes to a more diverse and innovative scientific community.
 
 In conclusion, the implications of this study extend beyond the immediate findings, urging a transformation in science education that is considerate of the multifaceted identities of students. By embracing inclusivity and tailoring support, institutions can contribute to a more equitable and enriched learning environment, fostering the next generation of diverse and motivated STEM professionals.
+
+## References
+[Here](https://github.com/pbischoff3/pbischoff3.github.io/blob/main/rproj/2023_abrcms/References.txt) are the references used for this project! 
