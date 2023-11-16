@@ -2,15 +2,15 @@
 title: "ABRCMS 2023"
 ---
 
-# Prescribing Passion: Medical Experiences Influence on Students’ Relationship with Science from Pre and Post Semester Surveys at an Open-Enrollment Institution
+# Prescribing Passion: Medical Experiences Influence on Students' Relationship with Science from Pre and Post Semester Surveys at an Open-Enrollment Institution
 
 Welcome to the website for our poster! It is here we will go through some of the traditional aspects of a poster, including the "Introduction", "Methods", "Results", and "Conclusion". If you have any questions, please do not hesitate to reach out to Porter at [portergbischoff\@gmail.com](mailto:portergbischoff@gmail.com){.email} !
 
 ## Abstract
 
 Prior research has investigated the recruitment and retention of certain student identities (like gender (Master 2021), person excluded because of ethnicity or race (PEER) (Museus et al., 2010), and first-generation students (Bettencourt et al., 2020)) in STEM. No research has investigated the impact of having medical experiences on these groups. As such, our research questions were: What percentage of students indicate that they have medical experiences (Research Question #1)? Are medical experiences a benefit or barrier to students connecting and engaging with science? Specifically, do students who have medical experiences have higher or lower science motivation, sense of belonging, and science relevance (Research Question #2)?
- 
-Data were collected from 390 students who were taking biology classes ranging from introductory biology for non-majors to advanced biology. All data were collected in a pre-survey/post-survey format. Students were asked if they had a medical experience, defined as: “Have you ever had a medical experience (hospitalization, chronic medical condition, and/or issues with mental, physical, emotional health etc.)?” Surprisingly, 57% of students surveyed reported having a medical experience and 22% reported having a chronic condition, indicating these are indeed an important and large identity to investigate further.  At the end of the semester, all students had significantly higher science identity, interest in science, sense of belonging, and value of the relevance of science. However, having medical experiences did not relate to consistent changes in constructs for all students. In contrast, consistent increases in constructs were found for first generation students with medical experiences such as: career value, interest, actions to promote success, self-efficacy, and sense of belonging. Information on the impact medical experiences can have on students from different demographics is crucial to investigate as science instructors modify course content and pedagogy to be more inclusive of all identities in the student population.
+
+Data were collected from 390 students who were taking biology classes ranging from introductory biology for non-majors to advanced biology. All data were collected in a pre-survey/post-survey format. Students were asked if they had a medical experience, defined as: "Have you ever had a medical experience (hospitalization, chronic medical condition, and/or issues with mental, physical, emotional health etc.)?" Surprisingly, 57% of students surveyed reported having a medical experience and 22% reported having a chronic condition, indicating these are indeed an important and large identity to investigate further.  At the end of the semester, all students had significantly higher science identity, interest in science, sense of belonging, and value of the relevance of science. However, having medical experiences did not relate to consistent changes in constructs for all students. In contrast, consistent increases in constructs were found for first generation students with medical experiences such as: career value, interest, actions to promote success, self-efficacy, and sense of belonging. Information on the impact medical experiences can have on students from different demographics is crucial to investigate as science instructors modify course content and pedagogy to be more inclusive of all identities in the student population.
 
 ## Author Information
 
@@ -27,14 +27,16 @@ Conflicts of Interest: The authors have no conflicts of interest to declare.
 # Background
 
 ## Connections to STEM:
-- STEM success linked to community ties (Estrada et. al, 2011).
-- Strong science community connection boosts success (Christe et. al, 2013).
-- STEM success influenced by community ties, identity, and engagement (Nadelson et. al, 2017).
-- Vital STEM community connection for underserved students (Chemers et. al, 2011).
+
+-   STEM success linked to community ties (Estrada et. al, 2011).
+-   Strong science community connection boosts success (Christe et. al, 2013).
+-   STEM success influenced by community ties, identity, and engagement (Nadelson et. al, 2017).
+-   Vital STEM community connection for underserved students (Chemers et. al, 2011).
 
 ## Impact of Medical Conditions:
-- Med school challenges for those with health issues (Pagnin et. al, 2013).
-- Health conditions increase stress and social disconnection (Campagne et. al, 2019).
+
+-   Med school challenges for those with health issues (Pagnin et. al, 2013).
+-   Health conditions increase stress and social disconnection (Campagne et. al, 2019).
 
 ## Motivation for the Project
 
@@ -590,6 +592,7 @@ Of those who identified as had a medical experience, approximately 60% answered 
 ## Pre-Semester
 
 ### Heatmap
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
 
@@ -616,6 +619,7 @@ print(pre_heatmap)
 ```
 
 ### Spider Chart
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 # Load the required libraries
 library(fmsb)
@@ -664,6 +668,7 @@ title(main = "Pre-Semester", col.main = "black", font.main = 3, cex.main = 1.2)
 ## Post-Semester
 
 ### Heatmap
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
 
@@ -690,6 +695,7 @@ print(post_heatmap)
 ```
 
 ### Spider Chart
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 # Load the required libraries
 library(fmsb)
@@ -737,6 +743,7 @@ title(main = "Post-Semester", col.main = "black", font.main = 3, cex.main = 1.2)
 ## Pre/Post-Semester Comparison
 
 ### Heatmap
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
 
@@ -767,6 +774,7 @@ print(comp_heatmap)
 ```
 
 ### Spider Chart
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 # Load the required libraries
 library(fmsb)
@@ -813,25 +821,21 @@ title(main = "Pre/Post-Semester Comparison", col.main = "black", font.main = 3, 
 
 # Conclusion
 
-- STEM motivation is significantly influenced by medical experiences.
-- Experiences in classrooms through the semester can influence student’s STEM motivation
-- In this selection of students, STEM motivation increases through the semester
+-   STEM motivation is significantly influenced by medical experiences.
+-   Experiences in classrooms through the semester can influence student's STEM motivation
+-   In this selection of students, STEM motivation increases through the semester
 
 ## Importance
-
 
 In the context of a study exploring students' STEM (Science, Technology, Engineering, and Mathematics) motivation, particularly in relation to medical experiences and the impact of classroom experiences throughout the semester, the following findings are crucial:
 
 Significant Influence of Medical Experiences on STEM Motivation:
 
-The research indicates a substantial connection between students' STEM motivation and their exposure to medical experiences. Understanding how these medical experiences contribute to or shape STEM motivation provides valuable insights into the factors that drive students' interest in these fields.
-Classroom Experiences Throughout the Semester as Motivational Factors:
+The research indicates a substantial connection between students' STEM motivation and their exposure to medical experiences. Understanding how these medical experiences contribute to or shape STEM motivation provides valuable insights into the factors that drive students' interest in these fields. Classroom Experiences Throughout the Semester as Motivational Factors:
 
-Classroom interactions and experiences play a pivotal role in shaping students' STEM motivation. The study highlights the importance of examining how various aspects of the classroom environment, teaching methods, and curriculum content influence students' motivation to pursue STEM disciplines. Identifying these specific factors is essential for creating effective strategies to enhance STEM motivation.
-Temporal Evolution of STEM Motivation:
+Classroom interactions and experiences play a pivotal role in shaping students' STEM motivation. The study highlights the importance of examining how various aspects of the classroom environment, teaching methods, and curriculum content influence students' motivation to pursue STEM disciplines. Identifying these specific factors is essential for creating effective strategies to enhance STEM motivation. Temporal Evolution of STEM Motivation:
 
-A notable trend observed in this cohort of students is the increase in STEM motivation throughout the semester. This temporal evolution suggests that the learning experiences and educational environment have a positive impact on students' motivation over time. Analyzing the factors contributing to this increase can provide valuable insights into effective pedagogical approaches and interventions.
-In summary, these findings collectively underscore the complex interplay between medical experiences, classroom dynamics, and the temporal evolution of STEM motivation. Understanding these relationships is crucial for educators, policymakers, and researchers seeking to enhance and sustain students' interest and motivation in STEM disciplines. This comprehensive perspective contributes to the broader dialogue on educational strategies and interventions aimed at fostering a sustained passion for STEM subjects among students.
+A notable trend observed in this cohort of students is the increase in STEM motivation throughout the semester. This temporal evolution suggests that the learning experiences and educational environment have a positive impact on students' motivation over time. Analyzing the factors contributing to this increase can provide valuable insights into effective pedagogical approaches and interventions. In summary, these findings collectively underscore the complex interplay between medical experiences, classroom dynamics, and the temporal evolution of STEM motivation. Understanding these relationships is crucial for educators, policymakers, and researchers seeking to enhance and sustain students' interest and motivation in STEM disciplines. This comprehensive perspective contributes to the broader dialogue on educational strategies and interventions aimed at fostering a sustained passion for STEM subjects among students.
 
 ## Next Steps
 
