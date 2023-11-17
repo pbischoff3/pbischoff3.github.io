@@ -7,6 +7,7 @@ title: "ABRCMS 2023"
 Welcome to the website for our poster! It is here we will go through some of the traditional aspects of a poster, including the "Introduction", "Methods", "Results", and "Conclusion". If you have any questions, please do not hesitate to reach out to Porter at [portergbischoff\@gmail.com](mailto:portergbischoff@gmail.com){.email} !
 
 ## Download the Presentation
+
 <a href="ABRCMS.pdf" download>Click to Download Presentation</a> <br>
 
 ## Abstract
@@ -17,7 +18,7 @@ Data were collected from 390 students who were taking biology classes ranging fr
 
 ## Author Information
 
-Porter Bischoff\*, Kody Garrett, Clayton Rawson, Joshua Premo, Brittney N. Wyatt
+Porter Bischoff\*, Joshua Premo, Brittney N. Wyatt
 
 Department of Biology, Utah Valley University, Orem, UT, 84058, USA.
 
@@ -125,7 +126,7 @@ SPSS was used to complete the Pearson Correlation. R packages were used, with `c
 
 # Results
 
-To see the R code for this, [follow this link](https://github.com/pbischoff3/pbischoff3.github.io/blob/main/Projects/2023_ambrcms/)! <br>
+To see the R code for this, [follow this link](https://github.com/pbischoff3/pbischoff3.github.io/tree/main/rproj/2023_abrcms)! <br>
 
 <small> *Each block represents 1%, but there are some demographics that have less than 1%. These are identified by 1 block, though they are smaller than the 1%.* </small>
 
@@ -853,4 +854,5 @@ In light of these findings, science education should evolve towards inclusivity,
 In conclusion, the implications of this study extend beyond the immediate findings, urging a transformation in science education that is considerate of the multifaceted identities of students. By embracing inclusivity and tailoring support, institutions can contribute to a more equitable and enriched learning environment, fostering the next generation of diverse and motivated STEM professionals.
 
 ## References
-[Here](https://github.com/pbischoff3/pbischoff3.github.io/blob/main/rproj/2023_abrcms/References.txt) are the references used for this project! 
+
+[Here](https://github.com/pbischoff3/pbischoff3.github.io/blob/main/rproj/2023_abrcms/References.txt) are the references used for this project!
