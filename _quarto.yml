@@ -36,6 +36,8 @@ website:
             href: rproj/2023_asmcue/asmcue.qmd
           - text: ABRCMS 2023
             href: rproj/2023_abrcms/abrcms.qmd
+          - text: WRHC 2024
+            href: rproj/2024_wrhc/wrhc.qmd
       - text: Publications
         href: publ/home.qmd
       - text: Medical Hours
