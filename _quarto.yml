@@ -22,21 +22,21 @@ website:
             href: conf/2023/2023.qmd  
       - text: R Projects
         menu: 
-          - text: About
+          - text: "About"
             href: rproj/rproj.qmd
-          - text: Seagrass Microbiome
+          - text: "Seagrass Microbiome"
             href: https://github.com/gzahn/syringodium_bacteria
             target: _blank
-          - text: netplot R Package
+          - text: "`netplot` R Package"
             href: https://github.com/USCCANA/netplot
             target: _blank
-          - text: SABER 2023
+          - text: "SABER 2023"
             href: rproj/2023_saber/home.qmd
-          - text: ASMCUE 2023
+          - text: "ASMCUE 2023"
             href: rproj/2023_asmcue/asmcue.qmd
-          - text: ABRCMS 2023
+          - text: "ABRCMS 2023"
             href: rproj/2023_abrcms/abrcms.qmd
-          - text: WRHC 2024
+          - text: "WRHC 2024"
             href: rproj/2024_wrhc/wrhc.qmd
       - text: Publications
         href: publ/home.qmd
