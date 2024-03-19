@@ -1097,5 +1097,12 @@
     "title": "Research",
     "section": "Summer Program for Undergraduate Research SPUR",
     "text": "Summer Program for Undergraduate Research SPUR\n\nDescription\n“SPUR is a nationally competitive opportunity that provides undergraduate students with an intensive 10-week summer research experience under the mentorship of a University of Utah faculty member. The program provides opportunities to gain research experience in a variety of disciplines.”\n\n\nLearnings\nI am currently involved in SPUR, and I am excited to report back at the end of my time here on my experience."
+  },
+  {
+    "objectID": "rproj/2024_wrhc/wrhc.html",
+    "href": "rproj/2024_wrhc/wrhc.html",
+    "title": "Western Regional Honors Conference 2024",
+    "section": "",
+    "text": "This is a test\n\nprint(\"This is a test\")\n\n[1] \"This is a test\""
   }
 ]

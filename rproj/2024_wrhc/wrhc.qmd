@@ -1,3 +1,9 @@
 ---
 title: "Western Regional Honors Conference 2024"
 ---
+This is a test
+
+```{r}
+print("This is a test")
+```
+

@@ -26,13 +26,13 @@ Conflicts of Interest: The authors have no conflicts of interest to declare.
 
 # Background
 
-Medical experiences can significantly influence perceptions of gender and the well-being of individuals who are socially secluded due to their ethnicity or race. The intersectionality of medical encounters and societal dynamics can shape one's identity, affecting not only how individuals view themselves but also how they are perceived by others. Gender biases within the medical field can impact the quality of care received, with research indicating that women may face disparities in diagnosis and treatment. These experiences can contribute to the reinforcement of gender norms and expectations, influencing individuals' self-perception and societal roles. This is not only true in the medical field, but also in the STEM field. Profound differences exists in STEM and gender identity both in education and ion medical experiences.  
+Medical experiences can significantly influence perceptions of gender and the well-being of individuals who are socially secluded due to their ethnicity or race. The intersectionality of medical encounters and societal dynamics can shape one's identity, affecting not only how individuals view themselves but also how they are perceived by others. Gender biases within the medical field can impact the quality of care received, with research indicating that women may face disparities in diagnosis and treatment. These experiences can contribute to the reinforcement of gender norms and expectations, influencing individuals' self-perception and societal roles. This is not only true in the medical field, but also in the STEM field. Profound differences exists in STEM and gender identity both in education and ion medical experiences.
 
-Moreover, individuals who are socially secluded due to their ethnicity or the rarity of their conditions may encounter unique challenges within medical settings. Cultural competency and understanding are crucial in providing effective care, yet individuals from certain ethnic backgrounds may face misunderstanding or stigmatization. This can lead to feelings of isolation and impact mental health. In some cases, individuals may avoid seeking medical attention altogether, exacerbating health issues. Thus, medical experiences become a key factor in shaping not only the physical well-being but also the emotional and social aspects of those who are marginalized due to their ethnicity or race. 
+Moreover, individuals who are socially secluded due to their ethnicity or the rarity of their conditions may encounter unique challenges within medical settings. Cultural competency and understanding are crucial in providing effective care, yet individuals from certain ethnic backgrounds may face misunderstanding or stigmatization. This can lead to feelings of isolation and impact mental health. In some cases, individuals may avoid seeking medical attention altogether, exacerbating health issues. Thus, medical experiences become a key factor in shaping not only the physical well-being but also the emotional and social aspects of those who are marginalized due to their ethnicity or race.
 
-The concept of PEERs (persons excluded due to ethnicity or race) emphasizes the importance of recognizing and addressing the specific needs of individuals who fall into these categories. Medical encounters should be sensitive to cultural nuances and the unique challenges faced by those of a different race or ethnicity. Those differences should be encouraged and supported so that regardless of the environment, they are allowed to flourish. Integrating diversity and inclusion in medical education and science education can foster an environment where individuals from all backgrounds feel understood and valued. Additionally, advocacy for equitable healthcare policies and research that considers the diverse experiences of different genders and ethnicities is essential to reducing disparities and promoting the well-being of all individuals, irrespective of their social or medical circumstances. 
+The concept of PEERs (persons excluded due to ethnicity or race) emphasizes the importance of recognizing and addressing the specific needs of individuals who fall into these categories. Medical encounters should be sensitive to cultural nuances and the unique challenges faced by those of a different race or ethnicity. Those differences should be encouraged and supported so that regardless of the environment, they are allowed to flourish. Integrating diversity and inclusion in medical education and science education can foster an environment where individuals from all backgrounds feel understood and valued. Additionally, advocacy for equitable healthcare policies and research that considers the diverse experiences of different genders and ethnicities is essential to reducing disparities and promoting the well-being of all individuals, irrespective of their social or medical circumstances.
 
-In conclusion, medical experiences play a pivotal role in shaping the perceptions of gender and the well-being of PEERs. Addressing gender biases within the medical field and promoting cultural competency can contribute to more inclusive, effective, diverse education and healthcare systems. By acknowledging the unique challenges faced by individuals secluded due to their ethnicity or race, we can work towards healthcare and education systems that value diversity and support unique and valuable experience for all. While this research focuses on STEM education and healthcare systems it must be said that both of those are profound influence on the rest of society. Sandara Day O’Conner said it best, “Society as a whole benefits immeasurably form a climate in which all persons, regardless of race or gender, may have the opportunity to earn respect based on ability.” Opportunity is not equal across the spectrum and those with medical conditions and gender disparities often face issues that others do not, which as Sandra said is something that cannot and should not be allowed.  
+In conclusion, medical experiences play a pivotal role in shaping the perceptions of gender and the well-being of PEERs. Addressing gender biases within the medical field and promoting cultural competency can contribute to more inclusive, effective, diverse education and healthcare systems. By acknowledging the unique challenges faced by individuals secluded due to their ethnicity or race, we can work towards healthcare and education systems that value diversity and support unique and valuable experience for all. While this research focuses on STEM education and healthcare systems it must be said that both of those are profound influence on the rest of society. Sandara Day O’Conner said it best, “Society as a whole benefits immeasurably form a climate in which all persons, regardless of race or gender, may have the opportunity to earn respect based on ability.” Opportunity is not equal across the spectrum and those with medical conditions and gender disparities often face issues that others do not, which as Sandra said is something that cannot and should not be allowed.
 
 ## Motivation for the Project
 
@@ -586,6 +586,7 @@ chart
 Of those who identified as had a medical experience, approximately 60% answered "No" while around 40% answered "Yes" to whether they have a chronic condition.
 
 ## PEER Status & Medical Conditions
+
 ```{r echo=FALSE, warning=FALSE}
 # PEER 1st####
 # Load the fmsb package
@@ -751,10 +752,11 @@ title("Medical Conditions: PEER v. Non-PEER Science Motivation")
 mtext("PEER: n=20. Non-PEER: n=194", side = 1, line = 2, cex = 0.8)
 mtext("Belief in One's Ability and Integration significant at p<.05", side = 1, line = 3, cex = 0.8)
 ```
+
 Although there was only a small percentage of students who identified themselves as part of the PEER group that had medical conditions, there were some significant differences between this group and those that were a part of the non-PEER group that had medical conditions. From the survey, students who were a part of the PEER group with medical conditions had significantly lower belief in their abilities in science as well as a significantly low view on their integration in science, compared to those who were a part of the non-PEER group with Medical Conditions.
 
-
 ## Gender & Medical Conditions
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 # Gender####
 # Load the fmsb package
@@ -922,18 +924,21 @@ mtext("Identity, Interest, Belief in One's Ability, Sense of Belonging, and Inte
 
 
 ```
-From the survey, we see that the majority of students who reported that they have had medical conditions are women. Out of those numbers, however, there are some significant differences between men and women. Women have significantly lower identity, interest, sense of belonging, and integration in science. They also have significantly lower belief in their ability to succeed in science compared to men.
 
+From the survey, we see that the majority of students who reported that they have had medical conditions are women. Out of those numbers, however, there are some significant differences between men and women. Women have significantly lower identity, interest, sense of belonging, and integration in science. They also have significantly lower belief in their ability to succeed in science compared to men.
 
 # Conclusion
 
 ## Negative Effects
+
 Unfortunately, our results are conducive to previous research on the matter of PEER groups and women in science. It is important to note that there are many significant differences in both groups with respect to the majority of the demographics (Men and non-PEER) in our survey. There could be some important, possible correlations to these significant values amongst women as many of them have had medical conditions. This could indicate that their time spent in class is limited and their ability to be integrated in their science classes is diminished.
 
 ## Positive Effects
+
 There are many positives that came from these results. While our sample size of PEERs that had medical conditions wasn’t very large, there was no significant difference in the interest, career value, actions to promote success, and sense of belonging in science with that group compared to the non-PEERs of our survey. Amongst the women who have medical conditions, there was no significant difference in career value and actions to promote success compared to men who have medical conditions. Both career value and actions to promote success amongst all groups are similar, meaning that there is a greater tendency to focus on one’s career and the impact that this career will have in promoting success to the community within science.
 
 ## Next Steps
+
 For future advancement, instructors should be more considerate of those with medical conditions, especially amongst those who identify in the women or PEER groups. These groups can greatly influence the science community as a whole and have just as much tendency to take necessary actions that can
 
 promote success in science as any other group of people. If instructors are more purposeful about their inclusion with these groups, specifically in science, but in every field, there are limitless possibilities of what good can come from these groups of future scientists.
