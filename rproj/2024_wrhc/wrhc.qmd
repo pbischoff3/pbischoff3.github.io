@@ -1,7 +1,8 @@
+# Western Regional Honors Conference
 ![](bischoff_wrhc_poster.png)
 <a href="bischoff_wrhc_poster.png" download>Click to Download</a>
 
-## Abstract
+# Abstract
 
 This study explores the impact of chronic conditions on STEM motivation among undergraduate students, addressing a gap in existing research that primarily focuses on gender and ethnicity. Specifically, we investigate how medical experiences, especially chronic conditions, influence students in science classes at an open enrollment institution, considering demographics such as first-
 generation status, gender, major, and career goals.
@@ -16,14 +17,14 @@ However, increased engagement with science due to chronic conditions may motivat
 
 Understanding how chronic conditions shape students' motivation is crucial for science instructors to adapt their course content and pedagogy, fostering inclusivity and recognizing diverse identities across different demographic dimensions.
 
-## Background
+# Background
 
 ```{r echo=FALSE}
 library(vembedr)
 embed_url("https://www.youtube.com/watch?v=wiK6z7Of29Q&t=1s")
 ```
 
-## Motivation for the Project
+# Motivation for the Project
 
 Porter has had a slew of medical experiences, and these experiences led him to pursue a career path in medicine. While going through his undergraduate experience, preparing for medical school, he found a real passion for science as well as medicine. Because this was relatively late in his education, he wishes that he knew this passion he had before his undergraduate studies. Therefore, this project was born, hoping to find that Porter wasn't uncommon in his experience and assisting other students understand their passions for science sooner than later. To learn more about how this project became to be, [please go to this link!](https://youtu.be/ZyujRGODbs4)
 
@@ -33,9 +34,7 @@ We used an adapted survey from other literature to find information regarding ST
 
 390 students answered the pre/post-semester surveys. We have a large number of pre-semester data, but only 390 responded to both the beginning and end of the semester survey.
 
-## Aspects of the Survey
-
-### STEM Motivation Questions
+## STEM Motivation Questions
 
 Here are the questions that we asked to determine the different aspects of STEM motivation.
 
@@ -104,18 +103,18 @@ We used paired and upaired T-Tests to properly understand the significance data 
 
 SPSS was used to complete the Pearson Correlation. R packages were used to create the plots.
 
-## Conclusion
+# Conclusion
 
 ```{r echo=FALSE}
 library(vembedr)
 embed_url("https://www.youtube.com/watch?v=RSzaDsW0RTI")
 ```
 
-## R Code
+# R Code
 
 The code for the creation of the Spider Plots can be found at [this link](https://github.com/pbischoff3/pbischoff3.github.io/tree/main/rproj/2024_wrhc/docs/spider_plots)!
 
-## References
+# References
 
 - Bessette, A., Morkos, B., & Sangelkar, S. (2016, August). Motivational differences between senior and freshman engineering design students: A multi-institution study. In International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (Vol. 50138, p. V003T04A014). American Society of Mechanical Engineers.
 - Dika, S. L., & D'Amico, M. M. (2016). Early experiences and integration in the persistence of first‐generation college students in STEM and non‐STEM majors. Journal of Research in Science Teaching, 53(3), 368-383.
