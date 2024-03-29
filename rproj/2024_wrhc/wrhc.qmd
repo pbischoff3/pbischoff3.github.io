@@ -1,9 +1,118 @@
----
-title: "Western Regional Honors Conference 2024"
----
-This is a test
+# Chronic Realities, Varied Paths: Understanding STEM Motivation Across Demographics
 
-```{r}
-print("This is a test")
+## Abstract
+
+This study explores the impact of chronic conditions on STEM motivation among undergraduate students, addressing a gap in
+existing research that primarily focuses on gender and ethnicity. Specifically, we investigate how medical experiences, especially chronic conditions, influence students in science classes at an open enrollment institution, considering demographics such as first-
+generation status, gender, major, and career goals.
+
+Data from 390 students across 14 biology courses, including non-majors, were collected before and after the courses. Surprisingly, 57% reported medical experiences, with 22% having chronic conditions, emphasizing their significance within the diverse student
+population.
+
+Students facing more medical interruptions exhibited a notable decrease in their sense of belonging and self-efficacy, albeit with a small effect size. Intriguingly, across demographics, students with chronic conditions engaging more with science showed significantly higher levels of motivation and immersion. This suggests that chronic conditions can both positively and negatively influence student engagement with science.
+
+The impact of medical interruptions on academics is closely linked to students' sense of belonging and self-efficacy. 
+
+However, increased engagement with science due to chronic conditions may motivate students to explore these experiences within the context of scientific inquiry.
+
+Understanding how chronic conditions shape students' motivation is crucial for science instructors to adapt their course content
+and pedagogy, fostering inclusivity and recognizing diverse identities across different demographic dimensions.
+
+## Background
+
+```{r echo=FALSE}
+library(vembedr)
+embed_url("https://www.youtube.com/watch?v=wiK6z7Of29Q&t=1s")
 ```
 
+## Motivation for the Project
+
+Porter has had a slew of medical experiences, and these experiences led him to pursue a career path in medicine. While going through his undergraduate experience, preparing for medical school, he found a real passion for science as well as medicine. Because this was relatively late in his education, he wishes that he knew this passion he had before his undergraduate studies. Therefore, this project was born, hoping to find that Porter wasn't uncommon in his experience and assisting other students understand their passions for science sooner than later. To learn more about how this project became to be, [please go to this link!](https://youtu.be/ZyujRGODbs4)
+
+# Methods
+
+We used an adapted survey from other literature to find information regarding STEM motivation. This survey was given pre-semester and post-semester to 14 different Biology courses at Utah Valley University. These classes had students who were both STEM majors and non-majors, as these classes were generally General Education classes. Utah Valley University is an open enrollment institution, making this data an interesting set to explore.
+
+390 students answered the pre/post-semester surveys. We have a large number of pre-semester data, but only 390 responded to both the beginning and end of the semester survey.
+
+## Aspects of the Survey
+
+### STEM Motivation Questions
+
+Here are the questions that we asked to determine the different aspects of STEM motivation.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+
+# Define the data
+data <- data.frame(
+  Category = c("Science Identity", "Science Identity", "Science Identity", "Science Identity", "Science Identity",
+               "Career Motivation", "Career Motivation", "Career Motivation", "Career Motivation", "Career Motivation",
+               "Instrinsic Motivation", "Instrinsic Motivation", "Instrinsic Motivation", "Instrinsic Motivation", "Instrinsic Motivation",
+               "Self-Determination", "Self-Determination", "Self-Determination", "Self-Determination", "Self-Determination",
+               "Self-Efficacy", "Self-Efficacy", "Self-Efficacy", "Self-Efficacy",
+               "Grade Motivation", "Grade Motivation", "Grade Motivation", "Grade Motivation", "Grade Motivation",
+               "Value of Peer Interactions", "Value of Peer Interactions", "Value of Peer Interactions", "Value of Peer Interactions", "Value of Peer Interactions",
+               "Sense of Belonging", "Sense of Belonging", "Sense of Belonging", "Sense of Belonging", "Sense of Belonging", "Sense of Belonging",
+               "Competency in Science", "Competency in Science", "Competency in Science", "Competency in Science",
+               "Community in Science", "Community in Science", "Community in Science", "Community in Science"
+  ),
+  Statement = c("I see myself as a biology person.", "I see myself as a science person.", "I see myself as a scientist.",
+                "Other people (friends/family) see me as a science person.", "My science instructors see me as a science person.",
+                "Learning science will help me get a good job.", "Understanding science will benefit me in my career.",
+                "Knowing science will give me a career advantage.", "I will use science problem-solving skills in my career.",
+                "My career will involve science.", "Learning science is interesting.", "I am curious about discoveries in science.",
+                "The science I learn is relevant to my life.", "Learning science makes my life more meaningful.", "I enjoy learning science.",
+                "I study hard to learn science.", "I prepare well for science tests and labs.", "I put enough effort into learning science.",
+                "I spend a lot of time learning science.", "I use strategies to learn science well.", "I am confident that I will do well on science labs and projects.",
+                "I believe I can earn a grade of 'A' in science.", "I am confident I will do well on science tests.",
+                "I believe I can master science knowledge and skills.", "Scoring high on science tests and labs matters to me.",
+                "It is important that I get an 'A' in science.", "I think about the grade I will get in science.",
+                "Getting a good science grade is important to me.", "I like to do better than other students on science tests.",
+                "My college science classes are more enjoyable when I work with other students.",
+                "I understand more when my classmates participate in college classroom discussions.",
+                "I learn best in college science classes when I work with classmates.",
+                "The amount I understand is increased by classmates' ideas in my college science classes.",
+                "When classmates share their ideas in college science classes, this helps me learn.",
+                "When I am in a science setting, I feel a connection with the science community.",
+                "When I am in a science setting, I feel respected.",
+                "When I am in a science setting, I feel comfortable.",
+                "When I am in a science setting, I trust my instructors to be committed to helping me learn.",
+                "When I am in a science setting, I enjoy being an active participant.",
+                "When I am in a science setting, I try to say as little as possible.",
+                "I am good at solving complicated scientific problems.",
+                "I read websites articles or books about scientific issues.",
+                "I work on a project involving scientific concepts.",
+                "I think about how my life is affected by science.",
+                "To what extent is serving the community important to scientific work?",
+                "To what extent is working with people important to scientific work?",
+                "To what extent is helping others important to scientific work?",
+                "To what extent is connecting with others important to scientific work?"
+  )
+)
+
+# Create the table
+table <- kable(data, format = "html", row.names = FALSE) %>%
+  kable_styling(bootstrap_options = "striped", full_width = FALSE)
+
+# Display the table
+table
+```
+## Statistical Analysis
+
+We used paired and upaired T-Tests to properly understand the significance data for each of the aspects. We are excited to continue doing analysis on this data set, as we know that we can dive deeper into it.
+
+## Technology
+
+SPSS was used to complete the Pearson Correlation. R packages were used to create the plots.
+
+## Conclusion
+
+```{r echo=FALSE}
+library(vembedr)
+embed_url("https://www.youtube.com/watch?v=RSzaDsW0RTI")
+```
+
+## R Code
+
+## References
