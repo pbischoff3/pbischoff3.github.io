@@ -1,13 +1,12 @@
-# Chronic Realities, Varied Paths: Understanding STEM Motivation Across Demographics
+![](bischoff_wrhc_poster.png)
+<a href="bischoff_wrhc_poster.png" download>Click to Download</a>
 
 ## Abstract
 
-This study explores the impact of chronic conditions on STEM motivation among undergraduate students, addressing a gap in
-existing research that primarily focuses on gender and ethnicity. Specifically, we investigate how medical experiences, especially chronic conditions, influence students in science classes at an open enrollment institution, considering demographics such as first-
+This study explores the impact of chronic conditions on STEM motivation among undergraduate students, addressing a gap in existing research that primarily focuses on gender and ethnicity. Specifically, we investigate how medical experiences, especially chronic conditions, influence students in science classes at an open enrollment institution, considering demographics such as first-
 generation status, gender, major, and career goals.
 
-Data from 390 students across 14 biology courses, including non-majors, were collected before and after the courses. Surprisingly, 57% reported medical experiences, with 22% having chronic conditions, emphasizing their significance within the diverse student
-population.
+Data from 390 students across 14 biology courses, including non-majors, were collected before and after the courses. Surprisingly, 57% reported medical experiences, with 22% having chronic conditions, emphasizing their significance within the diverse student population.
 
 Students facing more medical interruptions exhibited a notable decrease in their sense of belonging and self-efficacy, albeit with a small effect size. Intriguingly, across demographics, students with chronic conditions engaging more with science showed significantly higher levels of motivation and immersion. This suggests that chronic conditions can both positively and negatively influence student engagement with science.
 
@@ -15,8 +14,7 @@ The impact of medical interruptions on academics is closely linked to students' 
 
 However, increased engagement with science due to chronic conditions may motivate students to explore these experiences within the context of scientific inquiry.
 
-Understanding how chronic conditions shape students' motivation is crucial for science instructors to adapt their course content
-and pedagogy, fostering inclusivity and recognizing diverse identities across different demographic dimensions.
+Understanding how chronic conditions shape students' motivation is crucial for science instructors to adapt their course content and pedagogy, fostering inclusivity and recognizing diverse identities across different demographic dimensions.
 
 ## Background
 
@@ -115,4 +113,11 @@ embed_url("https://www.youtube.com/watch?v=RSzaDsW0RTI")
 
 ## R Code
 
+The code for the creation of the Spider Plots can be found at [this link](https://github.com/pbischoff3/pbischoff3.github.io/tree/main/rproj/2024_wrhc/docs/spider_plots)!
+
 ## References
+
+- Bessette, A., Morkos, B., & Sangelkar, S. (2016, August). Motivational differences between senior and freshman engineering design students: A multi-institution study. In International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (Vol. 50138, p. V003T04A014). American Society of Mechanical Engineers.
+- Dika, S. L., & D'Amico, M. M. (2016). Early experiences and integration in the persistence of first‐generation college students in STEM and non‐STEM majors. Journal of Research in Science Teaching, 53(3), 368-383.
+- Starr, C. R. (2018). “I’m not a science nerd!” STEM stereotypes, identity, and motivation among undergraduate women. Psychology of Women Quarterly, 42(4), 489-503.
+- Starr, C. R., Hunter, L., Dunkin, R., Honig, S., Palomino, R., & Leaper, C. (2020). Engaging in science practices in classrooms predicts increases in undergraduates' STEM motivation, identity, and achievement: A short‐term longitudinal study. Journal of Research in Science Teaching, 57(7), 1093-1118.
