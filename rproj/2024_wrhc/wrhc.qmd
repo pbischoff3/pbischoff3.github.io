@@ -4,8 +4,7 @@
 
 # Abstract
 
-This study explores the impact of chronic conditions on STEM motivation among undergraduate students, addressing a gap in existing research that primarily focuses on gender and ethnicity. Specifically, we investigate how medical experiences, especially chronic conditions, influence students in science classes at an open enrollment institution, considering demographics such as first-
-generation status, gender, major, and career goals.
+This study explores the impact of chronic conditions on STEM motivation among undergraduate students, addressing a gap in existing research that primarily focuses on gender and ethnicity. Specifically, we investigate how medical experiences, especially chronic conditions, influence students in science classes at an open enrollment institution, considering demographics such as first-generation status, gender, major, and career goals.
 
 Data from 390 students across 14 biology courses, including non-majors, were collected before and after the courses. Surprisingly, 57% reported medical experiences, with 22% having chronic conditions, emphasizing their significance within the diverse student population.
 
